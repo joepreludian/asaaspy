@@ -1,0 +1,7 @@
+site_name: AsaasPy
+site_url: https://asaaspy.github.io/
+repo_name: joepreludian/asaaspy
+repo_url: https://github.com/tiangolo/fastapi
+theme:
+  name: material
+
