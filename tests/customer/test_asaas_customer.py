@@ -35,7 +35,7 @@ class TestAsaasCreateCustomer:
     def test_create_customer(self, asaas_svc):
         asaas_svc: AsaasService = asaas_svc
         
-        customer = CustomerCreateSchema(name="Kari Caldwell", cpfCnpj="458.907.623-38") 
+        customer = CustomerCreateSchema(name="Karen Baldwin", cpfCnpj="458.907.623-38") 
         new_customer = asaas_svc.customer.create(customer)
 
         assert new_customer.id is not None
