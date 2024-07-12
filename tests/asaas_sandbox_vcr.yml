@@ -1,0 +1,240 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://sandbox.asaas.com/api/v3/customers",
+                "body": "",
+                "headers": {
+                    "host": [
+                        "sandbox.asaas.com"
+                    ],
+                    "accept": [
+                        "*/*"
+                    ],
+                    "accept-encoding": [
+                        "gzip, deflate"
+                    ],
+                    "connection": [
+                        "keep-alive"
+                    ],
+                    "content-type": [
+                        "application/json"
+                    ],
+                    "user-agent": [
+                        "AsaasPy"
+                    ],
+                    "access_token": [
+                        "***REMOVED***"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": ""
+                },
+                "headers": {
+                    "Content-Type": [
+                        "application/json;charset=utf-8"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Date": [
+                        "Fri, 12 Jul 2024 22:29:46 GMT"
+                    ],
+                    "Set-Cookie": [
+                        "AWSALBTG=SIZPVRIKxo4IfguIxOq5KILR4U7YTYsxgg8UIn4/pb8jEUQhHEnCI78UYHAziuNh/0Iub/xnvUhJWvZPiMDPn0pMpYOgtJCRYt8NKZcFmCA8YLFyRT0LWnk7HzS5uOevvSsSa3/M5Q/eYClCXpInAleHcvRpTNjOD9fRcBTeG/Ip; Expires=Fri, 19 Jul 2024 22:29:46 GMT; Path=/",
+                        "AWSALBTGCORS=SIZPVRIKxo4IfguIxOq5KILR4U7YTYsxgg8UIn4/pb8jEUQhHEnCI78UYHAziuNh/0Iub/xnvUhJWvZPiMDPn0pMpYOgtJCRYt8NKZcFmCA8YLFyRT0LWnk7HzS5uOevvSsSa3/M5Q/eYClCXpInAleHcvRpTNjOD9fRcBTeG/Ip; Expires=Fri, 19 Jul 2024 22:29:46 GMT; Path=/; SameSite=None; Secure",
+                        "AWSALB=V0UsVHSPXETTSXDQ956viufk+SYSGdGMC1ktEyrByyz22EmgcEYGWixsVrdo56WMC/gJVouhHIINQSBbbBio46UrXLaeT92DVvHoio13p8YFr8vHhPsQ/koGyYao; Expires=Fri, 19 Jul 2024 22:29:46 GMT; Path=/",
+                        "AWSALBCORS=V0UsVHSPXETTSXDQ956viufk+SYSGdGMC1ktEyrByyz22EmgcEYGWixsVrdo56WMC/gJVouhHIINQSBbbBio46UrXLaeT92DVvHoio13p8YFr8vHhPsQ/koGyYao; Expires=Fri, 19 Jul 2024 22:29:46 GMT; Path=/; SameSite=None; Secure"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "X-Cache": [
+                        "Miss from cloudfront"
+                    ],
+                    "Via": [
+                        "1.1 f3ad6967905e6d2f0827e13dfa2c7d44.cloudfront.net (CloudFront)"
+                    ],
+                    "X-Amz-Cf-Pop": [
+                        "FOR50-P1"
+                    ],
+                    "Alt-Svc": [
+                        "h3=\":443\"; ma=86400"
+                    ],
+                    "X-Amz-Cf-Id": [
+                        "CxDPW_K-IE4TtJNUVEz33v-mfSkj0B-w_B5W0cGmGHM-KBsuzWfWBw=="
+                    ]
+                },
+                "body": {
+                    "string": "{\"object\":\"list\",\"hasMore\":false,\"totalCount\":3,\"limit\":10,\"offset\":0,\"data\":[{\"object\":\"customer\",\"id\":\"cus_000006101993\",\"dateCreated\":\"2024-07-12\",\"name\":\"Kari Caldwell\",\"email\":null,\"company\":null,\"phone\":null,\"mobilePhone\":null,\"address\":null,\"addressNumber\":null,\"complement\":null,\"province\":null,\"postalCode\":null,\"cpfCnpj\":\"45890762338\",\"personType\":\"FISICA\",\"deleted\":false,\"additionalEmails\":null,\"externalReference\":null,\"notificationDisabled\":false,\"observations\":null,\"municipalInscription\":null,\"stateInscription\":null,\"canDelete\":true,\"cannotBeDeletedReason\":null,\"canEdit\":true,\"cannotEditReason\":null,\"city\":null,\"cityName\":null,\"state\":null,\"country\":\"Brasil\"},{\"object\":\"customer\",\"id\":\"cus_000006101680\",\"dateCreated\":\"2024-07-12\",\"name\":\"Maria Jos\u00e9\",\"email\":null,\"company\":null,\"phone\":null,\"mobilePhone\":null,\"address\":null,\"addressNumber\":null,\"complement\":null,\"province\":null,\"postalCode\":null,\"cpfCnpj\":\"06150567419\",\"personType\":\"FISICA\",\"deleted\":false,\"additionalEmails\":null,\"externalReference\":null,\"notificationDisabled\":false,\"observations\":null,\"municipalInscription\":null,\"stateInscription\":null,\"canDelete\":true,\"cannotBeDeletedReason\":null,\"canEdit\":true,\"cannotEditReason\":null,\"city\":null,\"cityName\":null,\"state\":null,\"country\":\"Brasil\"},{\"object\":\"customer\",\"id\":\"cus_000006100224\",\"dateCreated\":\"2024-07-12\",\"name\":\"Joao das Couves\",\"email\":null,\"company\":null,\"phone\":null,\"mobilePhone\":null,\"address\":null,\"addressNumber\":null,\"complement\":null,\"province\":null,\"postalCode\":null,\"cpfCnpj\":\"06150557456\",\"personType\":\"FISICA\",\"deleted\":false,\"additionalEmails\":\"joaocouves1@gmail.com,joaocouves2@gmail.com\",\"externalReference\":null,\"notificationDisabled\":false,\"observations\":null,\"municipalInscription\":null,\"stateInscription\":null,\"canDelete\":true,\"cannotBeDeletedReason\":null,\"canEdit\":true,\"cannotEditReason\":null,\"city\":null,\"cityName\":null,\"state\":null,\"country\":\"Brasil\"}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "https://sandbox.asaas.com/api/v3/customers",
+                "body": "{\"name\": \"Kari Caldwell\", \"cpfCnpj\": \"458.907.623-38\"}",
+                "headers": {
+                    "host": [
+                        "sandbox.asaas.com"
+                    ],
+                    "accept": [
+                        "*/*"
+                    ],
+                    "accept-encoding": [
+                        "gzip, deflate"
+                    ],
+                    "connection": [
+                        "keep-alive"
+                    ],
+                    "content-type": [
+                        "application/json"
+                    ],
+                    "user-agent": [
+                        "AsaasPy"
+                    ],
+                    "access_token": [
+                        "***REMOVED***"
+                    ],
+                    "content-length": [
+                        "54"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": ""
+                },
+                "headers": {
+                    "Content-Type": [
+                        "application/json;charset=utf-8"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Date": [
+                        "Fri, 12 Jul 2024 22:35:37 GMT"
+                    ],
+                    "Set-Cookie": [
+                        "AWSALBTG=UmW9o7Pgysp2OexOwFKGODdnKe1Rw/8MswSJZr4oQ0n8TLhM1OarzVAxt44YPMLeQZYJe8Drdn2pRbC83UgUX01KpsswwOP227pBcas4SyajwfE5CudpfcmoKhT5UMqDzCnQEGHckG7t4D0JytcfpHMabd/vCoghfUtuGG7OsJ1/; Expires=Fri, 19 Jul 2024 22:35:37 GMT; Path=/",
+                        "AWSALBTGCORS=UmW9o7Pgysp2OexOwFKGODdnKe1Rw/8MswSJZr4oQ0n8TLhM1OarzVAxt44YPMLeQZYJe8Drdn2pRbC83UgUX01KpsswwOP227pBcas4SyajwfE5CudpfcmoKhT5UMqDzCnQEGHckG7t4D0JytcfpHMabd/vCoghfUtuGG7OsJ1/; Expires=Fri, 19 Jul 2024 22:35:37 GMT; Path=/; SameSite=None; Secure",
+                        "AWSALB=PeV1lA+AIZJzFRdHId5G3ZmqZ67RVecfDMBE22rDN2WZmREIt7Chicr+QFhERxRcxjtEfAnqgLPW3AK6z1Xt/0bI+SSIeI0zoRq5s1Zf5KZzntApwhOoBNEoGHZO; Expires=Fri, 19 Jul 2024 22:35:37 GMT; Path=/",
+                        "AWSALBCORS=PeV1lA+AIZJzFRdHId5G3ZmqZ67RVecfDMBE22rDN2WZmREIt7Chicr+QFhERxRcxjtEfAnqgLPW3AK6z1Xt/0bI+SSIeI0zoRq5s1Zf5KZzntApwhOoBNEoGHZO; Expires=Fri, 19 Jul 2024 22:35:37 GMT; Path=/; SameSite=None; Secure",
+                        "JSESSIONID=B3EF5801BB2FE9F7C0E2EEBDCAC0CC81A7E5A97A68516013121D51E1F2C555A0A3A565D4D9C9C805EDE4D3C05FF5C2BE5485A7A008F96B481E6D4311166C38CD.n1; Path=/; Secure; HttpOnly"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "X-Cache": [
+                        "Miss from cloudfront"
+                    ],
+                    "Via": [
+                        "1.1 bb57ace9351c7be961a38c3d4ed3a8b4.cloudfront.net (CloudFront)"
+                    ],
+                    "X-Amz-Cf-Pop": [
+                        "FOR50-P1"
+                    ],
+                    "Alt-Svc": [
+                        "h3=\":443\"; ma=86400"
+                    ],
+                    "X-Amz-Cf-Id": [
+                        "uOkGtx3JWngT_XmByECwfaiLi9aidGvprbY8HqKgLYORb89sRy-8Ew=="
+                    ]
+                },
+                "body": {
+                    "string": "{\"object\":\"customer\",\"id\":\"cus_000006102013\",\"dateCreated\":\"2024-07-12\",\"name\":\"Kari Caldwell\",\"email\":null,\"company\":null,\"phone\":null,\"mobilePhone\":null,\"address\":null,\"addressNumber\":null,\"complement\":null,\"province\":null,\"postalCode\":null,\"cpfCnpj\":\"45890762338\",\"personType\":\"FISICA\",\"deleted\":false,\"additionalEmails\":null,\"externalReference\":null,\"notificationDisabled\":false,\"observations\":null,\"municipalInscription\":null,\"stateInscription\":null,\"canDelete\":true,\"cannotBeDeletedReason\":null,\"canEdit\":true,\"cannotEditReason\":null,\"city\":null,\"cityName\":null,\"state\":null,\"country\":\"Brasil\"}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://sandbox.asaas.com/api/v3/customers?name=Jo%C3%A3o",
+                "body": "",
+                "headers": {
+                    "host": [
+                        "sandbox.asaas.com"
+                    ],
+                    "accept": [
+                        "*/*"
+                    ],
+                    "accept-encoding": [
+                        "gzip, deflate"
+                    ],
+                    "connection": [
+                        "keep-alive"
+                    ],
+                    "content-type": [
+                        "application/json"
+                    ],
+                    "user-agent": [
+                        "AsaasPy"
+                    ],
+                    "access_token": [
+                        "***REMOVED***"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": ""
+                },
+                "headers": {
+                    "Content-Type": [
+                        "application/json;charset=utf-8"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Date": [
+                        "Fri, 12 Jul 2024 22:35:37 GMT"
+                    ],
+                    "Set-Cookie": [
+                        "AWSALBTG=RSEkmXgzq+61l8YP/5SHq6LADZPXCGGh8MdZUUC+1DmN6TJ1RTxzHV4ghL9XTqgAx0hsvYt7yIiOAtNh6TmRRsgck6XnvRqs6AWOBeBKl5Gcv3OH2i/ia0ouqGfpkzdFfXN1DwXQvVhBsqOtsRs9N7+Et1o3nEL2U6e9dUGcegIG; Expires=Fri, 19 Jul 2024 22:35:37 GMT; Path=/",
+                        "AWSALBTGCORS=RSEkmXgzq+61l8YP/5SHq6LADZPXCGGh8MdZUUC+1DmN6TJ1RTxzHV4ghL9XTqgAx0hsvYt7yIiOAtNh6TmRRsgck6XnvRqs6AWOBeBKl5Gcv3OH2i/ia0ouqGfpkzdFfXN1DwXQvVhBsqOtsRs9N7+Et1o3nEL2U6e9dUGcegIG; Expires=Fri, 19 Jul 2024 22:35:37 GMT; Path=/; SameSite=None; Secure",
+                        "AWSALB=oq906a5OmOx4wTmZv6+HRYXTzQ4mk/B4/ln7lndTtkMzZJS1qC6NnCaxaanP1HzduixtJqsOBFTLbk3rieKDv/kqs8rSya26XZS46Ni95N5xg/+RmS7QesY9HVzt; Expires=Fri, 19 Jul 2024 22:35:37 GMT; Path=/",
+                        "AWSALBCORS=oq906a5OmOx4wTmZv6+HRYXTzQ4mk/B4/ln7lndTtkMzZJS1qC6NnCaxaanP1HzduixtJqsOBFTLbk3rieKDv/kqs8rSya26XZS46Ni95N5xg/+RmS7QesY9HVzt; Expires=Fri, 19 Jul 2024 22:35:37 GMT; Path=/; SameSite=None; Secure"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "X-Cache": [
+                        "Miss from cloudfront"
+                    ],
+                    "Via": [
+                        "1.1 2708377c97c5783333e2b58f46317aea.cloudfront.net (CloudFront)"
+                    ],
+                    "X-Amz-Cf-Pop": [
+                        "FOR50-P1"
+                    ],
+                    "Alt-Svc": [
+                        "h3=\":443\"; ma=86400"
+                    ],
+                    "X-Amz-Cf-Id": [
+                        "O5fugNh3ptyNNYyqchmSMKumNH2VVkBOnr-ii1uyN8xl3VFdbNMtWw=="
+                    ]
+                },
+                "body": {
+                    "string": "{\"object\":\"list\",\"hasMore\":false,\"totalCount\":1,\"limit\":10,\"offset\":0,\"data\":[{\"object\":\"customer\",\"id\":\"cus_000006100224\",\"dateCreated\":\"2024-07-12\",\"name\":\"Joao das Couves\",\"email\":null,\"company\":null,\"phone\":null,\"mobilePhone\":null,\"address\":null,\"addressNumber\":null,\"complement\":null,\"province\":null,\"postalCode\":null,\"cpfCnpj\":\"06150557456\",\"personType\":\"FISICA\",\"deleted\":false,\"additionalEmails\":\"joaocouves1@gmail.com,joaocouves2@gmail.com\",\"externalReference\":null,\"notificationDisabled\":false,\"observations\":null,\"municipalInscription\":null,\"stateInscription\":null,\"canDelete\":true,\"cannotBeDeletedReason\":null,\"canEdit\":true,\"cannotEditReason\":null,\"city\":null,\"cityName\":null,\"state\":null,\"country\":\"Brasil\"}]}"
+                }
+            }
+        }
+    ]
+}
