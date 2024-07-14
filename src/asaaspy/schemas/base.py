@@ -31,6 +31,7 @@ class PaginatedOutputPayload:
     offset: int
     data: Any
 
+
 @dataclass
 class QueryParamsPayload(BaseSchema):
     offset: Optional[int] = None
