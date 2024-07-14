@@ -1,4 +1,5 @@
 # AsaasPY
+[![Documentation Status](https://readthedocs.org/projects/asaaspy/badge/?version=latest)](https://asaaspy.readthedocs.io/pt-br/latest/?badge=latest)
 
 Another Unofficial Asaas client
 
