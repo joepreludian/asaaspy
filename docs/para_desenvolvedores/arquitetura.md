@@ -7,7 +7,7 @@ O projeto do AsaasPy possui uma arquitetura separada em camadas de modo a garant
 ## Estrutura
 O projeto do AsaasPy está estruturado, de maneira geral, conforme o gráfico abaixo:
 
-```mermaid
+``` mermaid
 flowchart TD
     AsaasPY(AsaasPy)
     Service(AsaasService)

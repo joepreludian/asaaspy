@@ -1,24 +1,34 @@
 # Bem vindo!
 
-Esta é uma Biblioteca python para abstração dos endpoints do Asaas. [https://www.asaas.com/]()
-Esta utiliza as seguintes tecnologias:
+Esta é uma Biblioteca python não oficial de abstração dos endpoints do Asaas. [https://www.asaas.com/]()
 
-* Python 3.10+
-  * Dataclasses - PEP 557 - [https://docs.python.org/3.10/library/dataclasses.html]()
-* HTTPX - [https://www.python-httpx.org]()
+## AVISO - Projeto em Desenvolvimento
+Esta biblioteca não faz parte do time de desenvolvimento do Asaas e também não possui garantia. Apesar de estar usando boas práticas de desenvolvimento, sua utilização em ambiente de produção requer cuidado.
+
+Como se trata de um projeto em alpha, a API utilizada poderá sofrer modificações.
+
+**Use por sua conta e risco**
 
 ## Motivação
 
-O projeto foi criado pensando nos seguintes pontos:
+Este projeto utiliza as seguintes tecnologias:
+
+* Python 3.10+
+    * Dataclasses - PEP 557 - [https://docs.python.org/3.10/library/dataclasses.html]()
+* HTTPX - [https://www.python-httpx.org]()
+
+E foi pensado baseado nos seguintes pontos:
 
 * Possuir uma arquitetura simples e funcional
 * Poder ter na camada de serviço formas de encapsular diferentes contratos da API
 * As estruturas de dados (DTO) serem previsiveis por meio de Dataclasses
 * Possuir uma biblioteca que possa ser mantida pela comunidade
 
-Ao se utilizar uma chamada com um retorno previsível, por meio de TypedHints, o desenvolvimento acaba se tornando mais agradável para o desenvolvedor que poderá contar com .
+Ao se utilizar uma chamada com um retorno previsível, por meio de TypedHints, o desenvolvimento acaba se tornando mais agradável para o desenvolvedor que poderá contar com a ajuda da sua IDE.
 
 Também foi pensado uma estrutura de encapsulamento da solução de modo que ela possa ser plugável por meio de Recursos. (Como a API é versionada, poder utilizar um contrato anterior, ou suportar diferentes contratos dentro da mesma API)
+
+Para mais informações, confira a [arquitetura do projeto](/para_desenvolvedores/arquitetura)
 
 ## Roadmap
 
