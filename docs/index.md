@@ -14,14 +14,14 @@ Como se trata de um projeto em alpha, a API utilizada poderá sofrer modificaç�
 Este projeto utiliza as seguintes tecnologias:
 
 * Python 3.10+
-    * Dataclasses - PEP 557 - [https://docs.python.org/3.10/library/dataclasses.html]()
+* Pydantic 2
 * HTTPX - [https://www.python-httpx.org]()
 
 E foi pensado baseado nos seguintes pontos:
 
 * Possuir uma arquitetura simples e funcional
 * Poder ter na camada de serviço formas de encapsular diferentes contratos da API
-* As estruturas de dados (DTO) serem previsiveis por meio de Dataclasses
+* As estruturas de dados (DTO) serem previsiveis por meio de Pydantic Models
 * Possuir uma biblioteca que possa ser mantida pela comunidade
 
 Ao se utilizar uma chamada com um retorno previsível, por meio de TypedHints, o desenvolvimento acaba se tornando mais agradável para o desenvolvedor que poderá contar com a ajuda da sua IDE.

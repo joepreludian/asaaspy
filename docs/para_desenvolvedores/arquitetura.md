@@ -52,12 +52,12 @@ As camadas ficam distribuidas da seguinte maneira. Tentarei separar por níveis 
 * **Schemas** -> Possui os DTOs (Data Transfer Objects) utilizados para visualização dos dados.
  
 #### Schemas
-Os Schemas são Dataclasses do python que representam os dados trafegados no app das seguintes maneiras:
+Os Schemas são modelos do Pydantic que representam os dados trafegados no app das seguintes maneiras:
 
-* **Schemas de Criação** -> São payloads que podemos injetar dentro dos recursos. Por exemplo **CustomerCreateSchema** possui um DataClass que pode ser utilizado para a criação de um novo *Customer* dentro do *AsaasService*.
+* **Schemas de Criação** -> São payloads que podemos injetar dentro dos recursos. Por exemplo **CustomerCreateSchema** possui um Pydantic Model que pode ser utilizado para a criação de um novo *Customer* dentro do *AsaasService*.
     * Eles conterão dados minimos e opcionais conforme declarados na documentação oficial da API.
 * **Schemas de Visualização** -> Estes são utilizados para representar um dado que veio da API. Geralmente possui mais campos. Por exemplo, ao Criar um novo *Customer* o método retornará um objeto do tipo *CustomerViewSchema*, onde trará o campo `id`, entre outros.
-* **PaginatedOutputPayload** -> Esta estrutura é a representação do retorno de um payload que vem da API, quando o resultado é paginado. Tentei seguir o padrão a ser utilizado de modo a manter uma camada de compatibilidade com o retorno atual, apenas tornando o retorno previsível por meio de dataclasses.
+* **PaginatedOutputPayload** -> Esta estrutura é a representação do retorno de um payload que vem da API, quando o resultado é paginado. Tentei seguir o padrão a ser utilizado de modo a manter uma camada de compatibilidade com o retorno atual, apenas tornando o retorno previsível por meio de pydantic model.
 
 #### AsaasService
 Este é o coração do projeto a ser oferecido. Ele encapsula o `Client` e os `Resources` dentro de si. É por meio dele que voce acessa os recursos na qual as peças são encaixadas.
