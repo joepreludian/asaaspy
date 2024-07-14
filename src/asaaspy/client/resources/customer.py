@@ -4,7 +4,6 @@ from asaaspy.schemas.customer import (
     CustomerSchema,
     CustomerSearchParams,
 )
-from typing import List
 
 
 class CustomerResource(AsaasResource):
@@ -40,3 +39,8 @@ class CustomerResource(AsaasResource):
         with self.get_client() as client:
             response = client.post("v3/customers", json=customer.as_lean_dict())
             return CustomerSchema(**response.json())
+
+    def delete(self, id: str) -> bool:
+        with self.get_client() as client:
+            response = client.delete(f"v3/customers/{id}").json()
+            return response.get("deleted", False)

@@ -1,6 +1,8 @@
-from typing import Dict, Any, Optional
+from typing import Any, Optional
+from enum import Enum
 from dataclasses import asdict, dataclass
 from abc import ABC
+from datetime import date
 
 
 class BaseSchema(ABC):
@@ -8,7 +10,16 @@ class BaseSchema(ABC):
         return asdict(self)
     
     def as_lean_dict(self):
-        return asdict(self, dict_factory=lambda x: {k: v for (k, v) in x if v is not None})
+        def get_json_value(value):
+            if isinstance(value, Enum):
+                return value.value
+            
+            if isinstance(value, date):
+                return value.strftime("%Y-%m-%d")
+
+            return value
+
+        return asdict(self, dict_factory=lambda x: {k: get_json_value(v) for (k, v) in x if v is not None})
 
 
 @dataclass

@@ -152,6 +152,242 @@
                     "string": "{\"object\":\"customer\",\"id\":\"cus_000006102042\",\"dateCreated\":\"2024-07-12\",\"name\":\"Karen Baldwin\",\"email\":null,\"company\":null,\"phone\":null,\"mobilePhone\":null,\"address\":null,\"addressNumber\":null,\"complement\":null,\"province\":null,\"postalCode\":null,\"cpfCnpj\":\"45890762338\",\"personType\":\"FISICA\",\"deleted\":false,\"additionalEmails\":null,\"externalReference\":null,\"notificationDisabled\":false,\"observations\":null,\"municipalInscription\":null,\"stateInscription\":null,\"canDelete\":true,\"cannotBeDeletedReason\":null,\"canEdit\":true,\"cannotEditReason\":null,\"city\":null,\"cityName\":null,\"state\":null,\"country\":\"Brasil\"}"
                 }
             }
+        },
+        {
+            "request": {
+                "method": "DELETE",
+                "uri": "https://sandbox.asaas.com/api/v3/customers/%7Bid%7D",
+                "body": "",
+                "headers": {
+                    "host": [
+                        "sandbox.asaas.com"
+                    ],
+                    "accept": [
+                        "*/*"
+                    ],
+                    "accept-encoding": [
+                        "gzip, deflate"
+                    ],
+                    "connection": [
+                        "keep-alive"
+                    ],
+                    "content-type": [
+                        "application/json"
+                    ],
+                    "user-agent": [
+                        "AsaasPy"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 404,
+                    "message": ""
+                },
+                "headers": {
+                    "Content-Length": [
+                        "0"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Date": [
+                        "Sat, 13 Jul 2024 00:08:40 GMT"
+                    ],
+                    "Set-Cookie": [
+                        "AWSALBTG=/oA07hC5mtdNE6udYBHnAhuQPCl0sTGeEVl6hVhVER38zsSNhrS9PtPbvv0K8k5EofccIqkg3VbtYRjooUcuGsuJq9dysD3K+6s8DAgxVq+gXPIhudTDRCOUfIupX0dZF8VeESs7gWI2hd6rI6OlxQUVd7SMwOh01hZtQLnWl9z+; Expires=Sat, 20 Jul 2024 00:08:40 GMT; Path=/",
+                        "AWSALBTGCORS=/oA07hC5mtdNE6udYBHnAhuQPCl0sTGeEVl6hVhVER38zsSNhrS9PtPbvv0K8k5EofccIqkg3VbtYRjooUcuGsuJq9dysD3K+6s8DAgxVq+gXPIhudTDRCOUfIupX0dZF8VeESs7gWI2hd6rI6OlxQUVd7SMwOh01hZtQLnWl9z+; Expires=Sat, 20 Jul 2024 00:08:40 GMT; Path=/; SameSite=None; Secure",
+                        "AWSALB=9oa+f1mJ4c4ba929T/UVcPlKpauK83wOAqAFSN/5NXI6KpT1512RiptSjA1d82z6HRNGeXX0tCHAnDR9w5DnJLoIM5zg8czSe6uwX73E9Wry+zKNc1NxpNkiSux/; Expires=Sat, 20 Jul 2024 00:08:40 GMT; Path=/",
+                        "AWSALBCORS=9oa+f1mJ4c4ba929T/UVcPlKpauK83wOAqAFSN/5NXI6KpT1512RiptSjA1d82z6HRNGeXX0tCHAnDR9w5DnJLoIM5zg8czSe6uwX73E9Wry+zKNc1NxpNkiSux/; Expires=Sat, 20 Jul 2024 00:08:40 GMT; Path=/; SameSite=None; Secure"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "Content-Language": [
+                        "pt-BR"
+                    ],
+                    "X-Cache": [
+                        "Error from cloudfront"
+                    ],
+                    "Via": [
+                        "1.1 dc2680d724e4abb012bd1de56721c0c6.cloudfront.net (CloudFront)"
+                    ],
+                    "X-Amz-Cf-Pop": [
+                        "FOR50-P1"
+                    ],
+                    "Alt-Svc": [
+                        "h3=\":443\"; ma=86400"
+                    ],
+                    "X-Amz-Cf-Id": [
+                        "ZlNroaaiBs4Wv_AMTgpkg6l6jNmGjMC5GH6KwrfzAeiZaJnxD7j0iw=="
+                    ]
+                },
+                "body": {
+                    "string": ""
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "DELETE",
+                "uri": "https://sandbox.asaas.com/api/v3/customers/cus_000006102042",
+                "body": "",
+                "headers": {
+                    "host": [
+                        "sandbox.asaas.com"
+                    ],
+                    "accept": [
+                        "*/*"
+                    ],
+                    "accept-encoding": [
+                        "gzip, deflate"
+                    ],
+                    "connection": [
+                        "keep-alive"
+                    ],
+                    "content-type": [
+                        "application/json"
+                    ],
+                    "user-agent": [
+                        "AsaasPy"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": ""
+                },
+                "headers": {
+                    "Content-Type": [
+                        "application/json;charset=utf-8"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Date": [
+                        "Sat, 13 Jul 2024 00:10:04 GMT"
+                    ],
+                    "Set-Cookie": [
+                        "AWSALBTG=ljOIB9/IMGKzplIM397UYRLIY2tB0DeehGcwQk3utEXVMHFn2QyIzmWew5tcFiVuaabeNojyHqFGeqQp6f8f9OddorJDGL/vx3anVQXB2ULFeU66+6D3bENg4K45ds9/QVGXZtG4Kc8kRTpZ/uj+99PYvB4Bq8uls14x01fEqf3j; Expires=Sat, 20 Jul 2024 00:10:04 GMT; Path=/",
+                        "AWSALBTGCORS=ljOIB9/IMGKzplIM397UYRLIY2tB0DeehGcwQk3utEXVMHFn2QyIzmWew5tcFiVuaabeNojyHqFGeqQp6f8f9OddorJDGL/vx3anVQXB2ULFeU66+6D3bENg4K45ds9/QVGXZtG4Kc8kRTpZ/uj+99PYvB4Bq8uls14x01fEqf3j; Expires=Sat, 20 Jul 2024 00:10:04 GMT; Path=/; SameSite=None; Secure",
+                        "AWSALB=zj+8PjAsR68j3451kmH03wCmXQzqgtjSxE+9kfeXERGyOS3Ow1Rv14PSUE9QbiAl5YBzJscre1LGz9mm4jx+2dzdcS04EYSByAk79OadGKsS88am3N/UG+EsF7vj; Expires=Sat, 20 Jul 2024 00:10:04 GMT; Path=/",
+                        "AWSALBCORS=zj+8PjAsR68j3451kmH03wCmXQzqgtjSxE+9kfeXERGyOS3Ow1Rv14PSUE9QbiAl5YBzJscre1LGz9mm4jx+2dzdcS04EYSByAk79OadGKsS88am3N/UG+EsF7vj; Expires=Sat, 20 Jul 2024 00:10:04 GMT; Path=/; SameSite=None; Secure",
+                        "JSESSIONID=291D060D2FB5555ED244DB135864B1DFF68C3D576119309ABA81CACAE18271DA93F2B733FECBB0C283FDE32DD41A3A50DF405EC640EF77C040F4565309B5039C.n1; Path=/; Secure; HttpOnly"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "X-Cache": [
+                        "Miss from cloudfront"
+                    ],
+                    "Via": [
+                        "1.1 b1cf94448ef20f6ecb20c99a510e73e2.cloudfront.net (CloudFront)"
+                    ],
+                    "X-Amz-Cf-Pop": [
+                        "FOR50-P1"
+                    ],
+                    "Alt-Svc": [
+                        "h3=\":443\"; ma=86400"
+                    ],
+                    "X-Amz-Cf-Id": [
+                        "OpqA3LV4yqbD0QBmzGskK2Hm1pfPkWZCHIQ5iH6_hYCX9ZuUboDDzg=="
+                    ]
+                },
+                "body": {
+                    "string": "{\"deleted\":true,\"id\":\"cus_000006102042\"}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "https://sandbox.asaas.com/api/v3/payments",
+                "body": "{\"customer\": \"cus_000006100224\", \"billingType\": \"PIX\", \"value\": 10.23, \"dueDate\": \"2024-07-20\"}",
+                "headers": {
+                    "host": [
+                        "sandbox.asaas.com"
+                    ],
+                    "accept": [
+                        "*/*"
+                    ],
+                    "accept-encoding": [
+                        "gzip, deflate"
+                    ],
+                    "connection": [
+                        "keep-alive"
+                    ],
+                    "content-type": [
+                        "application/json"
+                    ],
+                    "user-agent": [
+                        "AsaasPy"
+                    ],
+                    "content-length": [
+                        "95"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": ""
+                },
+                "headers": {
+                    "Content-Type": [
+                        "application/json;charset=utf-8"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Date": [
+                        "Sun, 14 Jul 2024 03:38:54 GMT"
+                    ],
+                    "Set-Cookie": [
+                        "AWSALBTG=3G6CBuRz9L+2VfQuJynwYFTmm0j/4dogqy6DkHOoWI6aRh8DM+cys02BsimfvS4miR4+Jlx3hCAOeUKT5tYxLbruLCrOAZhoo2Qk6kdRsF6FqJ9fuAOfeHgtvU6uk3YLmAS4kE5U95SoB8Q2TMDrelol7YDpCR5c10vlabUYpZXR; Expires=Sun, 21 Jul 2024 03:38:54 GMT; Path=/",
+                        "AWSALBTGCORS=3G6CBuRz9L+2VfQuJynwYFTmm0j/4dogqy6DkHOoWI6aRh8DM+cys02BsimfvS4miR4+Jlx3hCAOeUKT5tYxLbruLCrOAZhoo2Qk6kdRsF6FqJ9fuAOfeHgtvU6uk3YLmAS4kE5U95SoB8Q2TMDrelol7YDpCR5c10vlabUYpZXR; Expires=Sun, 21 Jul 2024 03:38:54 GMT; Path=/; SameSite=None; Secure",
+                        "AWSALB=+o+LcHS5jzosboaOPT3swlNIXgghg1W85z7K7930sHUtiTawvN5EczVp8YeNFEFt0VGZ8mPdRh3vOtm3R/3/tlWlDb9Rn6vbx1IaQaG0v7Zxl8ZWo5/Ca4oxwNIX; Expires=Sun, 21 Jul 2024 03:38:54 GMT; Path=/",
+                        "AWSALBCORS=+o+LcHS5jzosboaOPT3swlNIXgghg1W85z7K7930sHUtiTawvN5EczVp8YeNFEFt0VGZ8mPdRh3vOtm3R/3/tlWlDb9Rn6vbx1IaQaG0v7Zxl8ZWo5/Ca4oxwNIX; Expires=Sun, 21 Jul 2024 03:38:54 GMT; Path=/; SameSite=None; Secure",
+                        "JSESSIONID=6A4DF4BFAD3162F85266F639B6F693464AF5B483612B4D62DA4FA4DD88387991596D698130D8DBFBA48672CD328273DFD4747957F40D18B23523BAB06472F643.n2; Path=/; Secure; HttpOnly"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "RateLimit-Limit": [
+                        "100"
+                    ],
+                    "RateLimit-Remaining": [
+                        "99"
+                    ],
+                    "RateLimit-Reset": [
+                        "10"
+                    ],
+                    "X-Cache": [
+                        "Miss from cloudfront"
+                    ],
+                    "Via": [
+                        "1.1 2708377c97c5783333e2b58f46317aea.cloudfront.net (CloudFront)"
+                    ],
+                    "X-Amz-Cf-Pop": [
+                        "FOR50-P1"
+                    ],
+                    "Alt-Svc": [
+                        "h3=\":443\"; ma=86400"
+                    ],
+                    "X-Amz-Cf-Id": [
+                        "GwuqSt-mU32JjqXN259sdAvdd7ZpzHiKDyhrvrnNO6vFrFy3sLoKMA=="
+                    ]
+                },
+                "body": {
+                    "string": "{\"object\":\"payment\",\"id\":\"pay_egd03gp8vsz433au\",\"dateCreated\":\"2024-07-14\",\"customer\":\"cus_000006100224\",\"paymentLink\":null,\"value\":10.23,\"netValue\":9.24,\"originalValue\":null,\"interestValue\":null,\"description\":null,\"billingType\":\"PIX\",\"pixTransaction\":null,\"status\":\"PENDING\",\"dueDate\":\"2024-07-20\",\"originalDueDate\":\"2024-07-20\",\"paymentDate\":null,\"clientPaymentDate\":null,\"installmentNumber\":null,\"invoiceUrl\":\"https://sandbox.asaas.com/i/egd03gp8vsz433au\",\"invoiceNumber\":\"06089679\",\"externalReference\":null,\"deleted\":false,\"anticipated\":false,\"anticipable\":false,\"creditDate\":null,\"estimatedCreditDate\":null,\"transactionReceiptUrl\":null,\"nossoNumero\":null,\"bankSlipUrl\":null,\"lastInvoiceViewedDate\":null,\"lastBankSlipViewedDate\":null,\"discount\":{\"value\":0.00,\"limitDate\":null,\"dueDateLimitDays\":0,\"type\":\"FIXED\"},\"fine\":{\"value\":0.00,\"type\":\"FIXED\"},\"interest\":{\"value\":0.00,\"type\":\"PERCENTAGE\"},\"postalService\":false,\"custody\":null,\"refunds\":null}"
+                }
+            }
         }
     ]
 }

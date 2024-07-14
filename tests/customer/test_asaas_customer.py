@@ -24,13 +24,6 @@ class TestAsaasGetCustomer:
         assert all_customers.hasMore is False
 
 
-class TestAsaasCreateCustomerSchema:
-    def test_create_schema_factory(self):
-        new_customer = CustomerCreateSchemaFactory()
-
-        assert isinstance(new_customer, CustomerCreateSchema)
-
-
 class TestAsaasCreateCustomer:
     def test_create_customer(self, asaas_svc):
         asaas_svc: AsaasService = asaas_svc
@@ -39,3 +32,15 @@ class TestAsaasCreateCustomer:
         new_customer = asaas_svc.customer.create(customer)
 
         assert new_customer.id is not None
+
+
+class TestAsaasDeleteCustomer:
+    def test_delete(self, asaas_svc):
+        asaas_svc: AsaasService = asaas_svc
+
+        customer = CustomerCreateSchema(name="Usuario a Ser Excluido", cpfCnpj="083.138.660-63") 
+        new_customer = asaas_svc.customer.create(customer)
+
+        has_deleted = asaas_svc.customer.delete(id=new_customer.id)
+
+        assert has_deleted
