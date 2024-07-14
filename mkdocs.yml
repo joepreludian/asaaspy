@@ -1,6 +1,19 @@
 site_name: AsaasPy
 site_url: https://asaaspy.github.io/
 repo_name: joepreludian/asaaspy
-repo_url: https://github.com/tiangolo/fastapi
+repo_url: https://github.com/joepreludian/asaaspy
+plugins:
+  - search
+  - mermaid2
 theme:
   name: material
+  language: pt-BR
+markdown_extensions: 
+  - tables
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences

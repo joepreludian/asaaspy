@@ -31,6 +31,8 @@ Tracker = "https://github.com/joepreludian/asaaspy/issues"
 [project.optional-dependencies]
 docs = [
     "mkdocs-material>=9.5.27",
+    "mkdocs-mermaid2-plugin>=1.1.1",
+    "markdown>=3.6",
 ]
 dev = [
     "pytest>=8.2.2",
