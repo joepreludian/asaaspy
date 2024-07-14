@@ -35,7 +35,7 @@ class CustomerResource(AsaasResource):
             )
             return response
 
-    def create(self, customer: CustomerCreateSchema, avoid_duplicate=False) -> CustomerSchema:
+    def create(self, customer: CustomerCreateSchema) -> CustomerSchema:
         with self.get_client() as client:
             response = client.post("v3/customers", json=customer.as_lean_dict())
             return CustomerSchema(**response.json())
