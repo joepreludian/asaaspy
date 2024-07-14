@@ -388,6 +388,80 @@
                     "string": "{\"object\":\"payment\",\"id\":\"pay_egd03gp8vsz433au\",\"dateCreated\":\"2024-07-14\",\"customer\":\"cus_000006100224\",\"paymentLink\":null,\"value\":10.23,\"netValue\":9.24,\"originalValue\":null,\"interestValue\":null,\"description\":null,\"billingType\":\"PIX\",\"pixTransaction\":null,\"status\":\"PENDING\",\"dueDate\":\"2024-07-20\",\"originalDueDate\":\"2024-07-20\",\"paymentDate\":null,\"clientPaymentDate\":null,\"installmentNumber\":null,\"invoiceUrl\":\"https://sandbox.asaas.com/i/egd03gp8vsz433au\",\"invoiceNumber\":\"06089679\",\"externalReference\":null,\"deleted\":false,\"anticipated\":false,\"anticipable\":false,\"creditDate\":null,\"estimatedCreditDate\":null,\"transactionReceiptUrl\":null,\"nossoNumero\":null,\"bankSlipUrl\":null,\"lastInvoiceViewedDate\":null,\"lastBankSlipViewedDate\":null,\"discount\":{\"value\":0.00,\"limitDate\":null,\"dueDateLimitDays\":0,\"type\":\"FIXED\"},\"fine\":{\"value\":0.00,\"type\":\"FIXED\"},\"interest\":{\"value\":0.00,\"type\":\"PERCENTAGE\"},\"postalService\":false,\"custody\":null,\"refunds\":null}"
                 }
             }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://sandbox.asaas.com/api/v3/payments/pay_egd03gp8vsz433au",
+                "body": "",
+                "headers": {
+                    "host": [
+                        "sandbox.asaas.com"
+                    ],
+                    "accept": [
+                        "*/*"
+                    ],
+                    "accept-encoding": [
+                        "gzip, deflate"
+                    ],
+                    "connection": [
+                        "keep-alive"
+                    ],
+                    "content-type": [
+                        "application/json"
+                    ],
+                    "user-agent": [
+                        "AsaasPy"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": ""
+                },
+                "headers": {
+                    "Content-Type": [
+                        "application/json;charset=utf-8"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Date": [
+                        "Sun, 14 Jul 2024 20:08:12 GMT"
+                    ],
+                    "Set-Cookie": [
+                        "AWSALBTG=paquSjqJ+Rb+mEM2ZIPTlV/43rCr+Hfobq+3XyGaqOvfllG7ezpqaMFs7//shxSRAOn26yZb+pWeuVuB5jDSvvWFmAwS4GVWg5g0e1R3uWYbFQaDeS4ACSQggdQU1X+l6a2tndAXuz5YXhubs6PvWgjdYNJ87ePpP2uuPfAa+rR2; Expires=Sun, 21 Jul 2024 20:08:12 GMT; Path=/",
+                        "AWSALBTGCORS=paquSjqJ+Rb+mEM2ZIPTlV/43rCr+Hfobq+3XyGaqOvfllG7ezpqaMFs7//shxSRAOn26yZb+pWeuVuB5jDSvvWFmAwS4GVWg5g0e1R3uWYbFQaDeS4ACSQggdQU1X+l6a2tndAXuz5YXhubs6PvWgjdYNJ87ePpP2uuPfAa+rR2; Expires=Sun, 21 Jul 2024 20:08:12 GMT; Path=/; SameSite=None; Secure",
+                        "AWSALB=DseniQBTMAup4spVr7qFplmfALJNMqSocdwdVerYxRFLRUbiKbkcA9fw8+UXzAs2MDHdzY0NXpASH9eeX7SQj8REkLk9IwnjHAM+u04qHRjxZLK0MoChUJX2xyi/; Expires=Sun, 21 Jul 2024 20:08:12 GMT; Path=/",
+                        "AWSALBCORS=DseniQBTMAup4spVr7qFplmfALJNMqSocdwdVerYxRFLRUbiKbkcA9fw8+UXzAs2MDHdzY0NXpASH9eeX7SQj8REkLk9IwnjHAM+u04qHRjxZLK0MoChUJX2xyi/; Expires=Sun, 21 Jul 2024 20:08:12 GMT; Path=/; SameSite=None; Secure"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "X-Cache": [
+                        "Miss from cloudfront"
+                    ],
+                    "Via": [
+                        "1.1 b8e85c5c71395f0e0fb2f8242762543e.cloudfront.net (CloudFront)"
+                    ],
+                    "X-Amz-Cf-Pop": [
+                        "FOR50-P1"
+                    ],
+                    "Alt-Svc": [
+                        "h3=\":443\"; ma=86400"
+                    ],
+                    "X-Amz-Cf-Id": [
+                        "lBkjj4hV5AYoo0SPdv5RXq0KQciv3Tj3HlkXaOoYsipr11q5Oij-0A=="
+                    ]
+                },
+                "body": {
+                    "string": "{\"object\":\"payment\",\"id\":\"pay_egd03gp8vsz433au\",\"dateCreated\":\"2024-07-14\",\"customer\":\"cus_000006100224\",\"paymentLink\":null,\"value\":10.23,\"netValue\":9.24,\"originalValue\":null,\"interestValue\":null,\"description\":null,\"billingType\":\"PIX\",\"confirmedDate\":\"2024-07-14\",\"pixTransaction\":\"4249b0ef-6a05-43b1-a7ae-aabc78d81bcb\",\"pixQrCodeId\":\"88a51d14-68a2-4315-b38c-7adf1f3c864a\",\"status\":\"RECEIVED\",\"dueDate\":\"2024-07-20\",\"originalDueDate\":\"2024-07-20\",\"paymentDate\":\"2024-07-14\",\"clientPaymentDate\":\"2024-07-14\",\"installmentNumber\":null,\"invoiceUrl\":\"https://sandbox.asaas.com/i/egd03gp8vsz433au\",\"invoiceNumber\":\"06089679\",\"externalReference\":null,\"deleted\":false,\"anticipated\":false,\"anticipable\":false,\"creditDate\":\"2024-07-14\",\"estimatedCreditDate\":\"2024-07-14\",\"transactionReceiptUrl\":\"https://sandbox.asaas.com/comprovantes/4310414775834834\",\"nossoNumero\":null,\"bankSlipUrl\":null,\"lastInvoiceViewedDate\":null,\"lastBankSlipViewedDate\":null,\"discount\":{\"value\":0.00,\"limitDate\":null,\"dueDateLimitDays\":0,\"type\":\"FIXED\"},\"fine\":{\"value\":0.00,\"type\":\"FIXED\"},\"interest\":{\"value\":0.00,\"type\":\"PERCENTAGE\"},\"postalService\":false,\"custody\":null,\"refunds\":null}"
+                }
+            }
         }
     ]
 }

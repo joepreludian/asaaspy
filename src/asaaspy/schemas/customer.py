@@ -1,9 +1,8 @@
 from typing import Optional
-from dataclasses import dataclass
 from asaaspy.schemas.base import BaseSchema, QueryParamsPayload
+from asaaspy.schemas.fields import Date
 
 
-@dataclass
 class CustomerCreateSchema(BaseSchema):
     name: str
     cpfCnpj: str
@@ -25,7 +24,6 @@ class CustomerCreateSchema(BaseSchema):
     company: Optional[str] = None
 
 
-@dataclass
 class CustomerSchema(CustomerCreateSchema):
     id: Optional[str] = None
     object: Optional[str] = None
@@ -35,7 +33,7 @@ class CustomerSchema(CustomerCreateSchema):
     canEdit: Optional[bool] = None
     cannotBeDeletedReason: Optional[bool] = None
     cannotEditReason: Optional[str] = None
-    dateCreated: Optional[str] = None
+    dateCreated: Optional[Date] = None
 
     city: Optional[str] = None
     cityName: Optional[str] = None
@@ -44,7 +42,6 @@ class CustomerSchema(CustomerCreateSchema):
     country: Optional[str] = None
 
 
-@dataclass
 class CustomerSearchParams(QueryParamsPayload):
     name: Optional[str] = None
     email: Optional[str] = None
