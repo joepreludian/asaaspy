@@ -1,5 +1,5 @@
 from asaaspy.service import AsaasService
-from asaaspy.schemas.payment import PaymentCreateSchema, BillingType, PaymentViewSchema
+from asaaspy.schemas.payment import PaymentCreateSchema, BillingType, PaymentViewSchema, PaymentFilterBy
 from datetime import date
 
 
@@ -30,3 +30,28 @@ class TestAsaasGetPayment:
         assert payment.id == "pay_egd03gp8vsz433au"
         assert payment.value == 10.23
         assert payment.dueDate == date(year=2024, month=7, day=20)
+
+
+class TestAsaasAllPayment:
+    def test_all_payment(self, asaas_svc):
+        asaas_svc: AsaasService = asaas_svc
+
+        all_payments = asaas_svc.payment.all()
+
+        assert all_payments.data is not None
+        assert isinstance(all_payments.data[0], PaymentViewSchema)
+
+    def test_all_payment_filter_dto(self):
+        filter_by = PaymentFilterBy(
+            dateCreated_ge=date(2024, 7, 19),
+            dueDate_le=date(2024, 8, 3)
+        ).as_lean_dict()
+
+        assert {"dateCreated[ge]": "2024-07-19", "dueDate[le]": "2024-08-03"} == filter_by
+
+    def test_all_payment_with_filter(self, asaas_svc):
+        asaas_svc: AsaasService = asaas_svc
+
+        filtered_payments = asaas_svc.payment.all(PaymentFilterBy(status="RECEIVED"))
+
+        assert filtered_payments.totalCount == 2

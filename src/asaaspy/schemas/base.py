@@ -18,7 +18,7 @@ class BaseSchema(BaseModel):
     model_config = ConfigDict(use_enum_values=True)
     
     def as_lean_dict(self):
-        return self.model_dump(exclude_none=True)
+        return self.model_dump(exclude_none=True, by_alias=True)
 
 
 class PaginatedOutputPayload(BaseSchema):

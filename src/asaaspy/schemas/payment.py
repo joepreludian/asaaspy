@@ -2,6 +2,8 @@ from asaaspy.schemas.base import BaseSchema
 from typing import Optional, Literal, List
 from enum import Enum
 from asaaspy.schemas.fields import Date
+from datetime import datetime
+from pydantic import Field
 
 
 class BillingType(Enum):
@@ -80,8 +82,8 @@ class PaymentViewSchema(BaseSchema):
     paymentLink: Optional[str] = None
     creditDate: Optional[Date] = None
     estimatedCreditDate: Optional[Date] = None
-    lastInvoiceViewedDate: Optional[Date] = None
-    lastBankSlipViewedDate: Optional[Date] = None
+    lastInvoiceViewedDate: Optional[datetime] = None
+    lastBankSlipViewedDate: Optional[datetime] = None
     pixTransaction: Optional[str] = None
     status: Literal["PENDING", "RECEIVED", "CONFIRMED", "OVERDUE", "REFUNDED", "RECEIVED_IN_CASH", "REFUND_REQUESTED", "REFUND_IN_PROGRESS", "CHARGEBACK_REQUESTED", "CHARGEBACK_DISPUTE", "AWAITING_CHARGEBACK_REVERSAL", "DUNNING_REQUESTED", "DUNNING_RECEIVED", "AWAITING_RISK_ANALYSIS"] = "PENDING"
     description: Optional[str] = None
@@ -108,3 +110,28 @@ class PaymentViewSchema(BaseSchema):
     custody: Optional[str] = None,
     canBePaidAfterDueDate: Optional[bool] = None
 
+
+class PaymentFilterBy(BaseSchema):
+    customer: Optional[str] = None
+    customerGroupName: Optional[str] = None
+    billingType: Optional[BillingType] = None
+    status: Optional[Literal["PENDING", "RECEIVED", "CONFIRMED", "OVERDUE", "REFUNDED", "RECEIVED_IN_CASH", "REFUND_REQUESTED", "REFUND_IN_PROGRESS", "CHARGEBACK_REQUESTED", "CHARGEBACK_DISPUTE", "AWAITING_CHARGEBACK_REVERSAL", "DUNNING_REQUESTED", "DUNNING_RECEIVED", "AWAITING_RISK_ANALYSIS"]] = None
+    subscription: Optional[str] = None
+    installment: Optional[str] = None
+    externalReference: Optional[str] = None
+    paymentDate: Optional[Date] = None
+    invoiceStatus: Optional[str] = None
+    estimatedCreditDate: Optional[Date] = None
+    pixQrCodeId: Optional[str] = None
+    anticipated: Optional[bool] = None
+    dateCreated_ge: Optional[Date] = Field(serialization_alias="dateCreated[ge]", default=None)
+    dateCreated_le: Optional[Date] = Field(serialization_alias="dateCreated[le]", default=None)
+    paymentDate_ge: Optional[Date] = Field(serialization_alias="paymentDate[ge]", default=None)
+    paymentDate_le: Optional[Date] = Field(serialization_alias="paymentDate[le]", default=None)
+    estimatedCreditDate_ge: Optional[Date] = Field(serialization_alias="estimatedCreditDate[ge]", default=None)
+    estimatedCreditDate_le: Optional[Date] = Field(serialization_alias="estimatedCreditDate[le]", default=None)
+    dueDate_ge: Optional[Date] = Field(serialization_alias="dueDate[ge]", default=None)
+    dueDate_le: Optional[Date] = Field(serialization_alias="dueDate[le]", default=None)
+    user: Optional[str] = None  # email from user who create the charge
+    offset: Optional[int] = None
+    limit: Optional[int] = None

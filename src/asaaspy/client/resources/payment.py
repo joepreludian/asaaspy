@@ -1,6 +1,6 @@
 from asaaspy.client.base import AsaasResource
-from asaaspy.schemas.payment import PaymentViewSchema
-from asaaspy.schemas.payment import PaymentCreateSchema
+from asaaspy.schemas.payment import PaymentCreateSchema, PaymentViewSchema, PaymentFilterBy
+from asaaspy.schemas.base import PaginatedOutputPayload
 
 
 class PaymentResource(AsaasResource):
@@ -13,3 +13,11 @@ class PaymentResource(AsaasResource):
         with self.get_client() as client:
             response = client.get(f"/v3/payments/{payment_id}")
             return PaymentViewSchema(**response.json())
+        
+    def all(self, filter_by: PaymentFilterBy) -> PaginatedOutputPayload:
+        with self.get_client() as client:
+            response = self.get_list_response(
+                client.get("v3/payments", params=filter_by.as_lean_dict()),
+                data_response_class=PaymentViewSchema
+            )
+            return response
