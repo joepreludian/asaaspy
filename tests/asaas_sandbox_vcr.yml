@@ -610,6 +610,173 @@
                     "string": "{\"object\":\"list\",\"hasMore\":false,\"totalCount\":2,\"limit\":10,\"offset\":0,\"data\":[{\"object\":\"payment\",\"id\":\"pay_egd03gp8vsz433au\",\"dateCreated\":\"2024-07-14\",\"customer\":\"cus_000006100224\",\"paymentLink\":null,\"value\":10.23,\"netValue\":9.24,\"originalValue\":null,\"interestValue\":null,\"description\":null,\"billingType\":\"PIX\",\"confirmedDate\":\"2024-07-14\",\"pixTransaction\":\"4249b0ef-6a05-43b1-a7ae-aabc78d81bcb\",\"pixQrCodeId\":\"88a51d14-68a2-4315-b38c-7adf1f3c864a\",\"status\":\"RECEIVED\",\"dueDate\":\"2024-07-20\",\"originalDueDate\":\"2024-07-20\",\"paymentDate\":\"2024-07-14\",\"clientPaymentDate\":\"2024-07-14\",\"installmentNumber\":null,\"invoiceUrl\":\"https://sandbox.asaas.com/i/egd03gp8vsz433au\",\"invoiceNumber\":\"06089679\",\"externalReference\":null,\"deleted\":false,\"anticipated\":false,\"anticipable\":false,\"creditDate\":\"2024-07-14\",\"estimatedCreditDate\":\"2024-07-14\",\"transactionReceiptUrl\":\"https://sandbox.asaas.com/comprovantes/4310414775834834\",\"nossoNumero\":null,\"bankSlipUrl\":null,\"lastInvoiceViewedDate\":null,\"lastBankSlipViewedDate\":null,\"discount\":{\"value\":0.00,\"limitDate\":null,\"dueDateLimitDays\":0,\"type\":\"FIXED\"},\"fine\":{\"value\":0.00,\"type\":\"FIXED\"},\"interest\":{\"value\":0.00,\"type\":\"PERCENTAGE\"},\"postalService\":false,\"custody\":null,\"refunds\":null},{\"object\":\"payment\",\"id\":\"pay_vrj4f0yo0cq6iru3\",\"dateCreated\":\"2024-07-13\",\"customer\":\"cus_000006100224\",\"paymentLink\":null,\"value\":5,\"netValue\":4.01,\"originalValue\":null,\"interestValue\":null,\"description\":\"\",\"billingType\":\"BOLETO\",\"canBePaidAfterDueDate\":true,\"confirmedDate\":\"2024-07-13\",\"pixTransaction\":null,\"status\":\"RECEIVED\",\"dueDate\":\"2024-07-20\",\"originalDueDate\":\"2024-07-20\",\"paymentDate\":\"2024-07-13\",\"clientPaymentDate\":\"2024-07-13\",\"installmentNumber\":null,\"invoiceUrl\":\"https://sandbox.asaas.com/i/vrj4f0yo0cq6iru3\",\"invoiceNumber\":\"06087174\",\"externalReference\":null,\"deleted\":false,\"anticipated\":false,\"anticipable\":false,\"creditDate\":\"2024-07-13\",\"estimatedCreditDate\":\"2024-07-13\",\"transactionReceiptUrl\":\"https://sandbox.asaas.com/comprovantes/3781038467217558\",\"nossoNumero\":\"1752555\",\"bankSlipUrl\":\"https://sandbox.asaas.com/b/pdf/vrj4f0yo0cq6iru3\",\"lastInvoiceViewedDate\":\"2024-07-14T02:30:46Z\",\"lastBankSlipViewedDate\":null,\"discount\":{\"value\":0.00,\"limitDate\":null,\"dueDateLimitDays\":0,\"type\":\"PERCENTAGE\"},\"fine\":{\"value\":0.00,\"type\":\"PERCENTAGE\"},\"interest\":{\"value\":0.00,\"type\":\"PERCENTAGE\"},\"postalService\":false,\"custody\":null,\"refunds\":null}]}"
                 }
             }
+        },
+        {
+            "request": {
+                "method": "DELETE",
+                "uri": "https://sandbox.asaas.com/api/v3/payments/pay_egd03gp8vsz433au",
+                "body": "",
+                "headers": {
+                    "host": [
+                        "sandbox.asaas.com"
+                    ],
+                    "accept": [
+                        "*/*"
+                    ],
+                    "accept-encoding": [
+                        "gzip, deflate"
+                    ],
+                    "connection": [
+                        "keep-alive"
+                    ],
+                    "content-type": [
+                        "application/json"
+                    ],
+                    "user-agent": [
+                        "AsaasPy"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 400,
+                    "message": ""
+                },
+                "headers": {
+                    "Content-Type": [
+                        "application/json;charset=utf-8"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Date": [
+                        "Mon, 15 Jul 2024 01:08:35 GMT"
+                    ],
+                    "Set-Cookie": [
+                        "AWSALBTG=XqKReFQl7vuIOB6YTMvH9HcROKOnEzpSvetPD6bjmtn34uRiIkYPthtzR4ZvLS5Xbx9WVkWAdhlABKrPt6r3rL4tKeimBgpM5JX25QuFFKS2wMc4S0QomZzZcBB4bIVwRPev1frxFvsIEH9z1Qtw1auLsS/3RAx/aj00IzZc777a; Expires=Mon, 22 Jul 2024 01:08:35 GMT; Path=/",
+                        "AWSALBTGCORS=XqKReFQl7vuIOB6YTMvH9HcROKOnEzpSvetPD6bjmtn34uRiIkYPthtzR4ZvLS5Xbx9WVkWAdhlABKrPt6r3rL4tKeimBgpM5JX25QuFFKS2wMc4S0QomZzZcBB4bIVwRPev1frxFvsIEH9z1Qtw1auLsS/3RAx/aj00IzZc777a; Expires=Mon, 22 Jul 2024 01:08:35 GMT; Path=/; SameSite=None; Secure",
+                        "AWSALB=przPcaCBozIq6q5X0UUVPLPG7YIauS9rT2Naii7rs+BwCbOnX1cQ5BM0G9QQl6kT70BFHg53uFg2f4L2geqVB9vll/MGnu6YZLbsfWRpFxxpqg3aF2v49O+i5/0D; Expires=Mon, 22 Jul 2024 01:08:35 GMT; Path=/",
+                        "AWSALBCORS=przPcaCBozIq6q5X0UUVPLPG7YIauS9rT2Naii7rs+BwCbOnX1cQ5BM0G9QQl6kT70BFHg53uFg2f4L2geqVB9vll/MGnu6YZLbsfWRpFxxpqg3aF2v49O+i5/0D; Expires=Mon, 22 Jul 2024 01:08:35 GMT; Path=/; SameSite=None; Secure"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "RateLimit-Limit": [
+                        "100"
+                    ],
+                    "RateLimit-Remaining": [
+                        "99"
+                    ],
+                    "RateLimit-Reset": [
+                        "9"
+                    ],
+                    "X-Cache": [
+                        "Error from cloudfront"
+                    ],
+                    "Via": [
+                        "1.1 b683746027f3fcaf445434ca1720fcca.cloudfront.net (CloudFront)"
+                    ],
+                    "X-Amz-Cf-Pop": [
+                        "FOR50-P1"
+                    ],
+                    "Alt-Svc": [
+                        "h3=\":443\"; ma=86400"
+                    ],
+                    "X-Amz-Cf-Id": [
+                        "jd6J884JrIQwHcNx0lePi9zoD_sQPECitv7GpqhHIeySKkyfgacEcw=="
+                    ]
+                },
+                "body": {
+                    "string": "{\"errors\":[{\"code\":\"invalid_action\",\"description\":\"A cobran\u00e7a [6089679] n\u00e3o pode ser removida: S\u00f3 \u00e9 poss\u00edvel remover cobran\u00e7as pendentes ou vencidas.\"}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "DELETE",
+                "uri": "https://sandbox.asaas.com/api/v3/payments/pay_vtkxai01k8o8jo55",
+                "body": "",
+                "headers": {
+                    "host": [
+                        "sandbox.asaas.com"
+                    ],
+                    "accept": [
+                        "*/*"
+                    ],
+                    "accept-encoding": [
+                        "gzip, deflate"
+                    ],
+                    "connection": [
+                        "keep-alive"
+                    ],
+                    "content-type": [
+                        "application/json"
+                    ],
+                    "user-agent": [
+                        "AsaasPy"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": ""
+                },
+                "headers": {
+                    "Content-Type": [
+                        "application/json;charset=utf-8"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Date": [
+                        "Mon, 15 Jul 2024 01:18:45 GMT"
+                    ],
+                    "Set-Cookie": [
+                        "AWSALBTG=0yURQdkJz68U1/NjU07hVbkjsddm54mWqBzJ8x/zahopoCPuj2CH8S1O3zHwsuSYP8O+qwse87LeRVlGWPHYi3VfzqH3q/6q+fZ4QiggRdRJz8OUcuU+wfL1H0TMlZZpUpxXhw0ESptCOLxsK6Yh3S4P5xjgfeH95KL4qVI7KQ8F; Expires=Mon, 22 Jul 2024 01:18:45 GMT; Path=/",
+                        "AWSALBTGCORS=0yURQdkJz68U1/NjU07hVbkjsddm54mWqBzJ8x/zahopoCPuj2CH8S1O3zHwsuSYP8O+qwse87LeRVlGWPHYi3VfzqH3q/6q+fZ4QiggRdRJz8OUcuU+wfL1H0TMlZZpUpxXhw0ESptCOLxsK6Yh3S4P5xjgfeH95KL4qVI7KQ8F; Expires=Mon, 22 Jul 2024 01:18:45 GMT; Path=/; SameSite=None; Secure",
+                        "AWSALB=qhdzC4hVmvWxH1LZYd439vkI63LYr4/DhKrmHmULgZ6iHaPFGU8oMXd5vqU4ZCRlQTT89PmY8Q9gQAW37TkTu9xjPHtgAz4ec6svzm3DPWvsbJtvxDONVu+swIsq; Expires=Mon, 22 Jul 2024 01:18:45 GMT; Path=/",
+                        "AWSALBCORS=qhdzC4hVmvWxH1LZYd439vkI63LYr4/DhKrmHmULgZ6iHaPFGU8oMXd5vqU4ZCRlQTT89PmY8Q9gQAW37TkTu9xjPHtgAz4ec6svzm3DPWvsbJtvxDONVu+swIsq; Expires=Mon, 22 Jul 2024 01:18:45 GMT; Path=/; SameSite=None; Secure",
+                        "JSESSIONID=106AD1268FB0799FCAD47C0C0F886C005D6452C6EDE1ABD8DF894D8217E966896A234D3620BC2BEF03955FB69D5301600E3C9C9E20E60DE818CC93408ABCAA88.n1; Path=/; Secure; HttpOnly"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "RateLimit-Limit": [
+                        "100"
+                    ],
+                    "RateLimit-Remaining": [
+                        "99"
+                    ],
+                    "RateLimit-Reset": [
+                        "9"
+                    ],
+                    "X-Cache": [
+                        "Miss from cloudfront"
+                    ],
+                    "Via": [
+                        "1.1 152c4a8a2ea6a3c25f8efefafbfb7c18.cloudfront.net (CloudFront)"
+                    ],
+                    "X-Amz-Cf-Pop": [
+                        "FOR50-P1"
+                    ],
+                    "Alt-Svc": [
+                        "h3=\":443\"; ma=86400"
+                    ],
+                    "X-Amz-Cf-Id": [
+                        "1musa62sMDLjVd9mb-3Wj1esFbPRhaiQQFQk54qATV98fd195C0biA=="
+                    ]
+                },
+                "body": {
+                    "string": "{\"deleted\":true,\"id\":\"pay_vtkxai01k8o8jo55\"}"
+                }
+            }
         }
     ]
 }

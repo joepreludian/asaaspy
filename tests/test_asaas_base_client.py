@@ -1,6 +1,5 @@
-from asaaspy.service import AsaasService
-from asaaspy.service import CustomerResource
- 
+from asaaspy.service import AsaasService, CustomerResource
+
 
 class TestAsaasBaseClient:
     def test_customer_new(self, asaas_svc):

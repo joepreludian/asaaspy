@@ -8,7 +8,7 @@ plugins:
 theme:
   name: material
   language: pt-BR
-markdown_extensions: 
+markdown_extensions:
   - tables
   - pymdownx.highlight:
       anchor_linenums: true

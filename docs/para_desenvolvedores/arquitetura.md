@@ -31,7 +31,7 @@ flowchart TD
     AsaasPY --> Schemas
     Service --> AsaasClient
     Service --> AsaasResource
- 
+
     AsaasResource --> AsaasResourceCustomer
     AsaasResource --> AsaasResourcePayment
 
@@ -50,7 +50,7 @@ As camadas ficam distribuidas da seguinte maneira. Tentarei separar por níveis 
 
 * **AsaasService** -> Serviço Principal onde será feita a comunicação entre o cliente e o projeto do Asaas.
 * **Schemas** -> Possui os DTOs (Data Transfer Objects) utilizados para visualização dos dados.
- 
+
 #### Schemas
 Os Schemas são modelos do Pydantic que representam os dados trafegados no app das seguintes maneiras:
 

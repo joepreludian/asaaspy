@@ -11,9 +11,9 @@ class CustomerResource(AsaasResource):
         self,
         name=None,
         email=None,
-        cpfCnpj=None,
-        groupName=None,
-        externalReference=None,
+        cpf_cnpj=None,
+        group_name=None,
+        external_reference=None,
         **kwargs,
     ):
         with self.get_client() as client:
@@ -24,9 +24,9 @@ class CustomerResource(AsaasResource):
                         **{
                             "name": name,
                             "email": email,
-                            "cpfCnpj": cpfCnpj,
-                            "groupName": groupName,
-                            "externalReference": externalReference,
+                            "cpfCnpj": cpf_cnpj,
+                            "groupName": group_name,
+                            "externalReference": external_reference,
                             **kwargs,
                         }
                     ).as_lean_dict(),
