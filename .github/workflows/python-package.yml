@@ -35,11 +35,11 @@ jobs:
     - name: Test with pytest
       run: |
         pdm run pytest --cov=src --cov-report=term --cov-report=xml tests
-    - name: Get Project version
+    - name: Tag Repo
       id: project_version
       run: |
         pdm show --version -q > .version
-        git tag "$(cat .version)"
+        git tag "v$(cat .version)"
     - name: Push Tag
       uses: laputansoft/github-tag-action@v4.6
       with:
