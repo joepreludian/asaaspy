@@ -37,7 +37,7 @@ jobs:
     - name: Get Project version
       id: project_version
       run: |
-        pdm show --version
+        pdm show --version | tail -n 1 >> "$OUTPUT"
     - name: Create Tag
       run: |
         echo "${{ github.project_version.outputs }}"
