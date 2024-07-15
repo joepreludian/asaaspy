@@ -18,6 +18,7 @@ jobs:
         python-version: ["3.10", "3.11", "3.12"]
     env:
       ASAAS_SANDBOX_TOKEN: ${{ secrets.ASAAS_SANDBOX_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python ${{ matrix.python-version }}
@@ -38,4 +39,9 @@ jobs:
       id: project_version
       run: |
         pdm show --version -q > .version
-        cat .version
+        echo "VERSION=$(cat .version)" >> "$GITHUB_OUTPUT" 
+    - name: Push Tag
+      uses: laputansoft/github-tag-action@v4.6
+      with:
+        github_token: ${{ env.GITHUB_TOKEN }}
+        tag: ${{ steps.project_version.outputs.VERSION }}
