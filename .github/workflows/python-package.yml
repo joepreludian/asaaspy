@@ -24,9 +24,11 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: ${{ matrix.python-version }}
+    - uses: pre-commit/action@v3.0.1
+      with:
+        extra_args: run --all-files
     - name: Setup PDM
       uses: pdm-project/setup-pdm@v4
-      # You are now able to use PDM in your workflow
     - name: Install dependencies
       run: pdm install --with dev
     - name: Test with pytest
