@@ -39,7 +39,7 @@ jobs:
       id: project_version
       run: |
         pdm show --version -q > .version
-        echo "VERSION=$(cat .version)" >> "$GITHUB_OUTPUT"
+        git tag "$(cat .version)"
     - name: Push Tag
       uses: laputansoft/github-tag-action@v4.6
       with:
