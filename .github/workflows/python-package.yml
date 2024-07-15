@@ -26,7 +26,7 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - uses: pre-commit/action@v3.0.1
       with:
-        extra_args: run --all-files
+        extra_args: --all-files
     - name: Setup PDM
       uses: pdm-project/setup-pdm@v4
     - name: Install dependencies
