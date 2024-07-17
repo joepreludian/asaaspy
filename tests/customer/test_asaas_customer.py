@@ -1,6 +1,6 @@
 import pytest
 
-from asaaspy.schemas.customer import CustomerCreateSchema, CustomerSchema
+from asaaspy.schemas.customer import CustomerCreateSchema, CustomerViewSchema
 from asaaspy.service import AsaasService
 
 
@@ -10,7 +10,15 @@ class TestAsaasGetCustomer:
         all_customers = asaas_svc.customer.all()
 
         assert all_customers.totalCount == 3
-        assert isinstance(all_customers.data[0], CustomerSchema)
+        assert isinstance(all_customers.data[0], CustomerViewSchema)
+
+    def test_get_customer(self, asaas_svc):
+        asaas_svc: AsaasService = asaas_svc
+
+        CUSTOMER_ID = "cus_000006102042"
+        customer = asaas_svc.customer.get(customer_id=CUSTOMER_ID)
+
+        assert customer.id == CUSTOMER_ID
 
     @pytest.mark.parametrize(
         "extra_params",
@@ -32,6 +40,14 @@ class TestAsaasCreateCustomer:
         new_customer = asaas_svc.customer.create(customer)
 
         assert new_customer.id is not None
+
+    def test_create_customer_minimal(self, asaas_svc):
+        asaas_svc: AsaasService = asaas_svc
+
+        customer = CustomerCreateSchema(name="Empresa Apenas com o nome")
+        new_customer = asaas_svc.customer.create(customer)
+
+        assert new_customer.id.startswith("cus_")
 
 
 class TestAsaasDeleteCustomer:

@@ -6,7 +6,7 @@ from asaaspy.schemas.fields import Date
 
 class CustomerCreateSchema(BaseSchema):
     name: str
-    cpfCnpj: str
+    cpfCnpj: Optional[str] = None
     email: Optional[str] = None
     phone: Optional[str] = None
     mobilePhone: Optional[str] = None
@@ -25,14 +25,14 @@ class CustomerCreateSchema(BaseSchema):
     company: Optional[str] = None
 
 
-class CustomerSchema(CustomerCreateSchema):
+class CustomerViewSchema(CustomerCreateSchema):
     id: Optional[str] = None
     object: Optional[str] = None
     personType: Optional[str] = None
     deleted: Optional[bool] = None
     canDelete: Optional[bool] = None
     canEdit: Optional[bool] = None
-    cannotBeDeletedReason: Optional[bool] = None
+    cannotBeDeletedReason: Optional[str] = None
     cannotEditReason: Optional[str] = None
     dateCreated: Optional[Date] = None
 

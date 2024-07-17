@@ -777,6 +777,80 @@
                     "string": "{\"deleted\":true,\"id\":\"pay_vtkxai01k8o8jo55\"}"
                 }
             }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://sandbox.asaas.com/api/v3/customers/cus_000006102042",
+                "body": "",
+                "headers": {
+                    "host": [
+                        "sandbox.asaas.com"
+                    ],
+                    "accept": [
+                        "*/*"
+                    ],
+                    "accept-encoding": [
+                        "gzip, deflate"
+                    ],
+                    "connection": [
+                        "keep-alive"
+                    ],
+                    "content-type": [
+                        "application/json"
+                    ],
+                    "user-agent": [
+                        "AsaasPy"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": ""
+                },
+                "headers": {
+                    "Content-Type": [
+                        "application/json;charset=utf-8"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Date": [
+                        "Wed, 17 Jul 2024 18:47:22 GMT"
+                    ],
+                    "Set-Cookie": [
+                        "AWSALBTG=n9jcQybr+cT0KsQjEvSYZMKQCZfBlgjJIlhK6RV/8Q89vMrJyHSahvKt01jrx5tjIKQFVNR3WRa5v3ZGpTBRp8lINg9r+qq3/KUMlIeVin01GIQXwh7h9Ml4xzb2poTF0GA3ODA1pgECKELdxLyREqR25s3Ypu5ScMjFr5MPIbr+; Expires=Wed, 24 Jul 2024 18:47:22 GMT; Path=/",
+                        "AWSALBTGCORS=n9jcQybr+cT0KsQjEvSYZMKQCZfBlgjJIlhK6RV/8Q89vMrJyHSahvKt01jrx5tjIKQFVNR3WRa5v3ZGpTBRp8lINg9r+qq3/KUMlIeVin01GIQXwh7h9Ml4xzb2poTF0GA3ODA1pgECKELdxLyREqR25s3Ypu5ScMjFr5MPIbr+; Expires=Wed, 24 Jul 2024 18:47:22 GMT; Path=/; SameSite=None; Secure",
+                        "AWSALB=oNTocS64x+0+g2w2JD19o5HPnpaWp4TdY7781Jsj4tFxLjtujSNDQuUhJk5Va5mJSUUwewhvLJ4nQh1yMcsS2NAkRPaFYg1SEiN/ZmDtxwBQD8mf5aQyvjab6tNx; Expires=Wed, 24 Jul 2024 18:47:22 GMT; Path=/",
+                        "AWSALBCORS=oNTocS64x+0+g2w2JD19o5HPnpaWp4TdY7781Jsj4tFxLjtujSNDQuUhJk5Va5mJSUUwewhvLJ4nQh1yMcsS2NAkRPaFYg1SEiN/ZmDtxwBQD8mf5aQyvjab6tNx; Expires=Wed, 24 Jul 2024 18:47:22 GMT; Path=/; SameSite=None; Secure"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "X-Cache": [
+                        "Miss from cloudfront"
+                    ],
+                    "Via": [
+                        "1.1 f3ad6967905e6d2f0827e13dfa2c7d44.cloudfront.net (CloudFront)"
+                    ],
+                    "X-Amz-Cf-Pop": [
+                        "FOR50-P1"
+                    ],
+                    "Alt-Svc": [
+                        "h3=\":443\"; ma=86400"
+                    ],
+                    "X-Amz-Cf-Id": [
+                        "zyhesEV_gKg-x8dwQP_3XECrL5dxYVtOpQnrbQGiohy6CtaStSofZQ=="
+                    ]
+                },
+                "body": {
+                    "string": "{\"object\":\"customer\",\"id\":\"cus_000006102042\",\"dateCreated\":\"2024-07-12\",\"name\":\"Karen Baldwin\",\"email\":null,\"company\":null,\"phone\":null,\"mobilePhone\":null,\"address\":null,\"addressNumber\":null,\"complement\":null,\"province\":null,\"postalCode\":null,\"cpfCnpj\":\"45890762338\",\"personType\":\"FISICA\",\"deleted\":true,\"additionalEmails\":null,\"externalReference\":null,\"notificationDisabled\":false,\"observations\":null,\"municipalInscription\":null,\"stateInscription\":null,\"canDelete\":false,\"cannotBeDeletedReason\":\"Cliente exclu\u00eddo, n\u00e3o \u00e9 poss\u00edvel fazer altera\u00e7\u00f5es.\",\"canEdit\":false,\"cannotEditReason\":\"Cliente exclu\u00eddo, n\u00e3o \u00e9 poss\u00edvel fazer altera\u00e7\u00f5es.\",\"city\":null,\"cityName\":null,\"state\":null,\"country\":\"Brasil\"}"
+                }
+            }
         }
     ]
 }

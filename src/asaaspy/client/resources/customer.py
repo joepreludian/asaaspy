@@ -1,8 +1,8 @@
 from asaaspy.client.base import AsaasResource
 from asaaspy.schemas.customer import (
     CustomerCreateSchema,
-    CustomerSchema,
     CustomerSearchParams,
+    CustomerViewSchema,
 )
 
 
@@ -31,14 +31,19 @@ class CustomerResource(AsaasResource):
                         }
                     ).as_lean_dict(),
                 ),
-                data_response_class=CustomerSchema,
+                data_response_class=CustomerViewSchema,
             )
             return response
 
-    def create(self, customer: CustomerCreateSchema) -> CustomerSchema:
+    def get(self, customer_id):
+        with self.get_client() as client:
+            response = client.get(f"v3/customers/{customer_id}")
+            return CustomerViewSchema(**response.json())
+
+    def create(self, customer: CustomerCreateSchema) -> CustomerViewSchema:
         with self.get_client() as client:
             response = client.post("v3/customers", json=customer.as_lean_dict())
-            return CustomerSchema(**response.json())
+            return CustomerViewSchema(**response.json())
 
     def delete(self, id: str) -> bool:
         with self.get_client() as client:
