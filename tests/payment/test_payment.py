@@ -37,6 +37,20 @@ class TestAsaasGetPayment:
         assert payment.dueDate == date(year=2024, month=7, day=20)
 
 
+class TestAsaasPutPayment:
+    def test_put_payment(self, asaas_svc):
+        asaas_svc: AsaasService = asaas_svc
+
+        payment = asaas_svc.payment.put("pay_atg6n271g1l6nzhm", PaymentCreateSchema(
+            customer="cus_000006100224",
+            billingType=BillingType.BOLETO,
+            value=11.42,
+            dueDate=date(year=2024, month=7, day=20),
+        ))
+
+        assert payment.value == 11.42
+
+
 class TestAsaasAllPayment:
     def test_all_payment(self, asaas_svc):
         asaas_svc: AsaasService = asaas_svc

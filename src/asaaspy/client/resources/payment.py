@@ -12,6 +12,11 @@ class PaymentResource(AsaasResource):
         with self.get_client() as client:
             response = client.post("/v3/payments", json=payment.as_lean_dict())
             return PaymentViewSchema(**response.json())
+        
+    def put(self, payment_id, payment: PaymentCreateSchema) -> PaymentViewSchema:
+        with self.get_client() as client:
+            response = client.put(f"/v3/payments/{payment_id}", json=payment.as_lean_dict())
+            return PaymentViewSchema(**response.json())
 
     def get(self, payment_id) -> PaymentViewSchema:
         with self.get_client() as client:
