@@ -50,6 +50,19 @@ class TestAsaasCreateCustomer:
         assert new_customer.id.startswith("cus_")
 
 
+class TestAsaasUpdateCustomer:
+    def test_update_customer(self, asaas_svc):
+        asaas_svc: AsaasService = asaas_svc
+
+        customer = CustomerCreateSchema(name="Karen Rizzo", cpfCnpj="458.907.623-38")
+        new_customer = asaas_svc.customer.update(
+            customer_id="cus_000006100224", customer=customer
+        )
+
+        assert new_customer.id is not None
+        assert new_customer.name == "Karen Rizzo"
+
+
 class TestAsaasDeleteCustomer:
     def test_delete(self, asaas_svc):
         asaas_svc: AsaasService = asaas_svc

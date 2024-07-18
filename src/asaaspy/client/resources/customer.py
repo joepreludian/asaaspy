@@ -45,6 +45,13 @@ class CustomerResource(AsaasResource):
             response = client.post("v3/customers", json=customer.as_lean_dict())
             return CustomerViewSchema(**response.json())
 
+    def update(self, customer_id, customer: CustomerCreateSchema) -> CustomerViewSchema:
+        with self.get_client() as client:
+            response = client.put(
+                f"v3/customers/{customer_id}", json=customer.as_lean_dict()
+            )
+            return CustomerViewSchema(**response.json())
+
     def delete(self, id: str) -> bool:
         with self.get_client() as client:
             response = client.delete(f"v3/customers/{id}").json()

@@ -851,6 +851,84 @@
                     "string": "{\"object\":\"customer\",\"id\":\"cus_000006102042\",\"dateCreated\":\"2024-07-12\",\"name\":\"Karen Baldwin\",\"email\":null,\"company\":null,\"phone\":null,\"mobilePhone\":null,\"address\":null,\"addressNumber\":null,\"complement\":null,\"province\":null,\"postalCode\":null,\"cpfCnpj\":\"45890762338\",\"personType\":\"FISICA\",\"deleted\":true,\"additionalEmails\":null,\"externalReference\":null,\"notificationDisabled\":false,\"observations\":null,\"municipalInscription\":null,\"stateInscription\":null,\"canDelete\":false,\"cannotBeDeletedReason\":\"Cliente exclu\u00eddo, n\u00e3o \u00e9 poss\u00edvel fazer altera\u00e7\u00f5es.\",\"canEdit\":false,\"cannotEditReason\":\"Cliente exclu\u00eddo, n\u00e3o \u00e9 poss\u00edvel fazer altera\u00e7\u00f5es.\",\"city\":null,\"cityName\":null,\"state\":null,\"country\":\"Brasil\"}"
                 }
             }
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "uri": "https://sandbox.asaas.com/api/v3/customers/cus_000006100224",
+                "body": "{\"name\": \"Karen Rizzo\", \"cpfCnpj\": \"458.907.623-38\"}",
+                "headers": {
+                    "host": [
+                        "sandbox.asaas.com"
+                    ],
+                    "accept": [
+                        "*/*"
+                    ],
+                    "accept-encoding": [
+                        "gzip, deflate"
+                    ],
+                    "connection": [
+                        "keep-alive"
+                    ],
+                    "content-type": [
+                        "application/json"
+                    ],
+                    "user-agent": [
+                        "AsaasPy"
+                    ],
+                    "content-length": [
+                        "52"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": ""
+                },
+                "headers": {
+                    "Content-Type": [
+                        "application/json;charset=utf-8"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Date": [
+                        "Thu, 18 Jul 2024 02:48:08 GMT"
+                    ],
+                    "Set-Cookie": [
+                        "AWSALBTG=iYmR71Gm2HpNYAsUaFM/hSREUvccdPc5onMabpf5UCHrxa7+pFu70otazIZ3qAGKGpQbE2YBK0WzIT5/hkH+MzL6mOzPazj06jgwRMkyGnPA27Onc9+QaWDqqXdKYefXD8IjH0j1yQe0BQMfMgbShf7LBUsKbW3fxPMTkVVs6TRv; Expires=Thu, 25 Jul 2024 02:48:08 GMT; Path=/",
+                        "AWSALBTGCORS=iYmR71Gm2HpNYAsUaFM/hSREUvccdPc5onMabpf5UCHrxa7+pFu70otazIZ3qAGKGpQbE2YBK0WzIT5/hkH+MzL6mOzPazj06jgwRMkyGnPA27Onc9+QaWDqqXdKYefXD8IjH0j1yQe0BQMfMgbShf7LBUsKbW3fxPMTkVVs6TRv; Expires=Thu, 25 Jul 2024 02:48:08 GMT; Path=/; SameSite=None; Secure",
+                        "AWSALB=PADMiqHgTZiZYF34MC5ssKANajaXhyIWu0wwmDQxlaDH0lNv4KCNClNs8m3CJfq/d4B80sXwVxjWZpJmnqmB4z4KBO5dJozu31B8IZ0mPaPbqCG8BNdSzIIyZ3Mv; Expires=Thu, 25 Jul 2024 02:48:08 GMT; Path=/",
+                        "AWSALBCORS=PADMiqHgTZiZYF34MC5ssKANajaXhyIWu0wwmDQxlaDH0lNv4KCNClNs8m3CJfq/d4B80sXwVxjWZpJmnqmB4z4KBO5dJozu31B8IZ0mPaPbqCG8BNdSzIIyZ3Mv; Expires=Thu, 25 Jul 2024 02:48:08 GMT; Path=/; SameSite=None; Secure",
+                        "JSESSIONID=C522B09835510FFBE6C2EDBE856ECD0F5160529B5B6D54E12FED5AF8D4C5DB664EA5D895374243608F02FEE14976F38B3275519BD65FC948C8641F6AB92007A9.n2; Path=/; Secure; HttpOnly"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "X-Cache": [
+                        "Miss from cloudfront"
+                    ],
+                    "Via": [
+                        "1.1 7b33af062c38d5030466f38aa6ea5636.cloudfront.net (CloudFront)"
+                    ],
+                    "X-Amz-Cf-Pop": [
+                        "FOR50-P1"
+                    ],
+                    "Alt-Svc": [
+                        "h3=\":443\"; ma=86400"
+                    ],
+                    "X-Amz-Cf-Id": [
+                        "SFvuaNt_O8NBSAYbMn9aT66dyHj2t5D2j5XnkwAVp1hiDmn8HfZbTA=="
+                    ]
+                },
+                "body": {
+                    "string": "{\"object\":\"customer\",\"id\":\"cus_000006100224\",\"dateCreated\":\"2024-07-12\",\"name\":\"Karen Rizzo\",\"email\":null,\"company\":null,\"phone\":null,\"mobilePhone\":null,\"address\":null,\"addressNumber\":null,\"complement\":null,\"province\":null,\"postalCode\":null,\"cpfCnpj\":\"45890762338\",\"personType\":\"FISICA\",\"deleted\":false,\"additionalEmails\":\"joaocouves1@gmail.com,joaocouves2@gmail.com\",\"externalReference\":null,\"notificationDisabled\":false,\"observations\":null,\"municipalInscription\":null,\"stateInscription\":null,\"canDelete\":true,\"cannotBeDeletedReason\":null,\"canEdit\":true,\"cannotEditReason\":null,\"city\":null,\"cityName\":null,\"state\":null,\"country\":\"Brasil\"}"
+                }
+            }
         }
     ]
 }
