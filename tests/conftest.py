@@ -18,11 +18,13 @@ def asaas_svc(caplog, mock_http_client):
 
 
 @pytest.fixture
-def mock_http_client():
+def mock_http_client(request):
+    root_path = request.config.rootdir
     with vcr.use_cassette(
-        "./tests/asaas_sandbox_vcr.yml",
+        f"{root_path}/tests/asaas_sandbox_vcr.yml",
         serializer="json",
         record_mode="new_episodes",
         filter_headers=["access_token"],
+        match_on=["method", "scheme", "host", "port", "path", "query", "body"],
     ):
         yield

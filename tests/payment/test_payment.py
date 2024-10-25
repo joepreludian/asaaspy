@@ -1,5 +1,8 @@
 from datetime import date
 
+import pytest
+
+from asaaspy.exceptions import AsaasClientError
 from asaaspy.schemas.payment import (
     BillingType,
     PaymentCreateSchema,
@@ -25,6 +28,26 @@ class TestAsaasCreatePayment:
         assert payment_details.id.startswith("pay_")
         assert isinstance(payment_details, PaymentViewSchema)
 
+    def test_create_payment_below_minimum_value(self, asaas_svc):
+        asaas_svc: AsaasService = asaas_svc
+
+        payment_create = PaymentCreateSchema(
+            customer="cus_000006100224",
+            billingType=BillingType.PIX,
+            value=3,
+            dueDate=date(year=2024, month=10, day=30),
+        )
+
+        with pytest.raises(AsaasClientError) as exc_info:
+            asaas_svc.payment.create(payment_create)
+
+        assert exc_info.value.message == (
+            "O valor da cobrança (R$ 3,00) menos o valor do desconto (R$ 0,00) "
+            "não pode ser menor que R$ 5,00."
+        )
+        assert exc_info.value.status_code == 400
+        assert isinstance(exc_info.value.details, dict)
+
 
 class TestAsaasGetPayment:
     def test_get_payment(self, asaas_svc):
@@ -41,12 +64,15 @@ class TestAsaasPutPayment:
     def test_put_payment(self, asaas_svc):
         asaas_svc: AsaasService = asaas_svc
 
-        payment = asaas_svc.payment.put("pay_atg6n271g1l6nzhm", PaymentCreateSchema(
-            customer="cus_000006100224",
-            billingType=BillingType.BOLETO,
-            value=11.42,
-            dueDate=date(year=2024, month=7, day=20),
-        ))
+        payment = asaas_svc.payment.put(
+            "pay_atg6n271g1l6nzhm",
+            PaymentCreateSchema(
+                customer="cus_000006100224",
+                billingType=BillingType.BOLETO,
+                value=11.42,
+                dueDate=date(year=2024, month=7, day=20),
+            ),
+        )
 
         assert payment.value == 11.42
 
@@ -85,3 +111,15 @@ class TestAsaasDeletePayment:
         has_deleted = asaas_svc.payment.delete(payment_id="pay_vtkxai01k8o8jo55")
 
         assert has_deleted
+
+
+class TestAsaasGetWrongPayment:
+    def test_get_payment(self, asaas_svc):
+        asaas_svc: AsaasService = asaas_svc
+
+        with pytest.raises(AsaasClientError) as exc_info:
+            asaas_svc.payment.get("pay_that_not_exists")
+
+        assert exc_info.value.status_code == 404
+        assert exc_info.value.message == ""
+        assert exc_info.value.details is None

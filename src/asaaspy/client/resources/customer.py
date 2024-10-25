@@ -16,43 +16,39 @@ class CustomerResource(AsaasResource):
         external_reference=None,
         **kwargs,
     ):
-        with self.get_client() as client:
-            response = self.get_list_response(
-                client.get(
-                    "v3/customers",
-                    params=CustomerSearchParams(
-                        **{
-                            "name": name,
-                            "email": email,
-                            "cpfCnpj": cpf_cnpj,
-                            "groupName": group_name,
-                            "externalReference": external_reference,
-                            **kwargs,
-                        }
-                    ).as_lean_dict(),
-                ),
-                data_response_class=CustomerViewSchema,
-            )
-            return response
+        response = self.get_list_response(
+            self.call(
+                "GET",
+                "v3/customers",
+                params=CustomerSearchParams(
+                    **{
+                        "name": name,
+                        "email": email,
+                        "cpfCnpj": cpf_cnpj,
+                        "groupName": group_name,
+                        "externalReference": external_reference,
+                        **kwargs,
+                    }
+                ).as_lean_dict(),
+            ),
+            data_response_class=CustomerViewSchema,
+        )
+        return response
 
     def get(self, customer_id):
-        with self.get_client() as client:
-            response = client.get(f"v3/customers/{customer_id}")
-            return CustomerViewSchema(**response.json())
+        response = self.call("GET", f"v3/customers/{customer_id}")
+        return CustomerViewSchema(**response)
 
     def create(self, customer: CustomerCreateSchema) -> CustomerViewSchema:
-        with self.get_client() as client:
-            response = client.post("v3/customers", json=customer.as_lean_dict())
-            return CustomerViewSchema(**response.json())
+        response = self.call("POST", "v3/customers", json=customer.as_lean_dict())
+        return CustomerViewSchema(**response)
 
     def update(self, customer_id, customer: CustomerCreateSchema) -> CustomerViewSchema:
-        with self.get_client() as client:
-            response = client.put(
-                f"v3/customers/{customer_id}", json=customer.as_lean_dict()
-            )
-            return CustomerViewSchema(**response.json())
+        response = self.call(
+            "PUT", f"v3/customers/{customer_id}", json=customer.as_lean_dict()
+        )
+        return CustomerViewSchema(**response)
 
     def delete(self, id: str) -> bool:
-        with self.get_client() as client:
-            response = client.delete(f"v3/customers/{id}").json()
-            return response.get("deleted", False)
+        response = self.call("DELETE", f"v3/customers/{id}")
+        return response.get("deleted", False)
