@@ -10,7 +10,7 @@ class AsaasService:
 
         params:
             api_key(str): Asaas API Key to be used - required
-            sandbox(bool): whether use or not sandbox (default False)
+            sandbox(bool): whether you use or not sandbox (default False)
         """
         client = AsaasClient(*args, **kwargs)
 

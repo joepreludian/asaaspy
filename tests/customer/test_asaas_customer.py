@@ -1,6 +1,6 @@
 import pytest
 
-from asaaspy.schemas.customer import CustomerCreateSchema, CustomerViewSchema
+from asaaspy.schemas.customer import CustomerSchema, CustomerViewSchema
 from asaaspy.service import AsaasService
 
 
@@ -36,7 +36,7 @@ class TestAsaasCreateCustomer:
     def test_create_customer(self, asaas_svc):
         asaas_svc: AsaasService = asaas_svc
 
-        customer = CustomerCreateSchema(name="Karen Baldwin", cpfCnpj="458.907.623-38")
+        customer = CustomerSchema(name="Karen Baldwin", cpfCnpj="458.907.623-38")
         new_customer = asaas_svc.customer.create(customer)
 
         assert new_customer.id is not None
@@ -44,7 +44,7 @@ class TestAsaasCreateCustomer:
     def test_create_customer_minimal(self, asaas_svc):
         asaas_svc: AsaasService = asaas_svc
 
-        customer = CustomerCreateSchema(name="Empresa Apenas com o nome")
+        customer = CustomerSchema(name="Empresa Apenas com o nome")
         new_customer = asaas_svc.customer.create(customer)
 
         assert new_customer.id.startswith("cus_")
@@ -54,7 +54,7 @@ class TestAsaasUpdateCustomer:
     def test_update_customer(self, asaas_svc):
         asaas_svc: AsaasService = asaas_svc
 
-        customer = CustomerCreateSchema(name="Karen Rizzo", cpfCnpj="458.907.623-38")
+        customer = CustomerSchema(name="Karen Rizzo", cpfCnpj="458.907.623-38")
         new_customer = asaas_svc.customer.update(
             customer_id="cus_000006100224", customer=customer
         )
@@ -67,7 +67,7 @@ class TestAsaasDeleteCustomer:
     def test_delete(self, asaas_svc):
         asaas_svc: AsaasService = asaas_svc
 
-        customer = CustomerCreateSchema(
+        customer = CustomerSchema(
             name="Usuario a Ser Excluido", cpfCnpj="083.138.660-63"
         )
         new_customer = asaas_svc.customer.create(customer)

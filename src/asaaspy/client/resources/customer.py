@@ -1,6 +1,6 @@
 from asaaspy.client.base import AsaasResource
 from asaaspy.schemas.customer import (
-    CustomerCreateSchema,
+    CustomerSchema,
     CustomerSearchParams,
     CustomerViewSchema,
 )
@@ -39,11 +39,11 @@ class CustomerResource(AsaasResource):
         response = self.call("GET", f"v3/customers/{customer_id}")
         return CustomerViewSchema(**response)
 
-    def create(self, customer: CustomerCreateSchema) -> CustomerViewSchema:
+    def create(self, customer: CustomerSchema) -> CustomerViewSchema:
         response = self.call("POST", "v3/customers", json=customer.as_lean_dict())
         return CustomerViewSchema(**response)
 
-    def update(self, customer_id, customer: CustomerCreateSchema) -> CustomerViewSchema:
+    def update(self, customer_id, customer: CustomerSchema) -> CustomerViewSchema:
         response = self.call(
             "PUT", f"v3/customers/{customer_id}", json=customer.as_lean_dict()
         )

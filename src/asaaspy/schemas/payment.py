@@ -4,8 +4,8 @@ from typing import List, Literal, Optional
 
 from pydantic import Field
 
-from asaaspy.schemas.base import BaseSchema
-from asaaspy.schemas.fields import Date
+from asaaspy.schemas.base import BaseSchema, ViewItemSchema
+from asaaspy.schemas.base_fields import Date
 
 
 class BillingType(Enum):
@@ -69,10 +69,7 @@ class RefundDetail(BaseSchema):
     transactionReceiptUrl: Optional[str] = None
 
 
-class PaymentViewSchema(BaseSchema):
-    object: str
-    id: str
-    dateCreated: Date
+class PaymentViewSchema(ViewItemSchema):
     customer: str
     dueDate: Date
     value: float
@@ -119,7 +116,6 @@ class PaymentViewSchema(BaseSchema):
     discount: Optional[DiscountDetail] = None
     fine: Optional[FineDetail] = None
     interest: Optional[InterestDetail] = None
-    deleted: Optional[bool] = None
     postalService: Optional[bool] = None
     anticipated: Optional[bool] = None
     anticipable: Optional[bool] = None

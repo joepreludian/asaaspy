@@ -4,6 +4,8 @@ from typing import Any, Optional
 
 from pydantic import BaseModel, ConfigDict
 
+from asaaspy.schemas.base_fields import Date
+
 
 def sanitize_to_json(value):
     if isinstance(value, Enum):
@@ -34,3 +36,10 @@ class PaginatedOutputPayload(BaseSchema):
 class QueryParamsPayload(BaseSchema):
     offset: Optional[int] = None
     limit: Optional[int] = None
+
+
+class ViewItemSchema(BaseSchema):
+    id: Optional[str] = None
+    object: Optional[str] = None
+    deleted: Optional[bool] = None
+    dateCreated: Optional[Date] = None
