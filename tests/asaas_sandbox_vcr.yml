@@ -1550,6 +1550,240 @@
                     "string": "{\"object\":\"list\",\"hasMore\":true,\"totalCount\":17,\"limit\":10,\"offset\":0,\"data\":[{\"object\":\"customer\",\"id\":\"cus_000006306660\",\"dateCreated\":\"2024-10-24\",\"name\":\"Empresa Apenas com o nome\",\"email\":null,\"company\":null,\"phone\":null,\"mobilePhone\":null,\"address\":null,\"addressNumber\":null,\"complement\":null,\"province\":null,\"postalCode\":null,\"cpfCnpj\":null,\"personType\":null,\"deleted\":false,\"additionalEmails\":null,\"externalReference\":null,\"notificationDisabled\":false,\"observations\":null,\"municipalInscription\":null,\"stateInscription\":null,\"canDelete\":true,\"cannotBeDeletedReason\":null,\"canEdit\":true,\"cannotEditReason\":null,\"city\":null,\"cityName\":null,\"state\":null,\"country\":\"Brasil\"},{\"object\":\"customer\",\"id\":\"cus_000006210347\",\"dateCreated\":\"2024-09-15\",\"name\":\"RCPN DO MUNIC\u00cdPIO DE LASTRO\",\"email\":null,\"company\":null,\"phone\":null,\"mobilePhone\":null,\"address\":null,\"addressNumber\":null,\"complement\":null,\"province\":null,\"postalCode\":null,\"cpfCnpj\":\"39220427400\",\"personType\":\"FISICA\",\"deleted\":false,\"additionalEmails\":null,\"externalReference\":\"168\",\"notificationDisabled\":false,\"observations\":null,\"municipalInscription\":null,\"stateInscription\":null,\"canDelete\":true,\"cannotBeDeletedReason\":null,\"canEdit\":true,\"cannotEditReason\":null,\"city\":null,\"cityName\":null,\"state\":null,\"country\":\"Brasil\"},{\"object\":\"customer\",\"id\":\"cus_000006157906\",\"dateCreated\":\"2024-08-13\",\"name\":\"OF\u00cdCIO \u00daNICO DO CONDE\",\"email\":null,\"company\":null,\"phone\":null,\"mobilePhone\":null,\"address\":null,\"addressNumber\":null,\"complement\":null,\"province\":null,\"postalCode\":null,\"cpfCnpj\":\"06150567419\",\"personType\":\"FISICA\",\"deleted\":false,\"additionalEmails\":null,\"externalReference\":\"2341\",\"notificationDisabled\":false,\"observations\":null,\"municipalInscription\":null,\"stateInscription\":null,\"canDelete\":true,\"cannotBeDeletedReason\":null,\"canEdit\":true,\"cannotEditReason\":null,\"city\":null,\"cityName\":null,\"state\":null,\"country\":\"Brasil\"},{\"object\":\"customer\",\"id\":\"cus_000006157876\",\"dateCreated\":\"2024-08-13\",\"name\":\"RCPN DO MUNIC\u00cdPIO DE SERRA BRANCA\",\"email\":null,\"company\":null,\"phone\":null,\"mobilePhone\":null,\"address\":null,\"addressNumber\":null,\"complement\":null,\"province\":null,\"postalCode\":null,\"cpfCnpj\":\"06150557456\",\"personType\":\"FISICA\",\"deleted\":false,\"additionalEmails\":null,\"externalReference\":\"1149\",\"notificationDisabled\":false,\"observations\":null,\"municipalInscription\":null,\"stateInscription\":null,\"canDelete\":true,\"cannotBeDeletedReason\":null,\"canEdit\":true,\"cannotEditReason\":null,\"city\":null,\"cityName\":null,\"state\":null,\"country\":\"Brasil\"},{\"object\":\"customer\",\"id\":\"cus_000006154729\",\"dateCreated\":\"2024-08-11\",\"name\":\"Teste\",\"email\":null,\"company\":null,\"phone\":null,\"mobilePhone\":null,\"address\":null,\"addressNumber\":null,\"complement\":null,\"province\":null,\"postalCode\":null,\"cpfCnpj\":\"06150567419\",\"personType\":\"FISICA\",\"deleted\":false,\"additionalEmails\":null,\"externalReference\":\"991\",\"notificationDisabled\":false,\"observations\":null,\"municipalInscription\":null,\"stateInscription\":null,\"canDelete\":true,\"cannotBeDeletedReason\":null,\"canEdit\":true,\"cannotEditReason\":null,\"city\":null,\"cityName\":null,\"state\":null,\"country\":\"Brasil\"},{\"object\":\"customer\",\"id\":\"cus_000006136266\",\"dateCreated\":\"2024-07-29\",\"name\":\"RCPN  MUNIC\u00cdPIO DE CAPIM\",\"email\":null,\"company\":null,\"phone\":null,\"mobilePhone\":null,\"address\":null,\"addressNumber\":null,\"complement\":null,\"province\":null,\"postalCode\":null,\"cpfCnpj\":\"23419471000134\",\"personType\":\"JURIDICA\",\"deleted\":false,\"additionalEmails\":null,\"externalReference\":\"988\",\"notificationDisabled\":false,\"observations\":null,\"municipalInscription\":null,\"stateInscription\":null,\"canDelete\":true,\"cannotBeDeletedReason\":null,\"canEdit\":true,\"cannotEditReason\":null,\"city\":null,\"cityName\":null,\"state\":null,\"country\":\"Brasil\"},{\"object\":\"customer\",\"id\":\"cus_000006117979\",\"dateCreated\":\"2024-07-20\",\"name\":\"RCPN  MUNIC\u00cdPIO DE CONDA\",\"email\":\"alcinots@gmail.com\",\"company\":null,\"phone\":null,\"mobilePhone\":\"83987700106\",\"address\":null,\"addressNumber\":null,\"complement\":null,\"province\":null,\"postalCode\":null,\"cpfCnpj\":\"43379078000171\",\"personType\":\"JURIDICA\",\"deleted\":false,\"additionalEmails\":null,\"externalReference\":\"989\",\"notificationDisabled\":false,\"observations\":null,\"municipalInscription\":null,\"stateInscription\":null,\"canDelete\":true,\"cannotBeDeletedReason\":null,\"canEdit\":true,\"cannotEditReason\":null,\"city\":null,\"cityName\":null,\"state\":null,\"country\":\"Brasil\"},{\"object\":\"customer\",\"id\":\"cus_000006117959\",\"dateCreated\":\"2024-07-20\",\"name\":\"RCPN  MUNIC\u00cdPIO DE SANTA IN\u00caS\",\"email\":null,\"company\":null,\"phone\":null,\"mobilePhone\":null,\"address\":null,\"addressNumber\":null,\"complement\":null,\"province\":null,\"postalCode\":null,\"cpfCnpj\":\"11382087000125\",\"personType\":\"JURIDICA\",\"deleted\":false,\"additionalEmails\":null,\"externalReference\":\"990\",\"notificationDisabled\":false,\"observations\":null,\"municipalInscription\":null,\"stateInscription\":null,\"canDelete\":true,\"cannotBeDeletedReason\":null,\"canEdit\":true,\"cannotEditReason\":null,\"city\":null,\"cityName\":null,\"state\":null,\"country\":\"Brasil\"},{\"object\":\"customer\",\"id\":\"cus_000006117956\",\"dateCreated\":\"2024-07-20\",\"name\":\"RCPN  MUNIC\u00cdPIO DE SANTA IN\u00caS\",\"email\":null,\"company\":null,\"phone\":null,\"mobilePhone\":null,\"address\":null,\"addressNumber\":null,\"complement\":null,\"province\":null,\"postalCode\":null,\"cpfCnpj\":\"11382087000125\",\"personType\":\"JURIDICA\",\"deleted\":false,\"additionalEmails\":null,\"externalReference\":\"990\",\"notificationDisabled\":false,\"observations\":null,\"municipalInscription\":null,\"stateInscription\":null,\"canDelete\":true,\"cannotBeDeletedReason\":null,\"canEdit\":true,\"cannotEditReason\":null,\"city\":null,\"cityName\":null,\"state\":null,\"country\":\"Brasil\"},{\"object\":\"customer\",\"id\":\"cus_000006114803\",\"dateCreated\":\"2024-07-19\",\"name\":\"RCPN  MUNIC\u00cdPIO DE \u00c1GUA BRANCA\",\"email\":null,\"company\":null,\"phone\":null,\"mobilePhone\":null,\"address\":null,\"addressNumber\":null,\"complement\":null,\"province\":null,\"postalCode\":null,\"cpfCnpj\":null,\"personType\":null,\"deleted\":false,\"additionalEmails\":null,\"externalReference\":\"393\",\"notificationDisabled\":false,\"observations\":null,\"municipalInscription\":null,\"stateInscription\":null,\"canDelete\":true,\"cannotBeDeletedReason\":null,\"canEdit\":true,\"cannotEditReason\":null,\"city\":null,\"cityName\":null,\"state\":null,\"country\":\"Brasil\"}]}"
                 }
             }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://sandbox.asaas.com/api/myAccount/accountNumber",
+                "body": "",
+                "headers": {
+                    "host": [
+                        "sandbox.asaas.com"
+                    ],
+                    "accept": [
+                        "*/*"
+                    ],
+                    "accept-encoding": [
+                        "gzip, deflate"
+                    ],
+                    "connection": [
+                        "keep-alive"
+                    ],
+                    "content-type": [
+                        "application/json"
+                    ],
+                    "user-agent": [
+                        "AsaasPy"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 404,
+                    "message": ""
+                },
+                "headers": {
+                    "Content-Type": [
+                        "text/html;charset=utf-8"
+                    ],
+                    "Content-Length": [
+                        "798"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Date": [
+                        "Sat, 26 Oct 2024 21:07:13 GMT"
+                    ],
+                    "Content-Language": [
+                        "pt-BR"
+                    ],
+                    "Set-Cookie": [
+                        "AWSALBTG=r5rmEh03q8SWe/04drukuYcKc2vsdQo2OVSRMPQPLBKD0GnNyF2AsqaXygD0fWAfaFiIURqxaaCX/YbhgVO8JC01G6nuzSq1ikL8HuM3Zfn3tZyC+CejSO//Qw2PMsLsO1IBknN5YOOgXptuzLJa7RJDQIcfQpNr+NSUwfc12i5g; Expires=Sat, 02 Nov 2024 21:07:13 GMT; Path=/",
+                        "AWSALBTGCORS=r5rmEh03q8SWe/04drukuYcKc2vsdQo2OVSRMPQPLBKD0GnNyF2AsqaXygD0fWAfaFiIURqxaaCX/YbhgVO8JC01G6nuzSq1ikL8HuM3Zfn3tZyC+CejSO//Qw2PMsLsO1IBknN5YOOgXptuzLJa7RJDQIcfQpNr+NSUwfc12i5g; Expires=Sat, 02 Nov 2024 21:07:13 GMT; Path=/; SameSite=None; Secure",
+                        "AWSALB=8c3XTrB5kn6TNY8B92kJaPh7UdGQMWuP7hPC1VJ5ibnbrFogejKZucL467+P5h+mTcH0RH/OgGRydqafz1KWCLkBFEaWWvz15UOPmskB5wLcSRgLystZ5LUhdjGi; Expires=Sat, 02 Nov 2024 21:07:13 GMT; Path=/",
+                        "AWSALBCORS=8c3XTrB5kn6TNY8B92kJaPh7UdGQMWuP7hPC1VJ5ibnbrFogejKZucL467+P5h+mTcH0RH/OgGRydqafz1KWCLkBFEaWWvz15UOPmskB5wLcSRgLystZ5LUhdjGi; Expires=Sat, 02 Nov 2024 21:07:13 GMT; Path=/; SameSite=None; Secure"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "X-Cache": [
+                        "Error from cloudfront"
+                    ],
+                    "Via": [
+                        "1.1 a458d2030cb2c80769bb0398542c0264.cloudfront.net (CloudFront)"
+                    ],
+                    "X-Amz-Cf-Pop": [
+                        "FOR50-P1"
+                    ],
+                    "Alt-Svc": [
+                        "h3=\":443\"; ma=86400"
+                    ],
+                    "X-Amz-Cf-Id": [
+                        "L4bwciHrOWqGCaZGXPh8M-DMkLwkRLm3YKd-DEQgrQZz5IgjfGw6GA=="
+                    ]
+                },
+                "body": {
+                    "string": "<!doctype html><html lang=\"pt\"><head><title>HTTP Status 404 \u2013 N\u00e3o Encontrado</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 \u2013 N\u00e3o Encontrado</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Message</b> The requested resource [&#47;api&#47;myAccount&#47;accountNumber] is not available</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/9.0.73</h3></body></html>"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://sandbox.asaas.com/api/v3/myAccount/accountNumber",
+                "body": "",
+                "headers": {
+                    "host": [
+                        "sandbox.asaas.com"
+                    ],
+                    "accept": [
+                        "*/*"
+                    ],
+                    "accept-encoding": [
+                        "gzip, deflate"
+                    ],
+                    "connection": [
+                        "keep-alive"
+                    ],
+                    "content-type": [
+                        "application/json"
+                    ],
+                    "user-agent": [
+                        "AsaasPy"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": ""
+                },
+                "headers": {
+                    "Content-Type": [
+                        "application/json;charset=utf-8"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Date": [
+                        "Sat, 26 Oct 2024 21:07:58 GMT"
+                    ],
+                    "Set-Cookie": [
+                        "AWSALBTG=U6WWd9U+HmLDFTHv1fvztmKNGjaDCer1nsSa6OFv8QjzOGOqu8pCH2xBehQ1ODhgD0skgD0VO+QyYwU7XC69u8OkpwU+REsEl+FQXE01T07OLvubFLGa7zeHGYspRCHiB68TRgdVYMFCLudIVq7anrtYB/9QBsDceYB2PllCCEaL; Expires=Sat, 02 Nov 2024 21:07:58 GMT; Path=/",
+                        "AWSALBTGCORS=U6WWd9U+HmLDFTHv1fvztmKNGjaDCer1nsSa6OFv8QjzOGOqu8pCH2xBehQ1ODhgD0skgD0VO+QyYwU7XC69u8OkpwU+REsEl+FQXE01T07OLvubFLGa7zeHGYspRCHiB68TRgdVYMFCLudIVq7anrtYB/9QBsDceYB2PllCCEaL; Expires=Sat, 02 Nov 2024 21:07:58 GMT; Path=/; SameSite=None; Secure",
+                        "AWSALB=07bzi34obZPaU9VKqIOs9W2BlYtsx7ePFlgOyANcaVJvPy5Ap6hyKS5Q9cpOWrUT3Azs76jglyG/teF0hiV4eizlAQ0YNDBs4ckjoP7AU1aK5evgpewzaop1Ui2A; Expires=Sat, 02 Nov 2024 21:07:58 GMT; Path=/",
+                        "AWSALBCORS=07bzi34obZPaU9VKqIOs9W2BlYtsx7ePFlgOyANcaVJvPy5Ap6hyKS5Q9cpOWrUT3Azs76jglyG/teF0hiV4eizlAQ0YNDBs4ckjoP7AU1aK5evgpewzaop1Ui2A; Expires=Sat, 02 Nov 2024 21:07:58 GMT; Path=/; SameSite=None; Secure"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "X-Cache": [
+                        "Miss from cloudfront"
+                    ],
+                    "Via": [
+                        "1.1 9d86cea53984bc0c4ec089f2b29eccf0.cloudfront.net (CloudFront)"
+                    ],
+                    "X-Amz-Cf-Pop": [
+                        "FOR50-P1"
+                    ],
+                    "Alt-Svc": [
+                        "h3=\":443\"; ma=86400"
+                    ],
+                    "X-Amz-Cf-Id": [
+                        "HFqSN_xL7XjrAlKIPc3R1EfSrLm6Lko31EjbMlWKZBM5uxzf6u-40A=="
+                    ]
+                },
+                "body": {
+                    "string": "{\"agency\":\"0001\",\"account\":\"129923\",\"accountDigit\":\"1\"}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://sandbox.asaas.com/api/v3/finance/balance",
+                "body": "",
+                "headers": {
+                    "host": [
+                        "sandbox.asaas.com"
+                    ],
+                    "accept": [
+                        "*/*"
+                    ],
+                    "accept-encoding": [
+                        "gzip, deflate"
+                    ],
+                    "connection": [
+                        "keep-alive"
+                    ],
+                    "content-type": [
+                        "application/json"
+                    ],
+                    "user-agent": [
+                        "AsaasPy"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": ""
+                },
+                "headers": {
+                    "Content-Type": [
+                        "application/json;charset=utf-8"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Date": [
+                        "Sat, 26 Oct 2024 21:22:26 GMT"
+                    ],
+                    "RateLimit-Remaining": [
+                        "9"
+                    ],
+                    "RateLimit-Reset": [
+                        "10"
+                    ],
+                    "Set-Cookie": [
+                        "AWSALBTG=Srtit5m0hggTOrtXk6UVfjsOZf9WDShWy0BONdnDOtxsAp5fXGNhgnL/OVJFIAWz36VvKG66nMuqbRXmYNYYmyg8LbGE+8ihGspSpcSmgEHKshG/aqXnBnUobFQnzNZzAmAArfT3xK6WJdFto1l5oL/8ZTQtjiI468pwPewMy4Aq; Expires=Sat, 02 Nov 2024 21:22:26 GMT; Path=/",
+                        "AWSALBTGCORS=Srtit5m0hggTOrtXk6UVfjsOZf9WDShWy0BONdnDOtxsAp5fXGNhgnL/OVJFIAWz36VvKG66nMuqbRXmYNYYmyg8LbGE+8ihGspSpcSmgEHKshG/aqXnBnUobFQnzNZzAmAArfT3xK6WJdFto1l5oL/8ZTQtjiI468pwPewMy4Aq; Expires=Sat, 02 Nov 2024 21:22:26 GMT; Path=/; SameSite=None; Secure",
+                        "AWSALB=W3bt+3UUocRdDOH+NA73LdJza214xpiDzcIdNbKvw2bLGeWyScT/NeHO3+aE1PoGUFbf0/mXnedtMCdvQ/bWgVk+CbjkQshfsGHcsDIbtu4+enM+ILFEkXJ4zpgY; Expires=Sat, 02 Nov 2024 21:22:26 GMT; Path=/",
+                        "AWSALBCORS=W3bt+3UUocRdDOH+NA73LdJza214xpiDzcIdNbKvw2bLGeWyScT/NeHO3+aE1PoGUFbf0/mXnedtMCdvQ/bWgVk+CbjkQshfsGHcsDIbtu4+enM+ILFEkXJ4zpgY; Expires=Sat, 02 Nov 2024 21:22:26 GMT; Path=/; SameSite=None; Secure"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "RateLimit-Limit": [
+                        "10"
+                    ],
+                    "X-Cache": [
+                        "Miss from cloudfront"
+                    ],
+                    "Via": [
+                        "1.1 3499b160c7e7058ad5303a732200ac40.cloudfront.net (CloudFront)"
+                    ],
+                    "X-Amz-Cf-Pop": [
+                        "FOR50-P1"
+                    ],
+                    "Alt-Svc": [
+                        "h3=\":443\"; ma=86400"
+                    ],
+                    "X-Amz-Cf-Id": [
+                        "LSMWs0GD1GQXTzKRUMIBkII2gUg1tbnjrQSIRL7ZDmLNTrZIy_bqUA=="
+                    ]
+                },
+                "body": {
+                    "string": "{\"balance\":701.79}"
+                }
+            }
         }
     ]
 }

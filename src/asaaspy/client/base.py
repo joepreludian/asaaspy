@@ -8,7 +8,7 @@ from asaaspy.log import log
 from asaaspy.schemas.base import PaginatedOutputPayload
 
 
-class AsaasClient:
+class AsaasHTTPClient:
     def __init__(self, api_key, sandbox=False) -> None:
         self._client_params = {
             "headers": {

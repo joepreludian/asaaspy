@@ -1,4 +1,5 @@
-from asaaspy.client.base import AsaasClient
+from asaaspy.client.base import AsaasHTTPClient
+from asaaspy.client.resources.bank import BankResource
 from asaaspy.client.resources.customer import CustomerResource
 from asaaspy.client.resources.payment import PaymentResource
 
@@ -12,7 +13,8 @@ class AsaasService:
             api_key(str): Asaas API Key to be used - required
             sandbox(bool): whether you use or not sandbox (default False)
         """
-        client = AsaasClient(*args, **kwargs)
+        client = AsaasHTTPClient(*args, **kwargs)
 
         self.customer: CustomerResource = CustomerResource(client)
         self.payment: PaymentResource = PaymentResource(client)
+        self.bank: BankResource = BankResource(client)
