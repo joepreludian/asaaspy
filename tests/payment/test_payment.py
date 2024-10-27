@@ -3,7 +3,7 @@ from datetime import date
 import pytest
 
 from asaaspy.exceptions import AsaasClientError
-from asaaspy.schemas.payment import (
+from asaaspy.schemas.v3.payment import (
     BillingType,
     PaymentCreateSchema,
     PaymentFilterBy,

@@ -1,5 +1,5 @@
 from asaaspy.client.base import AsaasResource
-from asaaspy.schemas.customer import (
+from asaaspy.schemas.v3.customer import (
     CustomerSchema,
     CustomerSearchParams,
     CustomerViewSchema,

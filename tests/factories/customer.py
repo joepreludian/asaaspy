@@ -1,6 +1,6 @@
 import factory
 
-from asaaspy.schemas.customer import CustomerSchema
+from asaaspy.schemas.v3.customer import CustomerSchema
 
 
 class CustomerCreateSchemaFactory(factory.Factory):

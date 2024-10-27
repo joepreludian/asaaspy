@@ -4,7 +4,7 @@ from typing import Any, Optional
 
 from pydantic import BaseModel, ConfigDict
 
-from asaaspy.schemas.base_fields import Date
+from asaaspy.schemas.v3.base_fields import Date
 
 
 def sanitize_to_json(value):
@@ -33,7 +33,7 @@ class PaginatedOutputPayload(BaseSchema):
     data: Any
 
 
-class QueryParamsPayload(BaseSchema):
+class PaginatedQueryParams(BaseSchema):
     offset: Optional[int] = None
     limit: Optional[int] = None
 

@@ -1,6 +1,6 @@
 import pytest
 
-from asaaspy.schemas.customer import CustomerSchema, CustomerViewSchema
+from asaaspy.schemas.v3.customer import CustomerSchema, CustomerViewSchema
 from asaaspy.service import AsaasService
 
 

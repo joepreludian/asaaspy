@@ -1,5 +1,10 @@
 from asaaspy.client.base import AsaasResource
-from asaaspy.schemas.bank import BankAccountViewSchema, BankBalanceViewSchema
+from asaaspy.schemas.base import PaginatedQueryParams
+from asaaspy.schemas.v3.bank import (
+    BankAccountViewSchema,
+    BankBalanceViewSchema,
+    TransactionItemViewSchema,
+)
 
 
 class BankResource(AsaasResource):
@@ -7,10 +12,17 @@ class BankResource(AsaasResource):
         response = self.call("GET", "v3/myAccount/accountNumber")
         return BankAccountViewSchema(**response)
 
-    def get_account(self): ...  # noqa E704
-
     def get_balance(self):
         response = self.call("GET", "v3/finance/balance")
         return BankBalanceViewSchema(**response)
 
-    def get_transactions(self): ...  # noqa E704
+    def get_transactions(self, **pagination_kwargs):
+        response = self.get_list_response(
+            self.call(
+                "GET",
+                "v3/financialTransactions",
+                params=PaginatedQueryParams(**pagination_kwargs).as_lean_dict(),
+            ),
+            data_response_class=TransactionItemViewSchema,
+        )
+        return response

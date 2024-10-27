@@ -1,6 +1,6 @@
 from asaaspy.client.base import AsaasResource
 from asaaspy.schemas.base import PaginatedOutputPayload
-from asaaspy.schemas.payment import (
+from asaaspy.schemas.v3.payment import (
     PaymentCreateSchema,
     PaymentFilterBy,
     PaymentViewSchema,

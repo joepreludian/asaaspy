@@ -5,7 +5,7 @@ from typing import List, Literal, Optional
 from pydantic import Field
 
 from asaaspy.schemas.base import BaseSchema, ViewItemSchema
-from asaaspy.schemas.base_fields import Date
+from asaaspy.schemas.v3.base_fields import Date
 
 
 class BillingType(Enum):

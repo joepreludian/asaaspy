@@ -1,6 +1,6 @@
 from typing import Optional
 
-from asaaspy.schemas.base import BaseSchema, QueryParamsPayload, ViewItemSchema
+from asaaspy.schemas.base import BaseSchema, PaginatedQueryParams, ViewItemSchema
 
 
 class CustomerSchema(BaseSchema):
@@ -37,7 +37,7 @@ class CustomerViewSchema(CustomerSchema, ViewItemSchema):
     cannotEditReason: Optional[str] = None
 
 
-class CustomerSearchParams(QueryParamsPayload):
+class CustomerSearchParams(PaginatedQueryParams):
     name: Optional[str] = None
     email: Optional[str] = None
     cpfCnpj: Optional[str] = None
