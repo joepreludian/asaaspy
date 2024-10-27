@@ -1950,6 +1950,80 @@
                     "string": "{\"object\":\"list\",\"hasMore\":true,\"totalCount\":33,\"limit\":10,\"offset\":10,\"data\":[{\"object\":\"financialTransaction\",\"id\":\"ftn_000005018656\",\"value\":-0.99,\"balance\":504.27,\"type\":\"PAYMENT_FEE\",\"date\":\"2024-07-20\",\"description\":\"Taxa do Pix - fatura nr. 06135013 RCPN  MUNIC\u00cdPIO DE SANTA IN\u00caS\",\"paymentId\":\"pay_ncpcfkp5fiqx58e2\",\"splitId\":null,\"transferId\":null,\"anticipationId\":null,\"billId\":null,\"invoiceId\":null,\"paymentDunningId\":null,\"creditBureauReportId\":null},{\"object\":\"financialTransaction\",\"id\":\"ftn_000005018655\",\"value\":95.16,\"balance\":505.26,\"type\":\"PAYMENT_RECEIVED\",\"date\":\"2024-07-20\",\"description\":\"Cobran\u00e7a recebida - fatura nr. 06135013 RCPN  MUNIC\u00cdPIO DE SANTA IN\u00caS\",\"paymentId\":\"pay_ncpcfkp5fiqx58e2\",\"splitId\":null,\"transferId\":null,\"anticipationId\":null,\"billId\":null,\"invoiceId\":null,\"paymentDunningId\":null,\"creditBureauReportId\":null},{\"object\":\"financialTransaction\",\"id\":\"ftn_000005018654\",\"value\":-0.99,\"balance\":410.10,\"type\":\"PAYMENT_MESSAGING_NOTIFICATION_FEE\",\"date\":\"2024-07-20\",\"description\":\"Taxa de mensageria - fatura nr. 06135012 RCPN  MUNIC\u00cdPIO DE CONDA\",\"paymentId\":\"pay_j4gu39d1c063wmyn\",\"splitId\":null,\"transferId\":null,\"anticipationId\":null,\"billId\":null,\"invoiceId\":null,\"paymentDunningId\":null,\"creditBureauReportId\":null},{\"object\":\"financialTransaction\",\"id\":\"ftn_000005018653\",\"value\":-0.99,\"balance\":411.09,\"type\":\"PAYMENT_FEE\",\"date\":\"2024-07-20\",\"description\":\"Taxa do Pix - fatura nr. 06135012 RCPN  MUNIC\u00cdPIO DE CONDA\",\"paymentId\":\"pay_j4gu39d1c063wmyn\",\"splitId\":null,\"transferId\":null,\"anticipationId\":null,\"billId\":null,\"invoiceId\":null,\"paymentDunningId\":null,\"creditBureauReportId\":null},{\"object\":\"financialTransaction\",\"id\":\"ftn_000005018652\",\"value\":54.85,\"balance\":412.08,\"type\":\"PAYMENT_RECEIVED\",\"date\":\"2024-07-20\",\"description\":\"Cobran\u00e7a recebida - fatura nr. 06135012 RCPN  MUNIC\u00cdPIO DE CONDA\",\"paymentId\":\"pay_j4gu39d1c063wmyn\",\"splitId\":null,\"transferId\":null,\"anticipationId\":null,\"billId\":null,\"invoiceId\":null,\"paymentDunningId\":null,\"creditBureauReportId\":null},{\"object\":\"financialTransaction\",\"id\":\"ftn_000005018574\",\"value\":-0.99,\"balance\":357.23,\"type\":\"PAYMENT_MESSAGING_NOTIFICATION_FEE\",\"date\":\"2024-07-20\",\"description\":\"Taxa de mensageria - fatura nr. 06134642 RCPN  MUNIC\u00cdPIO DE CONDA123\",\"paymentId\":\"pay_2qwj885tqh6pczmw\",\"splitId\":null,\"transferId\":null,\"anticipationId\":null,\"billId\":null,\"invoiceId\":null,\"paymentDunningId\":null,\"creditBureauReportId\":null},{\"object\":\"financialTransaction\",\"id\":\"ftn_000005018573\",\"value\":-0.99,\"balance\":358.22,\"type\":\"PAYMENT_FEE\",\"date\":\"2024-07-20\",\"description\":\"Taxa do Pix - fatura nr. 06134642 RCPN  MUNIC\u00cdPIO DE CONDA123\",\"paymentId\":\"pay_2qwj885tqh6pczmw\",\"splitId\":null,\"transferId\":null,\"anticipationId\":null,\"billId\":null,\"invoiceId\":null,\"paymentDunningId\":null,\"creditBureauReportId\":null},{\"object\":\"financialTransaction\",\"id\":\"ftn_000005018572\",\"value\":99.02,\"balance\":359.21,\"type\":\"PAYMENT_RECEIVED\",\"date\":\"2024-07-20\",\"description\":\"Cobran\u00e7a recebida - fatura nr. 06134642 RCPN  MUNIC\u00cdPIO DE CONDA123\",\"paymentId\":\"pay_2qwj885tqh6pczmw\",\"splitId\":null,\"transferId\":null,\"anticipationId\":null,\"billId\":null,\"invoiceId\":null,\"paymentDunningId\":null,\"creditBureauReportId\":null},{\"object\":\"financialTransaction\",\"id\":\"ftn_000005018569\",\"value\":-0.99,\"balance\":260.19,\"type\":\"PAYMENT_MESSAGING_NOTIFICATION_FEE\",\"date\":\"2024-07-20\",\"description\":\"Taxa de mensageria - fatura nr. 06134635 RCPN  MUNIC\u00cdPIO DE CONDA123\",\"paymentId\":\"pay_kak705wey9iowzue\",\"splitId\":null,\"transferId\":null,\"anticipationId\":null,\"billId\":null,\"invoiceId\":null,\"paymentDunningId\":null,\"creditBureauReportId\":null},{\"object\":\"financialTransaction\",\"id\":\"ftn_000005018568\",\"value\":-0.99,\"balance\":261.18,\"type\":\"PAYMENT_FEE\",\"date\":\"2024-07-20\",\"description\":\"Taxa do Pix - fatura nr. 06134635 RCPN  MUNIC\u00cdPIO DE CONDA123\",\"paymentId\":\"pay_kak705wey9iowzue\",\"splitId\":null,\"transferId\":null,\"anticipationId\":null,\"billId\":null,\"invoiceId\":null,\"paymentDunningId\":null,\"creditBureauReportId\":null}]}"
                 }
             }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://sandbox.asaas.com/api/v3/myAccount/status",
+                "body": "",
+                "headers": {
+                    "host": [
+                        "sandbox.asaas.com"
+                    ],
+                    "accept": [
+                        "*/*"
+                    ],
+                    "accept-encoding": [
+                        "gzip, deflate"
+                    ],
+                    "connection": [
+                        "keep-alive"
+                    ],
+                    "content-type": [
+                        "application/json"
+                    ],
+                    "user-agent": [
+                        "AsaasPy"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": ""
+                },
+                "headers": {
+                    "Content-Type": [
+                        "application/json;charset=utf-8"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Date": [
+                        "Sun, 27 Oct 2024 19:52:28 GMT"
+                    ],
+                    "Set-Cookie": [
+                        "AWSALBTG=DZSHLLtKKO/B23hfUaVCOb050GscI5BsJQ/Ytn70zBICVQBRvMJzO8ByRf6khnhDijijilMvSROfgkAFVrqV5vvlxEe+2oUaQ9y03TbR8GW57wcEN/oc3Mw6CvLW17fSeF+vsmhg5eFrdG0FwRcacKHcddfpHEFRpJHlzGmoTVYf; Expires=Sun, 03 Nov 2024 19:52:28 GMT; Path=/",
+                        "AWSALBTGCORS=DZSHLLtKKO/B23hfUaVCOb050GscI5BsJQ/Ytn70zBICVQBRvMJzO8ByRf6khnhDijijilMvSROfgkAFVrqV5vvlxEe+2oUaQ9y03TbR8GW57wcEN/oc3Mw6CvLW17fSeF+vsmhg5eFrdG0FwRcacKHcddfpHEFRpJHlzGmoTVYf; Expires=Sun, 03 Nov 2024 19:52:28 GMT; Path=/; SameSite=None; Secure",
+                        "AWSALB=6wUM96QcCF7ZLi5Du+uydWqy4LbTMTFw26Uci1SsDSkqo8UxEREb4VQeOEGf5UEj+xJDjUKQub/jE1uCb12Sv/iewAu0knEpQkR3qryf0hiBXQ3l6O3Q2vDlJqL4; Expires=Sun, 03 Nov 2024 19:52:28 GMT; Path=/",
+                        "AWSALBCORS=6wUM96QcCF7ZLi5Du+uydWqy4LbTMTFw26Uci1SsDSkqo8UxEREb4VQeOEGf5UEj+xJDjUKQub/jE1uCb12Sv/iewAu0knEpQkR3qryf0hiBXQ3l6O3Q2vDlJqL4; Expires=Sun, 03 Nov 2024 19:52:28 GMT; Path=/; SameSite=None; Secure"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "X-Cache": [
+                        "Miss from cloudfront"
+                    ],
+                    "Via": [
+                        "1.1 794c3e7d5a3385d23c0cad27f9564af2.cloudfront.net (CloudFront)"
+                    ],
+                    "X-Amz-Cf-Pop": [
+                        "FOR50-P1"
+                    ],
+                    "Alt-Svc": [
+                        "h3=\":443\"; ma=86400"
+                    ],
+                    "X-Amz-Cf-Id": [
+                        "_CfnC1ScbKWbmn1JVWMZNdYYhGmZhsj53bkz7jTowyMnltxnqNfgew=="
+                    ]
+                },
+                "body": {
+                    "string": "{\"id\":\"a4667787-4bd1-4730-9b9c-977e7a869909\",\"commercialInfo\":\"AWAITING_APPROVAL\",\"bankAccountInfo\":\"PENDING\",\"documentation\":\"PENDING\",\"general\":\"PENDING\"}"
+                }
+            }
         }
     ]
 }

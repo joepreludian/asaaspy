@@ -1,10 +1,15 @@
 from asaaspy.schemas.base import PaginatedOutputPayload
-from asaaspy.schemas.v3.bank import BankAccountViewSchema, TransactionItemViewSchema
+from asaaspy.schemas.v3.bank import (
+    AccountStatusViewSchema,
+    BankAccountViewSchema,
+    StatusEnum,
+    TransactionItemViewSchema,
+)
 
 
 class TestBankResource:
-    def test_get_bank_account_info(self, asaas_svc):
-        account_info = asaas_svc.bank.get_account_info()
+    def test_get_bank_account_number(self, asaas_svc):
+        account_info = asaas_svc.bank.get_account_number()
         assert isinstance(account_info, BankAccountViewSchema)
         assert isinstance(account_info.account, str)
         assert isinstance(account_info.accountDigit, str)
@@ -26,3 +31,8 @@ class TestBankResource:
         assert isinstance(return_data, PaginatedOutputPayload)
         assert isinstance(return_data.data[0], TransactionItemViewSchema)
         assert return_data.hasMore is True
+
+    def test_get_bank_account_status(self, asaas_svc):
+        return_data = asaas_svc.bank.get_account_status()
+        assert isinstance(return_data, AccountStatusViewSchema)
+        assert return_data.general == StatusEnum.PENDING.value

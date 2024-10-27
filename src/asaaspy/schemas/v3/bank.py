@@ -1,3 +1,4 @@
+from enum import Enum
 from typing import Literal, Optional
 
 from asaaspy.schemas.base import BaseSchema
@@ -139,3 +140,18 @@ class TransactionItemViewSchema(BaseSchema):
         "CUSTOMER_COMMISSION_CHECKOUT",
         "RECEIVABLE_ANTICIPATION_CREDIT",
     ]
+
+
+class StatusEnum(Enum):
+    PENDING = "PENDING"
+    APPROVED = "APPROVED"
+    REJECTED = "REJECTED"
+    AWAITING_APPROVAL = "AWAITING_APPROVAL"
+
+
+class AccountStatusViewSchema(BaseSchema):
+    id: str
+    commercialInfo: StatusEnum
+    bankAccountInfo: StatusEnum
+    documentation: StatusEnum
+    general: StatusEnum
