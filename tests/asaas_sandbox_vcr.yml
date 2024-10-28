@@ -2098,6 +2098,89 @@
                     "string": "{\"object\":\"list\",\"hasMore\":false,\"totalCount\":1,\"limit\":10,\"offset\":0,\"data\":[{\"object\":\"transfer\",\"id\":\"93cbacf4-3bc3-4fd8-802a-f7fdc41922ea\",\"value\":1.00,\"netValue\":1.00,\"transferFee\":0,\"dateCreated\":\"2024-10-27\",\"status\":\"DONE\",\"effectiveDate\":\"2024-10-27 17:24:08\",\"confirmedDate\":\"2024-10-27\",\"endToEndIdentifier\":\"E1954055020241027202301937829137\",\"transactionReceiptUrl\":\"https://sandbox.asaas.com/comprovantes/h/UElYX1RSQU5TQUNUSU9OX0RPTkU6ZDQ4OGJkYzctMTVjMC00ZmMyLThiODctNjMwNjgzYWVkNDM5\",\"operationType\":\"PIX\",\"failReason\":null,\"walletId\":null,\"description\":\"Teste descricao\",\"canBeCancelled\":false,\"externalReference\":null,\"authorized\":true,\"scheduleDate\":null,\"type\":\"BANK_ACCOUNT\",\"bankAccount\":{\"bank\":{\"code\":null,\"name\":\"Banco Virtual - BACEN\",\"ispb\":\"99999004\"},\"accountName\":null,\"ownerName\":\"Joao Silva\",\"cpfCnpj\":\"***.911.111-**\",\"type\":\"CHECKING_ACCOUNT\",\"agency\":\"0\",\"agencyDigit\":null,\"account\":\"0000000\",\"accountDigit\":\"0\",\"pixAddressKey\":\"cliente-a00001@pix.bcb.gov.br\"}}]}"
                 }
             }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://sandbox.asaas.com/api/v3/transfers/93cbacf4-3bc3-4fd8-802a-f7fdc41922ea",
+                "body": "",
+                "headers": {
+                    "host": [
+                        "sandbox.asaas.com"
+                    ],
+                    "accept": [
+                        "*/*"
+                    ],
+                    "accept-encoding": [
+                        "gzip, deflate"
+                    ],
+                    "connection": [
+                        "keep-alive"
+                    ],
+                    "content-type": [
+                        "application/json"
+                    ],
+                    "user-agent": [
+                        "AsaasPy"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": ""
+                },
+                "headers": {
+                    "Content-Type": [
+                        "application/json;charset=utf-8"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Date": [
+                        "Mon, 28 Oct 2024 23:14:07 GMT"
+                    ],
+                    "RateLimit-Remaining": [
+                        "299"
+                    ],
+                    "RateLimit-Reset": [
+                        "299"
+                    ],
+                    "Set-Cookie": [
+                        "AWSALBTG=fGY2e3jcRUvTvshATX9MtNaOBBS2pj6St3QL3lx2esFviGWQZAuccAQ3/MS1P7MWUiz/8EYkeVz8PNJWFErx+LNEiNHgvyuIjR74/Ztm/6V4lcdSRNgAwpyvLf1NoxTahuefiCOnWFBCy+FjdA48Iy/HVcnlJfJCR7JoSw7oxiH3; Expires=Mon, 04 Nov 2024 23:14:07 GMT; Path=/",
+                        "AWSALBTGCORS=fGY2e3jcRUvTvshATX9MtNaOBBS2pj6St3QL3lx2esFviGWQZAuccAQ3/MS1P7MWUiz/8EYkeVz8PNJWFErx+LNEiNHgvyuIjR74/Ztm/6V4lcdSRNgAwpyvLf1NoxTahuefiCOnWFBCy+FjdA48Iy/HVcnlJfJCR7JoSw7oxiH3; Expires=Mon, 04 Nov 2024 23:14:07 GMT; Path=/; SameSite=None; Secure",
+                        "AWSALB=N/qBVgUBvwuL2hL1ewjoh8zZM2bQjPx0uAEj+l7KFvkc7CowQsTG6TkpnL64cz7IwxQq7KRbEa1MKKkm2uDY7sW9MnG//mewfsUkZ1eJwJRRZ8aD6eOnHWWYP0F7; Expires=Mon, 04 Nov 2024 23:14:07 GMT; Path=/",
+                        "AWSALBCORS=N/qBVgUBvwuL2hL1ewjoh8zZM2bQjPx0uAEj+l7KFvkc7CowQsTG6TkpnL64cz7IwxQq7KRbEa1MKKkm2uDY7sW9MnG//mewfsUkZ1eJwJRRZ8aD6eOnHWWYP0F7; Expires=Mon, 04 Nov 2024 23:14:07 GMT; Path=/; SameSite=None; Secure"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "RateLimit-Limit": [
+                        "300"
+                    ],
+                    "X-Cache": [
+                        "Miss from cloudfront"
+                    ],
+                    "Via": [
+                        "1.1 2a0fdfa56513675d5c5b25c2795727b0.cloudfront.net (CloudFront)"
+                    ],
+                    "X-Amz-Cf-Pop": [
+                        "FOR50-P1"
+                    ],
+                    "Alt-Svc": [
+                        "h3=\":443\"; ma=86400"
+                    ],
+                    "X-Amz-Cf-Id": [
+                        "H8MDubN73q15YpNdaXVahYDvVOJPgucglDfPe9mKWPrKVADXqcmUww=="
+                    ]
+                },
+                "body": {
+                    "string": "{\"object\":\"transfer\",\"id\":\"93cbacf4-3bc3-4fd8-802a-f7fdc41922ea\",\"value\":1.00,\"netValue\":1.00,\"transferFee\":0,\"dateCreated\":\"2024-10-27\",\"status\":\"DONE\",\"effectiveDate\":\"2024-10-27 17:24:08\",\"confirmedDate\":\"2024-10-27\",\"endToEndIdentifier\":\"E1954055020241027202301937829137\",\"transactionReceiptUrl\":\"https://sandbox.asaas.com/comprovantes/h/UElYX1RSQU5TQUNUSU9OX0RPTkU6ZDQ4OGJkYzctMTVjMC00ZmMyLThiODctNjMwNjgzYWVkNDM5\",\"operationType\":\"PIX\",\"failReason\":null,\"walletId\":null,\"description\":\"Teste descricao\",\"canBeCancelled\":false,\"externalReference\":null,\"authorized\":true,\"scheduleDate\":null,\"type\":\"BANK_ACCOUNT\",\"bankAccount\":{\"bank\":{\"code\":null,\"name\":\"Banco Virtual - BACEN\",\"ispb\":\"99999004\"},\"accountName\":null,\"ownerName\":\"Joao Silva\",\"cpfCnpj\":\"***.911.111-**\",\"type\":\"CHECKING_ACCOUNT\",\"agency\":\"0\",\"agencyDigit\":null,\"account\":\"0000000\",\"accountDigit\":\"0\",\"pixAddressKey\":\"cliente-a00001@pix.bcb.gov.br\"}}"
+                }
+            }
         }
     ]
 }

@@ -17,3 +17,7 @@ class TransferResource(AsaasResource):
             data_response_class=TransferItemViewSchema,
         )
         return response
+
+    def get_by_id(self, transfer_id):
+        response = self.call("GET", f"v3/transfers/{transfer_id}")
+        return TransferItemViewSchema(**response)
