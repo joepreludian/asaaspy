@@ -4,7 +4,7 @@ from typing import Any, Optional
 
 from pydantic import BaseModel, ConfigDict
 
-from asaaspy.schemas.v3.base_fields import Date
+from asaaspy.schemas.base_fields import Date
 
 
 def sanitize_to_json(value):
@@ -24,7 +24,7 @@ class BaseSchema(BaseModel):
         return self.model_dump(exclude_none=True, by_alias=True)
 
 
-class PaginatedOutputPayload(BaseSchema):
+class PaginatedViewSchema(BaseSchema):
     object: str
     hasMore: bool
     totalCount: int

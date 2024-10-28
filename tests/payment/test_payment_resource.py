@@ -99,7 +99,7 @@ class TestAsaasAllPayment:
     def test_all_payment_with_filter(self, asaas_svc):
         asaas_svc: AsaasService = asaas_svc
 
-        filtered_payments = asaas_svc.payment.all(PaymentFilterBy(status="RECEIVED"))
+        filtered_payments = asaas_svc.payment.all(status="RECEIVED")
 
         assert filtered_payments.totalCount == 2
 

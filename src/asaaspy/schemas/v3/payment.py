@@ -4,8 +4,8 @@ from typing import List, Literal, Optional
 
 from pydantic import Field
 
-from asaaspy.schemas.base import BaseSchema, ViewItemSchema
-from asaaspy.schemas.v3.base_fields import Date
+from asaaspy.schemas.base import BaseSchema, PaginatedQueryParams, ViewItemSchema
+from asaaspy.schemas.base_fields import Date
 
 
 class BillingType(Enum):
@@ -124,7 +124,7 @@ class PaymentViewSchema(ViewItemSchema):
     canBePaidAfterDueDate: Optional[bool] = None
 
 
-class PaymentFilterBy(BaseSchema):
+class PaymentFilterBy(PaginatedQueryParams):
     customer: Optional[str] = None
     customerGroupName: Optional[str] = None
     billingType: Optional[BillingType] = None
@@ -175,5 +175,3 @@ class PaymentFilterBy(BaseSchema):
     dueDate_ge: Optional[Date] = Field(serialization_alias="dueDate[ge]", default=None)
     dueDate_le: Optional[Date] = Field(serialization_alias="dueDate[le]", default=None)
     user: Optional[str] = None  # email from user who create the charge
-    offset: Optional[int] = None
-    limit: Optional[int] = None

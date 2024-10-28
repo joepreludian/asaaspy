@@ -1,5 +1,5 @@
 from asaaspy.client.base import AsaasResource
-from asaaspy.schemas.base import PaginatedOutputPayload
+from asaaspy.schemas.base import PaginatedViewSchema
 from asaaspy.schemas.v3.payment import (
     PaymentCreateSchema,
     PaymentFilterBy,
@@ -22,7 +22,8 @@ class PaymentResource(AsaasResource):
         response = self.call("GET", f"/v3/payments/{payment_id}")
         return PaymentViewSchema(**response)
 
-    def all(self, filter_by: PaymentFilterBy = None) -> PaginatedOutputPayload:
+    def all(self, **payment_filter_by) -> PaginatedViewSchema:
+        filter_by = PaymentFilterBy(**payment_filter_by)
         response = self.get_list_response(
             self.call(
                 "GET",

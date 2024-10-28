@@ -5,7 +5,7 @@ import httpx
 from asaaspy.constants import APIBaseURL
 from asaaspy.exceptions import AsaasClientError
 from asaaspy.log import log
-from asaaspy.schemas.base import PaginatedOutputPayload
+from asaaspy.schemas.base import PaginatedViewSchema
 
 
 class AsaasHTTPClient:
@@ -72,9 +72,9 @@ class AsaasResource:
 
     def get_list_response(
         self, response, data_response_class=dict
-    ) -> PaginatedOutputPayload:
+    ) -> PaginatedViewSchema:
         # TODO: Work on a better way to handle HTTP RESPONSES
-        response = PaginatedOutputPayload(**response)
+        response = PaginatedViewSchema(**response)
         response.data = [data_response_class(**item) for item in response.data]
 
         return response

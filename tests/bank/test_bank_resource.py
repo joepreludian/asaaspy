@@ -1,4 +1,4 @@
-from asaaspy.schemas.base import PaginatedOutputPayload
+from asaaspy.schemas.base import PaginatedViewSchema
 from asaaspy.schemas.v3.bank import (
     AccountStatusViewSchema,
     BankAccountViewSchema,
@@ -23,12 +23,12 @@ class TestBankResource:
 
     def test_get_bank_transactions(self, asaas_svc):
         return_data = asaas_svc.bank.get_transactions()
-        assert isinstance(return_data, PaginatedOutputPayload)
+        assert isinstance(return_data, PaginatedViewSchema)
         assert isinstance(return_data.data[0], TransactionItemViewSchema)
 
     def test_get_bank_transactions_page_2(self, asaas_svc):
         return_data = asaas_svc.bank.get_transactions(offset=10, limit=10)
-        assert isinstance(return_data, PaginatedOutputPayload)
+        assert isinstance(return_data, PaginatedViewSchema)
         assert isinstance(return_data.data[0], TransactionItemViewSchema)
         assert return_data.hasMore is True
 

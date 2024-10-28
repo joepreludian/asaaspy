@@ -2024,6 +2024,80 @@
                     "string": "{\"id\":\"a4667787-4bd1-4730-9b9c-977e7a869909\",\"commercialInfo\":\"AWAITING_APPROVAL\",\"bankAccountInfo\":\"PENDING\",\"documentation\":\"PENDING\",\"general\":\"PENDING\"}"
                 }
             }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://sandbox.asaas.com/api/v3/transfers",
+                "body": "",
+                "headers": {
+                    "host": [
+                        "sandbox.asaas.com"
+                    ],
+                    "accept": [
+                        "*/*"
+                    ],
+                    "accept-encoding": [
+                        "gzip, deflate"
+                    ],
+                    "connection": [
+                        "keep-alive"
+                    ],
+                    "content-type": [
+                        "application/json"
+                    ],
+                    "user-agent": [
+                        "AsaasPy"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": ""
+                },
+                "headers": {
+                    "Content-Type": [
+                        "application/json;charset=utf-8"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Date": [
+                        "Mon, 28 Oct 2024 23:03:57 GMT"
+                    ],
+                    "Set-Cookie": [
+                        "AWSALBTG=H4wiLT/ZAtKUuFZ815DFPNvm6ROP49SHEFfzN5DN8e377igrt8yrzqhFehIcmNBX2ddyc0/UJmbVMHTOipF5R7Idu8kQTga4Mduu9UjIMVO0heIK7/m3thqjoXGw1wAJHfX2S0+1cFaSP7OflWpDjOfzCJIiekyruPIPcbHH6rqB; Expires=Mon, 04 Nov 2024 23:03:57 GMT; Path=/",
+                        "AWSALBTGCORS=H4wiLT/ZAtKUuFZ815DFPNvm6ROP49SHEFfzN5DN8e377igrt8yrzqhFehIcmNBX2ddyc0/UJmbVMHTOipF5R7Idu8kQTga4Mduu9UjIMVO0heIK7/m3thqjoXGw1wAJHfX2S0+1cFaSP7OflWpDjOfzCJIiekyruPIPcbHH6rqB; Expires=Mon, 04 Nov 2024 23:03:57 GMT; Path=/; SameSite=None; Secure",
+                        "AWSALB=UqgUVxEyfS0Thrc/bnK+mdQi8Wg288PAV386LZ4hNz5e7mMJI5q8OfhbFkbtRuAa5IaWMLIj0lxRQf0R9jyBk+zKNXyqSXCWqhm1ucahqLLO6v+vu126VISwVoU0; Expires=Mon, 04 Nov 2024 23:03:57 GMT; Path=/",
+                        "AWSALBCORS=UqgUVxEyfS0Thrc/bnK+mdQi8Wg288PAV386LZ4hNz5e7mMJI5q8OfhbFkbtRuAa5IaWMLIj0lxRQf0R9jyBk+zKNXyqSXCWqhm1ucahqLLO6v+vu126VISwVoU0; Expires=Mon, 04 Nov 2024 23:03:57 GMT; Path=/; SameSite=None; Secure"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "X-Cache": [
+                        "Miss from cloudfront"
+                    ],
+                    "Via": [
+                        "1.1 c2624d79e796516a87831386686081aa.cloudfront.net (CloudFront)"
+                    ],
+                    "X-Amz-Cf-Pop": [
+                        "FOR50-P1"
+                    ],
+                    "Alt-Svc": [
+                        "h3=\":443\"; ma=86400"
+                    ],
+                    "X-Amz-Cf-Id": [
+                        "QV5Bzke9YQBF8dUvQLm6z7TZCV8m8MQ79uqw9GC56NvNd2a6pIjY8Q=="
+                    ]
+                },
+                "body": {
+                    "string": "{\"object\":\"list\",\"hasMore\":false,\"totalCount\":1,\"limit\":10,\"offset\":0,\"data\":[{\"object\":\"transfer\",\"id\":\"93cbacf4-3bc3-4fd8-802a-f7fdc41922ea\",\"value\":1.00,\"netValue\":1.00,\"transferFee\":0,\"dateCreated\":\"2024-10-27\",\"status\":\"DONE\",\"effectiveDate\":\"2024-10-27 17:24:08\",\"confirmedDate\":\"2024-10-27\",\"endToEndIdentifier\":\"E1954055020241027202301937829137\",\"transactionReceiptUrl\":\"https://sandbox.asaas.com/comprovantes/h/UElYX1RSQU5TQUNUSU9OX0RPTkU6ZDQ4OGJkYzctMTVjMC00ZmMyLThiODctNjMwNjgzYWVkNDM5\",\"operationType\":\"PIX\",\"failReason\":null,\"walletId\":null,\"description\":\"Teste descricao\",\"canBeCancelled\":false,\"externalReference\":null,\"authorized\":true,\"scheduleDate\":null,\"type\":\"BANK_ACCOUNT\",\"bankAccount\":{\"bank\":{\"code\":null,\"name\":\"Banco Virtual - BACEN\",\"ispb\":\"99999004\"},\"accountName\":null,\"ownerName\":\"Joao Silva\",\"cpfCnpj\":\"***.911.111-**\",\"type\":\"CHECKING_ACCOUNT\",\"agency\":\"0\",\"agencyDigit\":null,\"account\":\"0000000\",\"accountDigit\":\"0\",\"pixAddressKey\":\"cliente-a00001@pix.bcb.gov.br\"}}]}"
+                }
+            }
         }
     ]
 }
