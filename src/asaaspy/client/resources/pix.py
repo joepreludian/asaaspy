@@ -1,14 +1,20 @@
 from asaaspy.client.base import AsaasResource
-from asaaspy.schemas.v3.pix import PixKeyViewSchema
+from asaaspy.schemas.v3.pix import PixKeyFilterBy, PixKeyViewSchema
 
 
 class PixResource(AsaasResource):
-    def list_keys(self):
+    def list_keys(self, **filter_by):
+        pix_key_filters = PixKeyFilterBy(**filter_by)
         return self.get_list_response(
-            self.call("GET", "v3/pix/addressKeys"), PixKeyViewSchema
+            self.call(
+                "GET", "v3/pix/addressKeys", params=pix_key_filters.as_lean_dict()
+            ),
+            PixKeyViewSchema,
         )
 
-    def get_key_by_id(self, id): ...  # noqa E704
+    def get_key_by_id(self, id):
+        response = self.call("GET", f"v3/pix/addressKeys/{id}")
+        return PixKeyViewSchema(**response)
 
     def delete_key(self, id): ...  # noqa E704
 

@@ -23,7 +23,7 @@ class PaymentResource(AsaasResource):
         return PaymentViewSchema(**response)
 
     def all(self, **payment_filter_by) -> PaginatedViewSchema:
-        filter_by = PaymentFilterBy(**payment_filter_by)
+        filter_by = PaymentFilterBy(**payment_filter_by) if payment_filter_by else None
         response = self.get_list_response(
             self.call(
                 "GET",
