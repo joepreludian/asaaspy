@@ -1,9 +1,8 @@
-from pydantic import Field
 from datetime import date
 from enum import Enum
 from typing import Any, Optional
 
-from pydantic import BaseModel, ConfigDict
+from pydantic import BaseModel, ConfigDict, Field
 
 from asaaspy.schemas.base_fields import Date
 

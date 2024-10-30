@@ -1,5 +1,3 @@
-import pytest
-
 from asaaspy.schemas.v3.pix import PixKeyViewSchema
 
 
