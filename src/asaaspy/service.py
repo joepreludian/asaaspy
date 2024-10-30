@@ -3,6 +3,7 @@ from asaaspy.client.resources.bank import BankResource
 from asaaspy.client.resources.customer import CustomerResource
 from asaaspy.client.resources.payment import PaymentResource
 from asaaspy.client.resources.transfer import TransferResource
+from asaaspy.client.resources.pix import PixResource
 
 
 class AsaasService:
@@ -20,3 +21,4 @@ class AsaasService:
         self.payment: PaymentResource = PaymentResource(client)
         self.bank: BankResource = BankResource(client)
         self.transfer: TransferResource = TransferResource(client)
+        self.pix: PixResource = PixResource(client)

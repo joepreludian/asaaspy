@@ -1,3 +1,4 @@
+from pydantic import Field
 from datetime import date
 from enum import Enum
 from typing import Any, Optional
@@ -25,7 +26,7 @@ class BaseSchema(BaseModel):
 
 
 class PaginatedViewSchema(BaseSchema):
-    object: str
+    object: Optional[str] = Field(default=None)
     hasMore: bool
     totalCount: int
     limit: int
