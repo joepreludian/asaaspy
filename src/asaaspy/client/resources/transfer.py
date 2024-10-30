@@ -29,3 +29,7 @@ class TransferResource(AsaasResource):
     def create(self, transfer: TransferSchema) -> TransferItemViewSchema:
         response = self.call("POST", "v3/transfers", json=transfer.as_lean_dict())
         return TransferItemViewSchema(**response)
+
+    def delete(self, id: str) -> TransferItemViewSchema:
+        response = self.call("DELETE", f"v3/transfers/{id}/cancel")
+        return TransferItemViewSchema(**response)

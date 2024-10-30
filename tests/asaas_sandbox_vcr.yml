@@ -2268,6 +2268,81 @@
                     "string": "{\"object\":\"transfer\",\"id\":\"67049713-a41a-458a-aed4-729babb675ae\",\"value\":100.00,\"netValue\":100.00,\"transferFee\":0,\"dateCreated\":\"2024-10-30\",\"status\":\"PENDING\",\"effectiveDate\":null,\"confirmedDate\":null,\"endToEndIdentifier\":null,\"transactionReceiptUrl\":null,\"operationType\":\"PIX\",\"failReason\":null,\"walletId\":null,\"description\":null,\"canBeCancelled\":true,\"externalReference\":null,\"authorized\":false,\"scheduleDate\":\"2024-10-30\",\"type\":\"BANK_ACCOUNT\",\"bankAccount\":{\"bank\":{\"code\":null,\"name\":\"Banco Virtual - BACEN\",\"ispb\":\"99999004\"},\"accountName\":null,\"ownerName\":\"Jose da Silva\",\"cpfCnpj\":\"***.955.555-**\",\"type\":\"CHECKING_ACCOUNT\",\"agency\":\"0\",\"agencyDigit\":null,\"account\":\"0000000\",\"accountDigit\":\"0\",\"pixAddressKey\":\"cliente-a00005@pix.bcb.gov.br\"},\"recurring\":null}"
                 }
             }
+        },
+        {
+            "request": {
+                "method": "DELETE",
+                "uri": "https://sandbox.asaas.com/api/v3/transfers/67049713-a41a-458a-aed4-729babb675ae/cancel",
+                "body": "",
+                "headers": {
+                    "host": [
+                        "sandbox.asaas.com"
+                    ],
+                    "accept": [
+                        "*/*"
+                    ],
+                    "accept-encoding": [
+                        "gzip, deflate"
+                    ],
+                    "connection": [
+                        "keep-alive"
+                    ],
+                    "content-type": [
+                        "application/json"
+                    ],
+                    "user-agent": [
+                        "AsaasPy"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": ""
+                },
+                "headers": {
+                    "Content-Type": [
+                        "application/json;charset=utf-8"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Date": [
+                        "Wed, 30 Oct 2024 17:14:35 GMT"
+                    ],
+                    "Set-Cookie": [
+                        "AWSALBTG=07aq30NHfTVT1juNHaugl5eEtMFDe3Nk4Ude8Q7LbVM8RQekI2UQfk0HweabJRsaZsHlM0HUmpq6OvDvcIhL/vgxkq5Zsq2lwFvT3d1nhjgQlRZGf/JLyW/lXmoLoinLFr6SxoHTa4q2+xnwDkjTj6ysP06UYYdWeV9dxJuopEHr; Expires=Wed, 06 Nov 2024 17:14:34 GMT; Path=/",
+                        "AWSALBTGCORS=07aq30NHfTVT1juNHaugl5eEtMFDe3Nk4Ude8Q7LbVM8RQekI2UQfk0HweabJRsaZsHlM0HUmpq6OvDvcIhL/vgxkq5Zsq2lwFvT3d1nhjgQlRZGf/JLyW/lXmoLoinLFr6SxoHTa4q2+xnwDkjTj6ysP06UYYdWeV9dxJuopEHr; Expires=Wed, 06 Nov 2024 17:14:34 GMT; Path=/; SameSite=None; Secure",
+                        "AWSALB=/UBLJ55+WG7aNo3h1hstJWYfH/ra6ZLUVbQRhBpVLI+0tm3x2rjxAijIj9Lcg/2zI6qbOsNswutz57kFmV90wDnj6h6u+8jaJ3DN1OcSkOjiXUefk2OhOEZKh2Sd; Expires=Wed, 06 Nov 2024 17:14:34 GMT; Path=/",
+                        "AWSALBCORS=/UBLJ55+WG7aNo3h1hstJWYfH/ra6ZLUVbQRhBpVLI+0tm3x2rjxAijIj9Lcg/2zI6qbOsNswutz57kFmV90wDnj6h6u+8jaJ3DN1OcSkOjiXUefk2OhOEZKh2Sd; Expires=Wed, 06 Nov 2024 17:14:34 GMT; Path=/; SameSite=None; Secure",
+                        "JSESSIONID=58AE5EC579BF73EF5597179BD77DB4C29460CD3404E77B6ADB5A1CF3D346C046A6200C0B19B981A40D0C2C4F242993EB5E4F462497519C7F363A1BD9BCDEABE9.n1; Path=/; Secure; HttpOnly"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "X-Cache": [
+                        "Miss from cloudfront"
+                    ],
+                    "Via": [
+                        "1.1 c38d6ab9565a7e57a58b24e2ea024e58.cloudfront.net (CloudFront)"
+                    ],
+                    "X-Amz-Cf-Pop": [
+                        "FOR50-P1"
+                    ],
+                    "Alt-Svc": [
+                        "h3=\":443\"; ma=86400"
+                    ],
+                    "X-Amz-Cf-Id": [
+                        "NatTa-CyQshaBi-mZJx8u6wZmYrZnkDXXItFkEoGbS7-hS5nP_PalQ=="
+                    ]
+                },
+                "body": {
+                    "string": "{\"object\":\"transfer\",\"id\":\"67049713-a41a-458a-aed4-729babb675ae\",\"value\":100.00,\"netValue\":100.00,\"transferFee\":0,\"dateCreated\":\"2024-10-30\",\"status\":\"CANCELLED\",\"effectiveDate\":null,\"confirmedDate\":null,\"endToEndIdentifier\":null,\"transactionReceiptUrl\":null,\"operationType\":\"PIX\",\"failReason\":null,\"walletId\":null,\"description\":null,\"canBeCancelled\":false,\"externalReference\":null,\"authorized\":true,\"scheduleDate\":null,\"type\":\"BANK_ACCOUNT\",\"bankAccount\":{\"bank\":{\"code\":null,\"name\":\"Banco Virtual - BACEN\",\"ispb\":\"99999004\"},\"accountName\":null,\"ownerName\":\"Jose da Silva\",\"cpfCnpj\":\"***.955.555-**\",\"type\":\"CHECKING_ACCOUNT\",\"agency\":\"0\",\"agencyDigit\":null,\"account\":\"0000000\",\"accountDigit\":\"0\",\"pixAddressKey\":\"cliente-a00005@pix.bcb.gov.br\"},\"recurring\":null}"
+                }
+            }
         }
     ]
 }
