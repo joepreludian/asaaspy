@@ -33,10 +33,10 @@ class TransferItemViewSchema(BaseSchema):
     transferFee: float
     dateCreated: Date
     status: Literal["PENDING", "BANK_PROCESSING", "DONE", "CANCELLED", "FAILED"]
-    effectiveDate: DateTime
-    confirmedDate: Date
-    endToEndIdentifier: str
-    transactionReceiptUrl: str
+    effectiveDate: Optional[DateTime] = Field(default=None)
+    confirmedDate: Optional[Date] = Field(default=None)
+    endToEndIdentifier: Optional[str] = Field(default=None)
+    transactionReceiptUrl: Optional[str] = Field(default=None)
     operationType: Literal["PIX", "TED", "INTERNAL"]
     failReason: Optional[str]
     walletId: Optional[str]
@@ -63,3 +63,31 @@ class TransferFilterBy(PaginatedQueryParams):
         serialization_alias="paymentDate[le]", default=None
     )
     type: Optional[str] = None
+
+
+class BankSchema(BaseSchema):
+    code: str
+
+
+class BankAccountTEDSchema(BaseSchema):
+    bank: BankSchema
+    ownerName: str
+    accountName: Optional[str] = None
+    ownerBirthDate: Optional[Date] = None
+    cpfCnpj: Optional[str] = None
+    agency: Optional[str] = None
+    account: Optional[str] = None
+    accountDigit: Optional[str] = None
+    bankAccountType: Optional[Literal["CONTA_CORRENTE", "CONTA_POUPANCA"]] = None
+    ispb: Optional[str] = None
+
+
+class TransferSchema(BaseSchema):
+    value: float
+    operationType: Literal["PIX", "TED"] = "PIX"
+    pixAddressKey: Optional[str] = None
+    pixAddressKeyType: Literal["CPF", "CNPJ", "EMAIL", "PHONE", "EVP"]
+    description: Optional[str] = None
+    scheduleDate: Optional[Date] = None
+    externalReference: Optional[str] = None
+    bankAccount: Optional[BankAccountTEDSchema] = None

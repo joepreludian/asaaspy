@@ -1,5 +1,9 @@
 from asaaspy.client.base import AsaasResource
-from asaaspy.schemas.v3.transfer import TransferFilterBy, TransferItemViewSchema
+from asaaspy.schemas.v3.transfer import (
+    TransferFilterBy,
+    TransferItemViewSchema,
+    TransferSchema,
+)
 
 
 class TransferResource(AsaasResource):
@@ -18,6 +22,10 @@ class TransferResource(AsaasResource):
         )
         return response
 
-    def get_by_id(self, transfer_id):
+    def get_by_id(self, transfer_id) -> TransferItemViewSchema:
         response = self.call("GET", f"v3/transfers/{transfer_id}")
+        return TransferItemViewSchema(**response)
+
+    def create(self, transfer: TransferSchema) -> TransferItemViewSchema:
+        response = self.call("POST", "v3/transfers", json=transfer.as_lean_dict())
         return TransferItemViewSchema(**response)
