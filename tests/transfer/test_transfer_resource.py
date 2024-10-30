@@ -22,6 +22,8 @@ class TestPaymentResource:
         assert isinstance(return_data, TransferItemViewSchema)
 
     def test_delete_payment(self, asaas_svc):
-        return_data = asaas_svc.transfer.delete(id="67049713-a41a-458a-aed4-729babb675ae")
+        return_data = asaas_svc.transfer.delete(
+            id="67049713-a41a-458a-aed4-729babb675ae"
+        )
         assert isinstance(return_data, TransferItemViewSchema)
         assert return_data.status == "CANCELLED"
