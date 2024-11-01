@@ -1,7 +1,11 @@
 import pytest
 
 from asaaspy.exceptions import AsaasClientError
-from asaaspy.schemas.v3.pix import PixKeyViewSchema
+from asaaspy.schemas.v3.pix import (
+    PixKeyViewSchema,
+    StaticQRCodeSchema,
+    StaticQRCodeViewSchema,
+)
 
 
 class TestPixResource:
@@ -25,6 +29,13 @@ class TestPixResource:
     def test_create_random_key(self, asaas_svc):
         return_data = asaas_svc.pix.create_random_key()
         assert isinstance(return_data, PixKeyViewSchema)
+
+    def test_create_static_qrcode(self, asaas_svc):
+        request = StaticQRCodeSchema(
+            addressKey="e3326671-e7d7-40bc-b54d-d8303f8140e8", format="ALL"
+        )
+        return_data = asaas_svc.pix.create_qrcode(request)
+        assert isinstance(return_data, StaticQRCodeViewSchema)
 
     def test_delete_key_by_id_should_trigger_error_400(self, asaas_svc):
         with pytest.raises(AsaasClientError) as exc:

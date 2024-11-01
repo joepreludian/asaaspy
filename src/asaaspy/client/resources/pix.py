@@ -1,5 +1,10 @@
 from asaaspy.client.base import AsaasResource
-from asaaspy.schemas.v3.pix import PixKeyFilterBy, PixKeyViewSchema
+from asaaspy.schemas.v3.pix import (
+    PixKeyFilterBy,
+    PixKeyViewSchema,
+    StaticQRCodeSchema,
+    StaticQRCodeViewSchema,
+)
 
 
 class PixResource(AsaasResource):
@@ -12,19 +17,23 @@ class PixResource(AsaasResource):
             PixKeyViewSchema,
         )
 
-    def get_key_by_id(self, id: str):
+    def get_key_by_id(self, id: str) -> PixKeyViewSchema:
         response = self.call("GET", f"v3/pix/addressKeys/{id}")
         return PixKeyViewSchema(**response)
 
-    def delete_key(self, id: str):
+    def delete_key(self, id: str) -> PixKeyViewSchema:
         response = self.call("DELETE", f"v3/pix/addressKeys/{id}")
         return PixKeyViewSchema(**response)
 
-    def create_random_key(self):
+    def create_random_key(self) -> PixKeyViewSchema:
         response = self.call("POST", "v3/pix/addressKeys", json={"type": "EVP"})
         return PixKeyViewSchema(**response)
 
-    def create_qrcode(self): ...  # noqa E704
+    def create_qrcode(self, qrcode: StaticQRCodeSchema) -> StaticQRCodeViewSchema:
+        response = self.call(
+            "POST", "v3/pix/qrCodes/static", json=qrcode.as_lean_dict()
+        )
+        return StaticQRCodeViewSchema(**response)
 
     def delete_qrcode(self, id): ...  # noqa E704
 

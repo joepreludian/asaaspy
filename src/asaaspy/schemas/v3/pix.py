@@ -39,3 +39,23 @@ class PixKeyFilterBy(PaginatedQueryParams):
         ]
     ] = None
     statusList: Optional[str] = None
+
+
+class StaticQRCodeSchema(BaseSchema):
+    addressKey: str
+    format: Literal["ALL", "IMAGE", "PAYLOAD"]
+    description: Optional[str] = None
+    value: Optional[float] = None
+    expirationDate: Optional[DateTime] = None
+    expirationSeconds: Optional[int] = None
+    allowsMultiplePayments: Optional[bool] = None
+    externalReference: Optional[str] = None
+
+
+class StaticQRCodeViewSchema(BaseSchema):
+    id: str
+    encodedImage: str
+    payload: str
+    allowsMultiplePayments: Optional[bool] = None
+    expirationDate: Optional[DateTime] = None
+    externalReference: Optional[str] = None
