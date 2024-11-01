@@ -1,7 +1,8 @@
+name: CD Pipeline
 
 on:
   release:
-    types: [released]
+    types: [published, created, released]
 
 jobs:
   continuous_deployment:
