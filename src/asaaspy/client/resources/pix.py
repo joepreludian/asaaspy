@@ -4,6 +4,8 @@ from asaaspy.schemas.v3.pix import (
     PixKeyViewSchema,
     StaticQRCodeSchema,
     StaticQRCodeViewSchema,
+    QRCodePaySchema,
+    QRCodePayViewSchema,
 )
 
 
@@ -39,13 +41,15 @@ class PixResource(AsaasResource):
         response = self.call("DELETE", f"v3/pix/qrCodes/static/{id}")
         return response.get("deleted", False)
 
-    # Transacoes PIX
-    def pay_qrcode(self, id): ...  # noqa E704
+    def pay_qrcode(self, qrcode: QRCodePaySchema) -> QRCodePayViewSchema:
+        response = self.call("POST", "v3/pix/qrCodes/pay", json=qrcode.as_lean_dict())
+        return QRCodePayViewSchema(**response)
 
-    def decode_qrcode(self, id): ...  # noqa E704
-
-    def get_transaction(self, id): ...  # noqa E704
+    def decode_qrcode(self, id):
+        raise NotImplementedError("Decode QR code not implemented")
 
     def get_transactions(self): ...  # validate (sounds like Transaction)  # noqa E704
+
+    def get_transaction(self, id): ...  # noqa E704
 
     def cancel_scheduled_transaction(self, id): ...  # noqa E704

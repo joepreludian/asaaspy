@@ -5,6 +5,8 @@ from asaaspy.schemas.v3.pix import (
     PixKeyViewSchema,
     StaticQRCodeSchema,
     StaticQRCodeViewSchema,
+    QRCodePaySchema,
+    QRCodePayViewSchema,
 )
 
 
@@ -48,3 +50,17 @@ class TestPixResource:
             "Sua conta possui autorização crítica habilitada. "
             "Para efetuar esta ação informe o código de confirmação."
         )
+
+    # Payment
+    def test_pay_qrcode(self, asaas_svc):
+        request = QRCodePaySchema(
+            **{
+                "qrCode": {
+                    "payload": "00020101021226820014br.gov.bcb.pix2560pix-h.asaas.com/qr/cobv/b8eb41f5-468b-4914-8297-662bef42b3f25204000053039865802BR5914Preludian Tech6009Guarulhos61080711500062070503***6304B90E"
+                },
+                "value": 10,
+            }
+        )
+
+        response = asaas_svc.pix.pay_qrcode(request)
+        assert isinstance(response, QRCodePayViewSchema)
