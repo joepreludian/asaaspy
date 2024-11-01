@@ -1,5 +1,6 @@
 import pytest
 
+from asaaspy.exceptions import AsaasClientError
 from asaaspy.schemas.v3.pix import PixKeyViewSchema
 
 
@@ -20,3 +21,12 @@ class TestPixResource:
             "564dbd99-8e86-4342-bafb-c778150a1869"
         )
         assert isinstance(return_data, PixKeyViewSchema)
+
+    def test_delete_key_by_id_should_trigger_error_400(self, asaas_svc):
+        with pytest.raises(AsaasClientError) as exc:
+            asaas_svc.pix.delete_key("39006e1e-7c57-4944-ab22-10d957a0d1c9")
+
+        assert exc.value.message == (
+            "Sua conta possui autorização crítica habilitada. "
+            "Para efetuar esta ação informe o código de confirmação."
+        )

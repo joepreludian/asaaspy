@@ -12,11 +12,13 @@ class PixResource(AsaasResource):
             PixKeyViewSchema,
         )
 
-    def get_key_by_id(self, id):
+    def get_key_by_id(self, id: str):
         response = self.call("GET", f"v3/pix/addressKeys/{id}")
         return PixKeyViewSchema(**response)
 
-    def delete_key(self, id): ...  # noqa E704
+    def delete_key(self, id: str):
+        response = self.call("DELETE", f"v3/pix/addressKeys/{id}")
+        return PixKeyViewSchema(**response)
 
     def create_qrcode(self): ...  # noqa E704
 

@@ -1,6 +1,6 @@
 [project]
 name = "asaaspy"
-version = "0.16.0"
+version = "0.17.0"
 description = "Unnoficial python client for Asaas"
 authors = [
     {name = "Jonhnatha Trigueiro", email = "joepreludian@gmail.com"},

@@ -2652,6 +2652,80 @@
                     "string": "{\"totalCount\":0,\"limit\":10,\"offset\":0,\"hasMore\":false,\"data\":[]}"
                 }
             }
+        },
+        {
+            "request": {
+                "method": "DELETE",
+                "uri": "https://sandbox.asaas.com/api/v3/pix/addressKeys/39006e1e-7c57-4944-ab22-10d957a0d1c9",
+                "body": "",
+                "headers": {
+                    "host": [
+                        "sandbox.asaas.com"
+                    ],
+                    "accept": [
+                        "*/*"
+                    ],
+                    "accept-encoding": [
+                        "gzip, deflate"
+                    ],
+                    "connection": [
+                        "keep-alive"
+                    ],
+                    "content-type": [
+                        "application/json"
+                    ],
+                    "user-agent": [
+                        "AsaasPy"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 400,
+                    "message": ""
+                },
+                "headers": {
+                    "Content-Type": [
+                        "application/json;charset=utf-8"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Date": [
+                        "Thu, 31 Oct 2024 02:47:12 GMT"
+                    ],
+                    "Set-Cookie": [
+                        "AWSALBTG=RxV3JE4CkJZt+Qyr//jh4C1fuQWHWRXzCKbHp7vsXcIq+ObLE+lLaHy2si7Fg094YbTcmA9dkCqnY0uB6wtVvqKdZbAe3+loRtY0zrcp98w+ixcp4qeDBj4mogMJrgYtp1G2qY4/MpmWq/H1d5Pq/0TVPYaEvxSw0w4cXAHtqh6G; Expires=Thu, 07 Nov 2024 02:47:12 GMT; Path=/",
+                        "AWSALBTGCORS=RxV3JE4CkJZt+Qyr//jh4C1fuQWHWRXzCKbHp7vsXcIq+ObLE+lLaHy2si7Fg094YbTcmA9dkCqnY0uB6wtVvqKdZbAe3+loRtY0zrcp98w+ixcp4qeDBj4mogMJrgYtp1G2qY4/MpmWq/H1d5Pq/0TVPYaEvxSw0w4cXAHtqh6G; Expires=Thu, 07 Nov 2024 02:47:12 GMT; Path=/; SameSite=None; Secure",
+                        "AWSALB=+jMBn0Lbh2yx+y83ULH0FgByySpWtJ3HywdEAWfjb6YLFraY8KBYoziS/z6d0rCaXnHT741RZ6v+Y43DxmTi4K+Tom6Y9O+u15nix+jsGwIGQK2sw9KryjbLiO5K; Expires=Thu, 07 Nov 2024 02:47:12 GMT; Path=/",
+                        "AWSALBCORS=+jMBn0Lbh2yx+y83ULH0FgByySpWtJ3HywdEAWfjb6YLFraY8KBYoziS/z6d0rCaXnHT741RZ6v+Y43DxmTi4K+Tom6Y9O+u15nix+jsGwIGQK2sw9KryjbLiO5K; Expires=Thu, 07 Nov 2024 02:47:12 GMT; Path=/; SameSite=None; Secure"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "X-Cache": [
+                        "Error from cloudfront"
+                    ],
+                    "Via": [
+                        "1.1 eb9961b49f7bac993242e48f51ef6faa.cloudfront.net (CloudFront)"
+                    ],
+                    "X-Amz-Cf-Pop": [
+                        "FOR50-P1"
+                    ],
+                    "Alt-Svc": [
+                        "h3=\":443\"; ma=86400"
+                    ],
+                    "X-Amz-Cf-Id": [
+                        "_CLmttWRRJfKI7UA-LseWLg1o0Nl9jExXnfOt3DTqkg_VvH70hqRYA=="
+                    ]
+                },
+                "body": {
+                    "string": "{\"errors\":[{\"code\":\"invalid_action\",\"description\":\"Sua conta possui autoriza\u00e7\u00e3o cr\u00edtica habilitada. Para efetuar esta a\u00e7\u00e3o informe o c\u00f3digo de confirma\u00e7\u00e3o.\"}]}"
+                }
+            }
         }
     ]
 }
