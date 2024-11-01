@@ -56,8 +56,10 @@ class PixResource(AsaasResource):
             QRCodePayViewSchema,
         )
 
-    def get_transaction(self, id):
+    def get_transaction(self, id) -> QRCodePayViewSchema:
         response = self.call("GET", f"v3/pix/transactions/{id}")
         return QRCodePayViewSchema(**response)
 
-    def cancel_scheduled_transaction(self, id): ...  # noqa E704
+    def cancel_scheduled_transaction(self, id) -> QRCodePayViewSchema:
+        response = self.call("POST", f"v3/pix/transactions/{id}/cancel")
+        return QRCodePayViewSchema(**response)

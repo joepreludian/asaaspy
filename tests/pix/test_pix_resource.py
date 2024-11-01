@@ -78,3 +78,10 @@ class TestPixResource:
             id="693f1933-a522-4c14-9f6e-7cd2c3030ca1"
         )
         assert isinstance(return_data, QRCodePayViewSchema)
+
+    def test_cancel_scheduled_transaction_by_id(self, asaas_svc):
+        return_data = asaas_svc.pix.cancel_scheduled_transaction(
+            id="693f1933-a522-4c14-9f6e-7cd2c3030ca1"
+        )
+        assert isinstance(return_data, QRCodePayViewSchema)
+        assert return_data.status == "CANCELLED"
