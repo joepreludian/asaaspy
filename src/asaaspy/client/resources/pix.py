@@ -7,6 +7,7 @@ from asaaspy.schemas.v3.pix import (
     QRCodePaySchema,
     QRCodePayViewSchema,
 )
+from schemas.v3.pix import PixTransactionsFilterBySchema
 
 
 class PixResource(AsaasResource):
@@ -48,9 +49,11 @@ class PixResource(AsaasResource):
     def decode_qrcode(self, id):
         raise NotImplementedError("Decode QR code not implemented")
 
-    def get_transactions(self):
+    def get_transactions(self, **filter_by):
+        filter_by = PixTransactionsFilterBySchema(**filter_by)
         return self.get_list_response(
-            self.call("GET", "v3/pix/transactions", params={}), QRCodePayViewSchema
+            self.call("GET", "v3/pix/transactions", params=filter_by.as_lean_dict()),
+            QRCodePayViewSchema,
         )
 
     def get_transaction(self, id): ...  # noqa E704

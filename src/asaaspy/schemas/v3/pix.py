@@ -147,3 +147,31 @@ class QRCodePayViewSchema(BaseSchema):
     dateCreated: Optional[DateTime] = None
     transferId: Optional[str] = None
     externalReference: Optional[str] = None
+
+
+class PixTransactionsFilterBySchema(PaginatedQueryParams):
+    status: Optional[
+        Literal[
+            "AWAITING_BALANCE_VALIDATION",
+            "AWAITING_INSTANT_PAYMENT_ACCOUNT_BALANCE",
+            "AWAITING_CRITICAL_ACTION_AUTHORIZATION",
+            "AWAITING_CHECKOUT_RISK_ANALYSIS_REQUEST",
+            "AWAITING_CASH_IN_RISK_ANALYSIS_REQUEST",
+            "SCHEDULED",
+            "AWAITING_REQUEST",
+            "REQUESTED",
+            "DONE",
+            "REFUSED",
+            "CANCELLED",
+        ]
+    ] = None
+    type: Optional[
+        Literal[
+            "DEBIT",
+            "CREDIT",
+            "CREDIT_REFUND",
+            "DEBIT_REFUND",
+            "DEBIT_REFUND_CANCELLATION",
+        ]
+    ] = None
+    endToEndIdentifier: Optional[str] = None
