@@ -27,7 +27,7 @@ class AsaasHTTPClient:
 
     def get_http_client(self):
         log.info("Client instantiated")
-        return httpx.Client(**self._client_params)
+        return httpx.Client(**self._client_params, timeout=30)
 
 
 class AsaasResource:
