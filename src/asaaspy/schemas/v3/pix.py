@@ -67,7 +67,7 @@ class QRCodePayloadSchema(BaseSchema):
     changeValue: Optional[float] = None
 
 
-class QRCodePaySchema(BaseSchema):
+class PixTransactionSchema(BaseSchema):
     qrCode: QRCodePayloadSchema
     value: float
     description: Optional[str] = None

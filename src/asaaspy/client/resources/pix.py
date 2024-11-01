@@ -4,7 +4,7 @@ from asaaspy.schemas.v3.pix import (
     PixKeyViewSchema,
     StaticQRCodeSchema,
     StaticQRCodeViewSchema,
-    QRCodePaySchema,
+    PixTransactionSchema,
     QRCodePayViewSchema,
 )
 from schemas.v3.pix import PixTransactionsFilterBySchema
@@ -42,7 +42,7 @@ class PixResource(AsaasResource):
         response = self.call("DELETE", f"v3/pix/qrCodes/static/{id}")
         return response.get("deleted", False)
 
-    def pay_qrcode(self, qrcode: QRCodePaySchema) -> QRCodePayViewSchema:
+    def pay_qrcode(self, qrcode: PixTransactionSchema) -> QRCodePayViewSchema:
         response = self.call("POST", "v3/pix/qrCodes/pay", json=qrcode.as_lean_dict())
         return QRCodePayViewSchema(**response)
 
