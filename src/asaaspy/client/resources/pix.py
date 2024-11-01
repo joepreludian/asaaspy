@@ -20,6 +20,10 @@ class PixResource(AsaasResource):
         response = self.call("DELETE", f"v3/pix/addressKeys/{id}")
         return PixKeyViewSchema(**response)
 
+    def create_random_key(self):
+        response = self.call("POST", "v3/pix/addressKeys", json={"type": "EVP"})
+        return PixKeyViewSchema(**response)
+
     def create_qrcode(self): ...  # noqa E704
 
     def delete_qrcode(self, id): ...  # noqa E704

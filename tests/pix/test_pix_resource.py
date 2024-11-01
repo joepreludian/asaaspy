@@ -22,6 +22,10 @@ class TestPixResource:
         )
         assert isinstance(return_data, PixKeyViewSchema)
 
+    def test_create_random_key(self, asaas_svc):
+        return_data = asaas_svc.pix.create_random_key()
+        assert isinstance(return_data, PixKeyViewSchema)
+
     def test_delete_key_by_id_should_trigger_error_400(self, asaas_svc):
         with pytest.raises(AsaasClientError) as exc:
             asaas_svc.pix.delete_key("39006e1e-7c57-4944-ab22-10d957a0d1c9")

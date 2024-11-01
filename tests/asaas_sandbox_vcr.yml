@@ -2726,6 +2726,84 @@
                     "string": "{\"errors\":[{\"code\":\"invalid_action\",\"description\":\"Sua conta possui autoriza\u00e7\u00e3o cr\u00edtica habilitada. Para efetuar esta a\u00e7\u00e3o informe o c\u00f3digo de confirma\u00e7\u00e3o.\"}]}"
                 }
             }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "https://sandbox.asaas.com/api/v3/pix/addressKeys",
+                "body": "{\"type\": \"EVP\"}",
+                "headers": {
+                    "host": [
+                        "sandbox.asaas.com"
+                    ],
+                    "accept": [
+                        "*/*"
+                    ],
+                    "accept-encoding": [
+                        "gzip, deflate"
+                    ],
+                    "connection": [
+                        "keep-alive"
+                    ],
+                    "content-type": [
+                        "application/json"
+                    ],
+                    "user-agent": [
+                        "AsaasPy"
+                    ],
+                    "content-length": [
+                        "15"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": ""
+                },
+                "headers": {
+                    "Content-Type": [
+                        "application/json;charset=utf-8"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Date": [
+                        "Fri, 01 Nov 2024 02:13:39 GMT"
+                    ],
+                    "Set-Cookie": [
+                        "AWSALBTG=uiHhhQD8yk/bLQYJHLBMMbZNvmOKrUH+5/s115cjsd1H4/ZSePYl8sjgEqom8YqK+KY1SOwYsbv3B86AOWkI0x8wbhI1T4WjouM2PJOUfZFVCLBEBZcwkoY/DZafWWNgYx9Jfyjpxuv2VW6fPfeAb63l1GTFTbM2BHaC13wGUyXY; Expires=Fri, 08 Nov 2024 02:13:38 GMT; Path=/",
+                        "AWSALBTGCORS=uiHhhQD8yk/bLQYJHLBMMbZNvmOKrUH+5/s115cjsd1H4/ZSePYl8sjgEqom8YqK+KY1SOwYsbv3B86AOWkI0x8wbhI1T4WjouM2PJOUfZFVCLBEBZcwkoY/DZafWWNgYx9Jfyjpxuv2VW6fPfeAb63l1GTFTbM2BHaC13wGUyXY; Expires=Fri, 08 Nov 2024 02:13:38 GMT; Path=/; SameSite=None; Secure",
+                        "AWSALB=WqkKSxMeDgmV1RDVHtpiyFD/D64GL9n4KFLMTFrIkwpOnpYLSaO3KDl8yxk6LrIngISh5XO1UyDQM8Xiw9FlHaHI5VZDwqIfSGtN/flbPPILIsbWJYNbTYKI0wdC; Expires=Fri, 08 Nov 2024 02:13:38 GMT; Path=/",
+                        "AWSALBCORS=WqkKSxMeDgmV1RDVHtpiyFD/D64GL9n4KFLMTFrIkwpOnpYLSaO3KDl8yxk6LrIngISh5XO1UyDQM8Xiw9FlHaHI5VZDwqIfSGtN/flbPPILIsbWJYNbTYKI0wdC; Expires=Fri, 08 Nov 2024 02:13:38 GMT; Path=/; SameSite=None; Secure",
+                        "JSESSIONID=103B622386ACCEC45C6EF8B0C066503AFB82CBC6245B44E355F6EB2E1CD6C7D3ED9FD104E9713B0C160F33593F980454DFBC705D2214FE8B4DA308E42CD06BBD.n1; Path=/; Secure; HttpOnly"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "X-Cache": [
+                        "Miss from cloudfront"
+                    ],
+                    "Via": [
+                        "1.1 2a0fdfa56513675d5c5b25c2795727b0.cloudfront.net (CloudFront)"
+                    ],
+                    "X-Amz-Cf-Pop": [
+                        "FOR50-P1"
+                    ],
+                    "Alt-Svc": [
+                        "h3=\":443\"; ma=86400"
+                    ],
+                    "X-Amz-Cf-Id": [
+                        "qnHRYaDgqy-_IE4kXkrxw1mfhtEhOkQM6uZ_fAjHpl0wVXYhyScuZg=="
+                    ]
+                },
+                "body": {
+                    "string": "{\"id\":\"f9b12d4d-1aec-45c2-942d-5f99e88329fc\",\"key\":\"e3326671-e7d7-40bc-b54d-d8303f8140e8\",\"type\":\"EVP\",\"status\":\"ACTIVE\",\"dateCreated\":\"2024-10-31 23:13:39\",\"canBeDeleted\":true,\"cannotBeDeletedReason\":null,\"qrCode\":{\"encodedImage\":\"iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAADFklEQVR4Xu2UwY7cMAxD55b//6N+Vm5p+Cg5wQKFi16qAajJxhbNxznIs5/rH+vX56fytxVyVyF3FXJXIXcVclf/jTw/1HGvx3UeV/9pcSOP+naGHE2+HFpxdYp75Sj7cYYcTFq14+5pVpAZP+UM+R0kv1p5Za8YEgoI+V2kgKLZtB/y5Qw5m7z6fSKb04YQVG3fzpBzyTX07aecIf/4GUC+S3Pv8bs7PH5fi6dCjiU1Xyy6DcbceerVVhA3JuRs0gDig74QzrRYVIUcTRaBQ277/Wqz99WFHE0y6Vtc1+HkV61DKbwqBznkZBJMb/vPgiuhBWcREHI4qUsgSR7tfM7GugPQEUKOJcvSY2ZTraffKl/Bacjh5HJr8ji9hWZbSRUfcjC5DvULPzV8Q4pSQvUVzJeEnExKYaExWzFlbnCFhpxLlh/fyrk3vhNWPs6otJCjSQkYVaYArDsOoHJCjiYL5NBWlOuZP/snLORk8qwp6wXGfXCcEw8iCsYWci6prkruNliozVL8LSEHk5o5hAeuLdp6y16IlZCTSWYM/U54Op5WWENOJpm0CVzN+kQUmpVuQ44ly+n/w/rwn7kUxB+9kJBjSY/2mXu1JShJOrfAX7JuQsiJJJ1HXi6Pvh5JDpPcXxNyNOlWhwvRTnEYnL5SQ84mDa8EUX650YGWFRtyNqlGGr9vCwbw9kkfiQk5l4Rm0LfBJ4LkfHhhsnkNOZfErkM9zYLgXe+ORAg5mDxEYxXqFZY8y2gLDDmXfFoW3YVqRBLqu9LxIUeTsvoYvR542wTZwYoWciypMzqnCAHV8mwI6sOQk0ltb7GuQfPlOks3TJYq5GBSHh9KhjvqrbUCRa4l5FiyQDmrDGgj37lIJ8KHHEt22WSHDbSOLry2IQeTcjJ1ndFgOfihY3/6Pg45mNSuKHxyvbYOaEXekLNJqT4Gl4fldUUw0RkOOZ7051oPf0TY4EVYyO8gJdlghzZVyuJIT8jZJC54NX0PKm7tIfwOOZmsWZ92OkMhFg0QsI5CDib/qULuKuSuQu4q5K5C7urLyN8W2/dDH+UVKQAAAABJRU5ErkJggg==\",\"payload\":\"00020126580014br.gov.bcb.pix0136e3326671-e7d7-40bc-b54d-d8303f8140e85204000053039865802BR5914Preludian Tech6009Guarulhos62290525PRELUDIA00000000525655ASA630471AD\"}}"
+                }
+            }
         }
     ]
 }
