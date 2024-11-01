@@ -5,7 +5,6 @@ name: Package Build
 
 on:
   push:
-    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
@@ -21,27 +20,48 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
     - uses: actions/checkout@v4
+
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v3
       with:
         python-version: ${{ matrix.python-version }}
+
     - uses: pre-commit/action@v3.0.1
       with:
         extra_args: --all-files
+
     - name: Setup PDM
       uses: pdm-project/setup-pdm@v4
+
     - name: Install dependencies
       run: pdm install --with dev
+
     - name: Test with pytest
       run: |
         pdm run pytest --cov=src --cov-report=term --cov-report=xml tests
+
     - name: Tag Repo
       id: project_version
       run: |
         pdm show --version -q > .version
         git tag "v$(cat .version)"
+
     - name: Push Tag
+      if: github.ref == 'refs/heads/main'
       uses: laputansoft/github-tag-action@v4.6
       with:
         github_token: ${{ env.GITHUB_TOKEN }}
         tag: ${{ steps.project_version.outputs.VERSION }}
+
+    - name: Create Release
+      if: github.ref == 'refs/heads/main'
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ steps.project_version.outputs.VERSION }}
+        release_name: Release ${{ github.ref }} - v${{ steps.project_version.outputs.VERSION }}
+        body: For more info, please check CHANGELOG
+        draft: false
+        prerelease: false

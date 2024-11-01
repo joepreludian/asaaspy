@@ -55,6 +55,9 @@ distribution = true
 source = ['src']
 
 [tool.pytest.ini_options]
+pythonpath = [
+    "src/asaaspy"
+]
 testpaths = [
     "tests",
 ]
