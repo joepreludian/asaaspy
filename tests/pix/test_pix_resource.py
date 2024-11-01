@@ -72,3 +72,9 @@ class TestPixResource:
     def test_get_transactions_with_filter(self, asaas_svc):
         return_data = asaas_svc.pix.get_transactions(status="DONE")
         assert isinstance(return_data.data[0], QRCodePayViewSchema)
+
+    def test_recover_transaction_by_id(self, asaas_svc):
+        return_data = asaas_svc.pix.get_transaction(
+            id="693f1933-a522-4c14-9f6e-7cd2c3030ca1"
+        )
+        assert isinstance(return_data, QRCodePayViewSchema)
