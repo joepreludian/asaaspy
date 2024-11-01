@@ -63,14 +63,10 @@ jobs:
           github_token: ${{ env.GITHUB_TOKEN }}
           tag: ${{ steps.project_version.outputs.version }}
 
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
+      - name: Create a Release
+        uses: elgohr/Github-Release-Action@v5
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ steps.project_version.outputs.version }}
-          release_name: Release ${{ github.ref }} - v${{ steps.project_version.outputs.version }}
-          body: For more info, please check CHANGELOG
-          draft: false
-          prerelease: false
+          title: New Release
+          tag: v${{ steps.project_version.outputs.version }}
