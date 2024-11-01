@@ -35,7 +35,9 @@ class PixResource(AsaasResource):
         )
         return StaticQRCodeViewSchema(**response)
 
-    def delete_qrcode(self, id): ...  # noqa E704
+    def delete_qrcode(self, id) -> bool:
+        response = self.call("DELETE", f"v3/pix/qrCodes/static/{id}")
+        return response.get("deleted", False)
 
     # Transacoes PIX
     def pay_qrcode(self, id): ...  # noqa E704

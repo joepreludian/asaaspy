@@ -37,6 +37,9 @@ class TestPixResource:
         return_data = asaas_svc.pix.create_qrcode(request)
         assert isinstance(return_data, StaticQRCodeViewSchema)
 
+    def test_delete_static_qrcode(self, asaas_svc):
+        assert asaas_svc.pix.delete_qrcode("PRELUDIA00000000525658ASA")
+
     def test_delete_key_by_id_should_trigger_error_400(self, asaas_svc):
         with pytest.raises(AsaasClientError) as exc:
             asaas_svc.pix.delete_key("39006e1e-7c57-4944-ab22-10d957a0d1c9")
