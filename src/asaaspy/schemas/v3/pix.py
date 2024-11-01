@@ -93,7 +93,7 @@ class QRCodePayExternalAccountViewSchema(BaseSchema):
     name: Optional[str] = None
     cpfCnpj: Optional[str] = None
     addressKey: Optional[str] = None
-    addressKeyType: Literal["CPF", "CNPJ", "EMAIL", "PHONE", "EVP"]
+    addressKeyType: Optional[Literal["CPF", "CNPJ", "EMAIL", "PHONE", "EVP"]] = None
 
 
 class QRCodeInfoViewSchema(BaseSchema):
@@ -109,7 +109,6 @@ class QRCodeInfoViewSchema(BaseSchema):
 
 class QRCodePayViewSchema(BaseSchema):
     id: str
-    endToEndIdentifier: str
     value: float
     status: Literal[
         "AWAITING_BALANCE_VALIDATION",
@@ -134,7 +133,8 @@ class QRCodePayViewSchema(BaseSchema):
         "DYNAMIC_QRCODE",
         "PAYMENT_INITIATION_SERVICE",
     ]
-    qrCode: QRCodeInfoViewSchema
+    endToEndIdentifier: Optional[str] = None
+    qrCode: Optional[QRCodeInfoViewSchema] = None
     addressKeyType: Optional[Literal["CPF", "CNPJ", "EMAIL", "PHONE", "EVP"]] = None
     addressKey: Optional[str] = None
     originalTransaction: Optional[PixOriginalTransactionViewSchema] = None

@@ -48,7 +48,10 @@ class PixResource(AsaasResource):
     def decode_qrcode(self, id):
         raise NotImplementedError("Decode QR code not implemented")
 
-    def get_transactions(self): ...  # validate (sounds like Transaction)  # noqa E704
+    def get_transactions(self):
+        return self.get_list_response(
+            self.call("GET", "v3/pix/transactions", params={}), QRCodePayViewSchema
+        )
 
     def get_transaction(self, id): ...  # noqa E704
 
