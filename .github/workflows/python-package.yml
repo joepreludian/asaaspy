@@ -68,5 +68,5 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          title: New Release
+          title: v${{ steps.project_version.outputs.version }}
           tag: v${{ steps.project_version.outputs.version }}
