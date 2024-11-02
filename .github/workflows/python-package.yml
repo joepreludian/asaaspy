@@ -76,4 +76,4 @@ jobs:
         with:
           repository: "joepreludian/asaaspy"
           event-type: go-pypi
-          client-payload: '{"release_tag": "v${{ steps.get_project_version.outputs.PROJECT_VERSION }}"}'
+          client-payload: '{"release_tag": "v${{ steps.project_version.outputs.version }}"}'
