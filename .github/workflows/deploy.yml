@@ -12,7 +12,8 @@ jobs:
       id-token: write
     steps:
       - uses: actions/checkout@v4
-        ref: ${{ github.event.client_payload.release_tag }}
+        with:
+          ref: ${{ github.event.client_payload.release_tag }}
       - uses: pdm-project/setup-pdm@v4
       - name: Publish package distributions to PyPI
         run: pdm publish
