@@ -70,3 +70,10 @@ jobs:
         with:
           title: v${{ steps.project_version.outputs.version }}
           tag: v${{ steps.project_version.outputs.version }}
+
+      - name: Dispatch Deploy
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          repository: "joepreludian/asaaspy"
+          event-type: go-pypi
+          client-payload: '{"release_tag": "${{ steps.get_project_version.outputs.PROJECT_VERSION }}"}'
