@@ -7,7 +7,7 @@ from asaaspy.schemas.v3.pix import (
     PixTransactionSchema,
     QRCodePayViewSchema,
 )
-from schemas.v3.pix import PixTransactionsFilterBySchema
+from asaaspy.schemas.v3.pix import PixTransactionsFilterBySchema
 
 
 class PixResource(AsaasResource):
