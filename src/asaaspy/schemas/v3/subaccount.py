@@ -58,7 +58,7 @@ class SubAccountViewSchema(BaseSchema):
     cpfCnpj: str
     state: str
     walletId: str
-    apiKey: str
+    apiKey: Optional[str] = None
     accountNumber: SubAccountBankAccountViewSchema
     loginEmail: Optional[str] = None
     phone: Optional[str] = None

@@ -9,6 +9,8 @@ class SubAccountsResource(AsaasResource):
         )
         return SubAccountViewSchema(**response)
 
-    def get_by_id(self, id): ...
+    def get_by_id(self, id):
+        response = self.call("GET", f"v3/accounts/{id}")
+        return SubAccountViewSchema(**response)
 
     def list(self, **filters): ...

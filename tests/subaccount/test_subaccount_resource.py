@@ -24,3 +24,11 @@ class TestSubAccountResource:
         assert isinstance(account_result.walletId, str)
         assert isinstance(account_result.apiKey, str)
         assert account_result.apiKey.startswith("$aact_YT")
+
+    def test_get_subaccount_by_id(self, asaas_svc):
+        account_result = asaas_svc.sub_accounts.get_by_id(
+            "a7e73f10-eb87-42e6-b93b-9949917e8134"
+        )
+        assert isinstance(account_result, SubAccountViewSchema)
+        assert account_result.name == "Porco Rosso"
+        assert account_result.apiKey is None
