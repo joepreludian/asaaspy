@@ -1,6 +1,7 @@
 from typing import Optional, Literal, List
 from asaaspy.schemas.base import BaseSchema
 from asaaspy.schemas.base_fields import DateTime, Date
+from schemas.base import PaginatedQueryParams
 
 
 class WebhookSchema(BaseSchema):
@@ -73,3 +74,10 @@ class SubAccountViewSchema(BaseSchema):
     commercialInfoExpiration: Optional[SubAccountCommercialInfoExpirationViewSchema] = (
         None
     )
+
+
+class SubAccountFilterBySchema(PaginatedQueryParams):
+    cpfCnpj: Optional[str] = None
+    email: Optional[str] = None
+    name: Optional[str] = None
+    walletId: Optional[str] = None

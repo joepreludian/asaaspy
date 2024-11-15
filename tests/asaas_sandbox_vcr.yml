@@ -3514,6 +3514,80 @@
                     "string": "{\"object\":\"account\",\"id\":\"a7e73f10-eb87-42e6-b93b-9949917e8134\",\"name\":\"Porco Rosso\",\"email\":\"porco.rosso@asaaspy.com.br\",\"loginEmail\":\"porco.rosso@asaaspy.com.br\",\"phone\":null,\"mobilePhone\":\"41991524243\",\"address\":\"Avenida Pres. Epit\u00e1cio Pessoa\",\"addressNumber\":\"2690\",\"complement\":null,\"province\":\"Tambauzinho\",\"postalCode\":\"58042006\",\"cpfCnpj\":\"75149312010\",\"birthDate\":\"1988-12-13\",\"personType\":\"FISICA\",\"companyType\":null,\"city\":7999,\"state\":\"PB\",\"country\":\"Brasil\",\"site\":null,\"walletId\":\"ca0b59a4-6a83-4e06-8337-534c84f33dbd\",\"apiKey\":null,\"accountNumber\":{\"agency\":\"0001\",\"account\":\"145334\",\"accountDigit\":\"0\"},\"incomeValue\":10000,\"commercialInfoExpiration\":null}"
                 }
             }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://sandbox.asaas.com/api/v3/accounts",
+                "body": "",
+                "headers": {
+                    "host": [
+                        "sandbox.asaas.com"
+                    ],
+                    "accept": [
+                        "*/*"
+                    ],
+                    "accept-encoding": [
+                        "gzip, deflate"
+                    ],
+                    "connection": [
+                        "keep-alive"
+                    ],
+                    "content-type": [
+                        "application/json"
+                    ],
+                    "user-agent": [
+                        "AsaasPy"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": ""
+                },
+                "headers": {
+                    "Content-Type": [
+                        "application/json;charset=utf-8"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Date": [
+                        "Fri, 15 Nov 2024 10:52:11 GMT"
+                    ],
+                    "Set-Cookie": [
+                        "AWSALBTG=a2Hs2xspXwhGE/2Ag/gEGxyIKuhwpZQaRVV9AErYzb5L/PxGtSgMEAZAe2fGUoIGczSpUEZTKu6kGVzzNJK8ks4As/LW/KUtF7Q7Ag+eRtmoPX83ksw0exEFt9OIgK/aPdJ8gFtXNKmQFICnggsBK4U1BDySdrW/V6GeFLQ8uHJU; Expires=Fri, 22 Nov 2024 10:52:11 GMT; Path=/",
+                        "AWSALBTGCORS=a2Hs2xspXwhGE/2Ag/gEGxyIKuhwpZQaRVV9AErYzb5L/PxGtSgMEAZAe2fGUoIGczSpUEZTKu6kGVzzNJK8ks4As/LW/KUtF7Q7Ag+eRtmoPX83ksw0exEFt9OIgK/aPdJ8gFtXNKmQFICnggsBK4U1BDySdrW/V6GeFLQ8uHJU; Expires=Fri, 22 Nov 2024 10:52:11 GMT; Path=/; SameSite=None; Secure",
+                        "AWSALB=YqD8w/uo9iUrTDZvMwj57O2X6azIFAAx2ygEknu0Gj9oaoXmxK3s/+Ss5EfvDCJSQUtjBD+sc35EXjYUI9Dkxxm9h+OxfkiNqHeA5QLHKWjPTEJ0hfXn/J5fWsCW; Expires=Fri, 22 Nov 2024 10:52:11 GMT; Path=/",
+                        "AWSALBCORS=YqD8w/uo9iUrTDZvMwj57O2X6azIFAAx2ygEknu0Gj9oaoXmxK3s/+Ss5EfvDCJSQUtjBD+sc35EXjYUI9Dkxxm9h+OxfkiNqHeA5QLHKWjPTEJ0hfXn/J5fWsCW; Expires=Fri, 22 Nov 2024 10:52:11 GMT; Path=/; SameSite=None; Secure"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "X-Cache": [
+                        "Miss from cloudfront"
+                    ],
+                    "Via": [
+                        "1.1 197db36bff9b8b42740d3c5aefd2a474.cloudfront.net (CloudFront)"
+                    ],
+                    "X-Amz-Cf-Pop": [
+                        "GRU1-P1"
+                    ],
+                    "Alt-Svc": [
+                        "h3=\":443\"; ma=86400"
+                    ],
+                    "X-Amz-Cf-Id": [
+                        "UGYLmJJWRpx_0KfmHGGlwDYc8nejLpj-4Iol0gURiCsOfsMhx4Jllg=="
+                    ]
+                },
+                "body": {
+                    "string": "{\"object\":\"list\",\"hasMore\":false,\"totalCount\":1,\"limit\":10,\"offset\":0,\"data\":[{\"object\":\"account\",\"id\":\"a7e73f10-eb87-42e6-b93b-9949917e8134\",\"name\":\"Porco Rosso\",\"email\":\"porco.rosso@asaaspy.com.br\",\"loginEmail\":\"porco.rosso@asaaspy.com.br\",\"phone\":null,\"mobilePhone\":\"41991524243\",\"address\":\"Avenida Pres. Epit\u00e1cio Pessoa\",\"addressNumber\":\"2690\",\"complement\":null,\"province\":\"Tambauzinho\",\"postalCode\":\"58042006\",\"cpfCnpj\":\"75149312010\",\"birthDate\":\"1988-12-13\",\"personType\":\"FISICA\",\"companyType\":null,\"city\":7999,\"state\":\"PB\",\"country\":\"Brasil\",\"site\":null,\"walletId\":\"ca0b59a4-6a83-4e06-8337-534c84f33dbd\",\"apiKey\":null,\"accountNumber\":{\"agency\":\"0001\",\"account\":\"145334\",\"accountDigit\":\"0\"},\"incomeValue\":10000,\"commercialInfoExpiration\":null}]}"
+                }
+            }
         }
     ]
 }

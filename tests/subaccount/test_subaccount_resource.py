@@ -32,3 +32,9 @@ class TestSubAccountResource:
         assert isinstance(account_result, SubAccountViewSchema)
         assert account_result.name == "Porco Rosso"
         assert account_result.apiKey is None
+
+    def test_get_subaccount_list(self, asaas_svc):
+        sub_accounts = asaas_svc.sub_accounts.list()
+        assert sub_accounts.data[0].name == "Porco Rosso"
+        assert sub_accounts.data[0].apiKey is None
+        assert isinstance(sub_accounts.data[0], SubAccountViewSchema)
