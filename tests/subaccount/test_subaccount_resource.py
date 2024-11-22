@@ -1,5 +1,5 @@
 from asaaspy.schemas.v3.subaccount import SubAccountSchema
-from schemas.v3.subaccount import SubAccountViewSchema
+from asaaspy.schemas.v3.subaccount import SubAccountViewSchema
 
 
 class TestSubAccountResource:
