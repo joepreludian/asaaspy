@@ -1,5 +1,5 @@
 from asaaspy.client.base import AsaasResource
-from schemas.v3.subaccount import (
+from asaaspy.schemas.v3.subaccount import (
     SubAccountViewSchema,
     SubAccountSchema,
     SubAccountFilterBySchema,

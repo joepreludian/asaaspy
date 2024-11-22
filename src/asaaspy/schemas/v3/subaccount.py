@@ -1,7 +1,7 @@
 from typing import Optional, Literal, List
 from asaaspy.schemas.base import BaseSchema
 from asaaspy.schemas.base_fields import DateTime, Date
-from schemas.base import PaginatedQueryParams
+from asaaspy.schemas.base import PaginatedQueryParams
 
 
 class WebhookSchema(BaseSchema):
