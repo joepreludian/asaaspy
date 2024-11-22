@@ -4,7 +4,7 @@ from asaaspy.client.resources.customer import CustomerResource
 from asaaspy.client.resources.payment import PaymentResource
 from asaaspy.client.resources.pix import PixResource
 from asaaspy.client.resources.transfer import TransferResource
-from client.resources.subaccounts import SubAccountsResource
+from asaaspy.client.resources.subaccounts import SubAccountsResource
 
 
 class AsaasService:
