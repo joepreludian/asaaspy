@@ -3588,6 +3588,80 @@
                     "string": "{\"object\":\"list\",\"hasMore\":false,\"totalCount\":1,\"limit\":10,\"offset\":0,\"data\":[{\"object\":\"account\",\"id\":\"a7e73f10-eb87-42e6-b93b-9949917e8134\",\"name\":\"Porco Rosso\",\"email\":\"porco.rosso@asaaspy.com.br\",\"loginEmail\":\"porco.rosso@asaaspy.com.br\",\"phone\":null,\"mobilePhone\":\"41991524243\",\"address\":\"Avenida Pres. Epit\u00e1cio Pessoa\",\"addressNumber\":\"2690\",\"complement\":null,\"province\":\"Tambauzinho\",\"postalCode\":\"58042006\",\"cpfCnpj\":\"75149312010\",\"birthDate\":\"1988-12-13\",\"personType\":\"FISICA\",\"companyType\":null,\"city\":7999,\"state\":\"PB\",\"country\":\"Brasil\",\"site\":null,\"walletId\":\"ca0b59a4-6a83-4e06-8337-534c84f33dbd\",\"apiKey\":null,\"accountNumber\":{\"agency\":\"0001\",\"account\":\"145334\",\"accountDigit\":\"0\"},\"incomeValue\":10000,\"commercialInfoExpiration\":null}]}"
                 }
             }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://sandbox.asaas.com/api/v3/myAccount/documents",
+                "body": "",
+                "headers": {
+                    "host": [
+                        "sandbox.asaas.com"
+                    ],
+                    "accept": [
+                        "*/*"
+                    ],
+                    "accept-encoding": [
+                        "gzip, deflate"
+                    ],
+                    "connection": [
+                        "keep-alive"
+                    ],
+                    "content-type": [
+                        "application/json"
+                    ],
+                    "user-agent": [
+                        "AsaasPy"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": ""
+                },
+                "headers": {
+                    "Content-Type": [
+                        "application/json;charset=utf-8"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Date": [
+                        "Tue, 03 Dec 2024 01:44:35 GMT"
+                    ],
+                    "Set-Cookie": [
+                        "AWSALBTG=FlG9FNH+ViN4+j9I+arj1SS5Vka463ZyZxBdGHIA+7FIuaoOHs+7/FLaSdAE2WC50MQEQLg5DChMAN7GyishLGAO+t0jAL5GeXLzXQkQ6GA+WQ/EBzwK/VzBEbB4Ehz4fnTvlcbC6AhbM2IL+kzjTVprUAfV5wr5bHx4gllKHApU; Expires=Tue, 10 Dec 2024 01:44:35 GMT; Path=/",
+                        "AWSALBTGCORS=FlG9FNH+ViN4+j9I+arj1SS5Vka463ZyZxBdGHIA+7FIuaoOHs+7/FLaSdAE2WC50MQEQLg5DChMAN7GyishLGAO+t0jAL5GeXLzXQkQ6GA+WQ/EBzwK/VzBEbB4Ehz4fnTvlcbC6AhbM2IL+kzjTVprUAfV5wr5bHx4gllKHApU; Expires=Tue, 10 Dec 2024 01:44:35 GMT; Path=/; SameSite=None; Secure",
+                        "AWSALB=4ZRNxlPkBtFHfpQhYbk8WXFGWegldF8wXd9tNL/6Wrjcpin92zFu8iC9Zch5QaoF6eucLkcBCOxY5K9E07HHh4EWuTGWc89FfxaMI8PEcl9ZU8+wTzCWayGR7St4; Expires=Tue, 10 Dec 2024 01:44:35 GMT; Path=/",
+                        "AWSALBCORS=4ZRNxlPkBtFHfpQhYbk8WXFGWegldF8wXd9tNL/6Wrjcpin92zFu8iC9Zch5QaoF6eucLkcBCOxY5K9E07HHh4EWuTGWc89FfxaMI8PEcl9ZU8+wTzCWayGR7St4; Expires=Tue, 10 Dec 2024 01:44:35 GMT; Path=/; SameSite=None; Secure"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "X-Cache": [
+                        "Miss from cloudfront"
+                    ],
+                    "Via": [
+                        "1.1 6b996efa63c143c504e2c611fdc53b44.cloudfront.net (CloudFront)"
+                    ],
+                    "X-Amz-Cf-Pop": [
+                        "FOR50-P1"
+                    ],
+                    "Alt-Svc": [
+                        "h3=\":443\"; ma=86400"
+                    ],
+                    "X-Amz-Cf-Id": [
+                        "igdmxWpjJ7LPmeqoE4TbKTGJDs3vRz0VybQpXIq93soR7rQgw40WdQ=="
+                    ]
+                },
+                "body": {
+                    "string": "{\"rejectReasons\":null,\"data\":[{\"id\":\"25a35c8f-9530-40ea-b913-1516ab8bde50\",\"status\":\"APPROVED\",\"type\":\"IDENTIFICATION\",\"title\":\"Documentos de identifica\u00e7\u00e3o\",\"description\":\"Para enviar esse documento acesse nosso aplicativo ou utilize o link de onboarding.\",\"responsible\":{\"name\":\"Preludian Tech\",\"type\":\"INDIVIDUAL_COMPANY\"},\"onboardingUrl\":null},{\"id\":\"25a35c8f-9530-40ea-b913-1516ab8bde50\",\"status\":\"APPROVED\",\"type\":\"IDENTIFICATION\",\"title\":\"Documentos de identifica\u00e7\u00e3o\",\"description\":\"Para enviar esse documento acesse nosso aplicativo ou utilize o link de onboarding.\",\"responsible\":{\"name\":\"Preludian Tech\",\"type\":\"INDIVIDUAL_COMPANY\"},\"onboardingUrl\":null},{\"id\":\"25a35c8f-9530-40ea-b913-1516ab8bde50\",\"status\":\"APPROVED\",\"type\":\"ENTREPRENEUR_REQUIREMENT\",\"title\":\"Requerimento de Empres\u00e1rio\",\"description\":\"Enviar em conjunto com o cart\u00e3o CNPJ.\",\"responsible\":{\"name\":\"Preludian Tech\",\"type\":\"INDIVIDUAL_COMPANY\"},\"onboardingUrl\":null},{\"id\":\"25a35c8f-9530-40ea-b913-1516ab8bde50\",\"status\":\"APPROVED\",\"type\":\"IDENTIFICATION_SELFIE\",\"title\":\"Selfie de identifica\u00e7\u00e3o\",\"description\":\"Para enviar esse documento acesse nosso aplicativo ou utilize o link de onboarding.\",\"responsible\":{\"name\":\"Preludian Tech\",\"type\":\"INDIVIDUAL_COMPANY\"},\"onboardingUrl\":null}]}"
+                }
+            }
         }
     ]
 }
