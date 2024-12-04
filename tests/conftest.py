@@ -21,28 +21,6 @@ def mock_http_client(request):
 
 
 @pytest.fixture
-def mock_http_client_subaccount(request):
-    root_path = request.config.rootdir
-    with vcr.use_cassette(
-        f"{root_path}/tests/asaas_sandbox_vcr_subaccount.yml",
-        record_mode="new_episodes",
-        filter_headers=["access_token"],
-        match_on=[
-            "method",
-            "scheme",
-            "host",
-            "port",
-            "path",
-            "query",
-            "body",
-            "raw_body",
-        ],
-        preserve_exact_body_bytes=True,
-    ):
-        yield
-
-
-@pytest.fixture
 def asaas_svc(caplog, mock_http_client):
     caplog.set_level(logging.INFO)
 
@@ -53,7 +31,7 @@ def asaas_svc(caplog, mock_http_client):
 
 
 @pytest.fixture
-def asaas_svc_subaccount(caplog, mock_http_client, mock_http_client_subaccount):
+def asaas_svc_subaccount(caplog, mock_http_client):
     caplog.set_level(logging.INFO)
 
     return AsaasService(
