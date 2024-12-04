@@ -17,6 +17,7 @@ jobs:
         python-version: ["3.10", "3.11", "3.12"]
     env:
       ASAAS_SANDBOX_TOKEN: ${{ secrets.ASAAS_SANDBOX_TOKEN }}
+      ASAAS_SANDBOX_TOKEN_SUBACCOUNT_1: ${{ secrets.ASAAS_SANDBOX_TOKEN_SUBACCOUNT_1 }}
     steps:
     - uses: actions/checkout@v4
 
