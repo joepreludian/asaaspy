@@ -21,6 +21,11 @@ class ResponsibleSchema(BaseSchema):
     ]
 
 
+class AccountDocumentDetail(BaseSchema):
+    id: str
+    status: Literal["NOT_SENT", "PENDING", "APPROVED", "REJECTED"]
+
+
 class AccountDocument(BaseSchema):
     id: Optional[str] = None
     status: Optional[
@@ -39,6 +44,8 @@ class AccountDocument(BaseSchema):
     title: Optional[str] = None
     description: Optional[str] = None
     responsible: Optional[ResponsibleSchema] = None
+    onboardingUrl: Optional[str] = None
+    documents: Optional[List[AccountDocumentDetail]] = None
 
 
 class MyAccountDocumentsViewSchema(BaseSchema):
