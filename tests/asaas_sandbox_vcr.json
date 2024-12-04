@@ -3631,14 +3631,13 @@
                         "keep-alive"
                     ],
                     "Date": [
-                        "Wed, 04 Dec 2024 00:11:19 GMT"
+                        "Wed, 04 Dec 2024 02:05:49 GMT"
                     ],
                     "Set-Cookie": [
-                        "AWSALBTG=5g0GSByjnlQ9fFbu6f6TppAEJYrtynCpPgjuQvKDjxqheAZGIF/lWDVwwmQG2hi9CQ2zS8WU/XTCyz8Gdidgl/t7DmkJKQnCT3x4H8vVXEZEXoGx5zvHHpZxiz9UgTVkFL+mKLzv4cinJzbKB3FpR/gxPIWrpm3+fW/xv+2H9Vv9; Expires=Wed, 11 Dec 2024 00:11:18 GMT; Path=/",
-                        "AWSALBTGCORS=5g0GSByjnlQ9fFbu6f6TppAEJYrtynCpPgjuQvKDjxqheAZGIF/lWDVwwmQG2hi9CQ2zS8WU/XTCyz8Gdidgl/t7DmkJKQnCT3x4H8vVXEZEXoGx5zvHHpZxiz9UgTVkFL+mKLzv4cinJzbKB3FpR/gxPIWrpm3+fW/xv+2H9Vv9; Expires=Wed, 11 Dec 2024 00:11:18 GMT; Path=/; SameSite=None; Secure",
-                        "AWSALB=4wNQ+7hqPEyRMUTjvqTFBbJZL/jCV8410T6oJNP/uIGhvJk49zbhRWG3IPMHZ9KAPur5CRBEQGMQxq9w7jdL4TZFgc2+mnN0mlchDjTzyY80+hhjRVxzQ1rIDqtV; Expires=Wed, 11 Dec 2024 00:11:18 GMT; Path=/",
-                        "AWSALBCORS=4wNQ+7hqPEyRMUTjvqTFBbJZL/jCV8410T6oJNP/uIGhvJk49zbhRWG3IPMHZ9KAPur5CRBEQGMQxq9w7jdL4TZFgc2+mnN0mlchDjTzyY80+hhjRVxzQ1rIDqtV; Expires=Wed, 11 Dec 2024 00:11:18 GMT; Path=/; SameSite=None; Secure",
-                        "JSESSIONID=C8B21FF4CD7F1EAD19A5A594444AF86ACA86AE2CCCAF593F78D7B4A8BE0EF8F2891B7F7D0AA62E99B6556B19AE02838A264ABDC97B0976D533EB863BFF614610.n2; Path=/; Secure; HttpOnly"
+                        "AWSALBTG=Peb/gr1gl9ZriCpTaVqMiyFfOcD91H0Oz2j28mpH2eEEciemqEoZlKp8M07WzMBXhmqZnTdr6qkoewVFciMnKVN65gVRuHLVxJeOX9OVbVrlSreUQX0X4rsZdKXzYVWWqdcI1pqviuq5bIToMWqOwqSCDu7FcEVBGpLQ5eit0DFW; Expires=Wed, 11 Dec 2024 02:05:49 GMT; Path=/",
+                        "AWSALBTGCORS=Peb/gr1gl9ZriCpTaVqMiyFfOcD91H0Oz2j28mpH2eEEciemqEoZlKp8M07WzMBXhmqZnTdr6qkoewVFciMnKVN65gVRuHLVxJeOX9OVbVrlSreUQX0X4rsZdKXzYVWWqdcI1pqviuq5bIToMWqOwqSCDu7FcEVBGpLQ5eit0DFW; Expires=Wed, 11 Dec 2024 02:05:49 GMT; Path=/; SameSite=None; Secure",
+                        "AWSALB=XMO3CQt8gvHOwN7yqmSfarvsN2PmULKeHFcV5HcRyeUMMIaFxeAZQk01Ax9ym8W/rwNkQV9EbBX8l9Cd4DqHcZWWv9N1xh4OWh85r9E9+UXbrqvK/SclzQazgUdf; Expires=Wed, 11 Dec 2024 02:05:49 GMT; Path=/",
+                        "AWSALBCORS=XMO3CQt8gvHOwN7yqmSfarvsN2PmULKeHFcV5HcRyeUMMIaFxeAZQk01Ax9ym8W/rwNkQV9EbBX8l9Cd4DqHcZWWv9N1xh4OWh85r9E9+UXbrqvK/SclzQazgUdf; Expires=Wed, 11 Dec 2024 02:05:49 GMT; Path=/; SameSite=None; Secure"
                     ],
                     "Server": [
                         "nginx"
@@ -3647,7 +3646,7 @@
                         "Miss from cloudfront"
                     ],
                     "Via": [
-                        "1.1 a458d2030cb2c80769bb0398542c0264.cloudfront.net (CloudFront)"
+                        "1.1 2803f36cda29f414f68a159da9be23e4.cloudfront.net (CloudFront)"
                     ],
                     "X-Amz-Cf-Pop": [
                         "FOR50-P1"
@@ -3656,7 +3655,7 @@
                         "h3=\":443\"; ma=86400"
                     ],
                     "X-Amz-Cf-Id": [
-                        "0GElbr1nEC2dcpYur2Sm3mEal37gUIYU3QDM3RilpqISu3KwC0K87w=="
+                        "CKyW_yDZWKAMTTAtb-wvGXZ2ZPbWKsYgK01chMeSfq-9nr9tSNtijA=="
                     ]
                 },
                 "body": {
