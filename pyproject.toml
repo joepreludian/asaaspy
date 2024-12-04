@@ -1,6 +1,6 @@
 [project]
 name = "asaaspy"
-version = "0.29.0"
+version = "0.30.0"
 description = "Unnoficial python client for Asaas"
 authors = [
     {name = "Jonhnatha Trigueiro", email = "joepreludian@gmail.com"},
@@ -42,6 +42,7 @@ dev = [
     "Faker>=26.0.0",
     "factory-boy>=3.3.0",
     "Flake8-pyproject>=1.2.3",
+    "vcrpy==6.0.2",
 ]
 [build-system]
 requires = ["pdm-backend"]

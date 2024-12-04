@@ -3631,13 +3631,14 @@
                         "keep-alive"
                     ],
                     "Date": [
-                        "Tue, 03 Dec 2024 01:44:35 GMT"
+                        "Wed, 04 Dec 2024 00:11:19 GMT"
                     ],
                     "Set-Cookie": [
-                        "AWSALBTG=FlG9FNH+ViN4+j9I+arj1SS5Vka463ZyZxBdGHIA+7FIuaoOHs+7/FLaSdAE2WC50MQEQLg5DChMAN7GyishLGAO+t0jAL5GeXLzXQkQ6GA+WQ/EBzwK/VzBEbB4Ehz4fnTvlcbC6AhbM2IL+kzjTVprUAfV5wr5bHx4gllKHApU; Expires=Tue, 10 Dec 2024 01:44:35 GMT; Path=/",
-                        "AWSALBTGCORS=FlG9FNH+ViN4+j9I+arj1SS5Vka463ZyZxBdGHIA+7FIuaoOHs+7/FLaSdAE2WC50MQEQLg5DChMAN7GyishLGAO+t0jAL5GeXLzXQkQ6GA+WQ/EBzwK/VzBEbB4Ehz4fnTvlcbC6AhbM2IL+kzjTVprUAfV5wr5bHx4gllKHApU; Expires=Tue, 10 Dec 2024 01:44:35 GMT; Path=/; SameSite=None; Secure",
-                        "AWSALB=4ZRNxlPkBtFHfpQhYbk8WXFGWegldF8wXd9tNL/6Wrjcpin92zFu8iC9Zch5QaoF6eucLkcBCOxY5K9E07HHh4EWuTGWc89FfxaMI8PEcl9ZU8+wTzCWayGR7St4; Expires=Tue, 10 Dec 2024 01:44:35 GMT; Path=/",
-                        "AWSALBCORS=4ZRNxlPkBtFHfpQhYbk8WXFGWegldF8wXd9tNL/6Wrjcpin92zFu8iC9Zch5QaoF6eucLkcBCOxY5K9E07HHh4EWuTGWc89FfxaMI8PEcl9ZU8+wTzCWayGR7St4; Expires=Tue, 10 Dec 2024 01:44:35 GMT; Path=/; SameSite=None; Secure"
+                        "AWSALBTG=5g0GSByjnlQ9fFbu6f6TppAEJYrtynCpPgjuQvKDjxqheAZGIF/lWDVwwmQG2hi9CQ2zS8WU/XTCyz8Gdidgl/t7DmkJKQnCT3x4H8vVXEZEXoGx5zvHHpZxiz9UgTVkFL+mKLzv4cinJzbKB3FpR/gxPIWrpm3+fW/xv+2H9Vv9; Expires=Wed, 11 Dec 2024 00:11:18 GMT; Path=/",
+                        "AWSALBTGCORS=5g0GSByjnlQ9fFbu6f6TppAEJYrtynCpPgjuQvKDjxqheAZGIF/lWDVwwmQG2hi9CQ2zS8WU/XTCyz8Gdidgl/t7DmkJKQnCT3x4H8vVXEZEXoGx5zvHHpZxiz9UgTVkFL+mKLzv4cinJzbKB3FpR/gxPIWrpm3+fW/xv+2H9Vv9; Expires=Wed, 11 Dec 2024 00:11:18 GMT; Path=/; SameSite=None; Secure",
+                        "AWSALB=4wNQ+7hqPEyRMUTjvqTFBbJZL/jCV8410T6oJNP/uIGhvJk49zbhRWG3IPMHZ9KAPur5CRBEQGMQxq9w7jdL4TZFgc2+mnN0mlchDjTzyY80+hhjRVxzQ1rIDqtV; Expires=Wed, 11 Dec 2024 00:11:18 GMT; Path=/",
+                        "AWSALBCORS=4wNQ+7hqPEyRMUTjvqTFBbJZL/jCV8410T6oJNP/uIGhvJk49zbhRWG3IPMHZ9KAPur5CRBEQGMQxq9w7jdL4TZFgc2+mnN0mlchDjTzyY80+hhjRVxzQ1rIDqtV; Expires=Wed, 11 Dec 2024 00:11:18 GMT; Path=/; SameSite=None; Secure",
+                        "JSESSIONID=C8B21FF4CD7F1EAD19A5A594444AF86ACA86AE2CCCAF593F78D7B4A8BE0EF8F2891B7F7D0AA62E99B6556B19AE02838A264ABDC97B0976D533EB863BFF614610.n2; Path=/; Secure; HttpOnly"
                     ],
                     "Server": [
                         "nginx"
@@ -3646,7 +3647,7 @@
                         "Miss from cloudfront"
                     ],
                     "Via": [
-                        "1.1 6b996efa63c143c504e2c611fdc53b44.cloudfront.net (CloudFront)"
+                        "1.1 a458d2030cb2c80769bb0398542c0264.cloudfront.net (CloudFront)"
                     ],
                     "X-Amz-Cf-Pop": [
                         "FOR50-P1"
@@ -3655,11 +3656,11 @@
                         "h3=\":443\"; ma=86400"
                     ],
                     "X-Amz-Cf-Id": [
-                        "igdmxWpjJ7LPmeqoE4TbKTGJDs3vRz0VybQpXIq93soR7rQgw40WdQ=="
+                        "0GElbr1nEC2dcpYur2Sm3mEal37gUIYU3QDM3RilpqISu3KwC0K87w=="
                     ]
                 },
                 "body": {
-                    "string": "{\"rejectReasons\":null,\"data\":[{\"id\":\"25a35c8f-9530-40ea-b913-1516ab8bde50\",\"status\":\"APPROVED\",\"type\":\"IDENTIFICATION\",\"title\":\"Documentos de identifica\u00e7\u00e3o\",\"description\":\"Para enviar esse documento acesse nosso aplicativo ou utilize o link de onboarding.\",\"responsible\":{\"name\":\"Preludian Tech\",\"type\":\"INDIVIDUAL_COMPANY\"},\"onboardingUrl\":null},{\"id\":\"25a35c8f-9530-40ea-b913-1516ab8bde50\",\"status\":\"APPROVED\",\"type\":\"IDENTIFICATION\",\"title\":\"Documentos de identifica\u00e7\u00e3o\",\"description\":\"Para enviar esse documento acesse nosso aplicativo ou utilize o link de onboarding.\",\"responsible\":{\"name\":\"Preludian Tech\",\"type\":\"INDIVIDUAL_COMPANY\"},\"onboardingUrl\":null},{\"id\":\"25a35c8f-9530-40ea-b913-1516ab8bde50\",\"status\":\"APPROVED\",\"type\":\"ENTREPRENEUR_REQUIREMENT\",\"title\":\"Requerimento de Empres\u00e1rio\",\"description\":\"Enviar em conjunto com o cart\u00e3o CNPJ.\",\"responsible\":{\"name\":\"Preludian Tech\",\"type\":\"INDIVIDUAL_COMPANY\"},\"onboardingUrl\":null},{\"id\":\"25a35c8f-9530-40ea-b913-1516ab8bde50\",\"status\":\"APPROVED\",\"type\":\"IDENTIFICATION_SELFIE\",\"title\":\"Selfie de identifica\u00e7\u00e3o\",\"description\":\"Para enviar esse documento acesse nosso aplicativo ou utilize o link de onboarding.\",\"responsible\":{\"name\":\"Preludian Tech\",\"type\":\"INDIVIDUAL_COMPANY\"},\"onboardingUrl\":null}]}"
+                    "string": "{\"rejectReasons\":null,\"data\":[{\"id\":\"766a9870-4abc-4cce-b618-99f8b8cc9334\",\"status\":\"NOT_SENT\",\"type\":\"IDENTIFICATION\",\"title\":\"Documentos de identifica\u00e7\u00e3o\",\"description\":\"Para enviar esse documento acesse nosso aplicativo ou utilize o link de onboarding.\",\"responsible\":{\"name\":\"Porco Rosso\",\"type\":\"ASAAS_ACCOUNT_OWNER\"},\"onboardingUrl\":null,\"documents\":[]},{\"id\":\"766a9870-4abc-4cce-b618-99f8b8cc9334\",\"status\":\"NOT_SENT\",\"type\":\"IDENTIFICATION_SELFIE\",\"title\":\"Selfie de identifica\u00e7\u00e3o\",\"description\":\"Para enviar esse documento acesse nosso aplicativo ou utilize o link de onboarding.\",\"responsible\":{\"name\":\"Porco Rosso\",\"type\":\"ASAAS_ACCOUNT_OWNER\"},\"onboardingUrl\":null,\"documents\":[]}]}"
                 }
             }
         }

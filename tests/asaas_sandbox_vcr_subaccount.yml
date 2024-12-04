@@ -1,0 +1,61 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-type:
+      - application/json
+      host:
+      - sandbox.asaas.com
+      user-agent:
+      - AsaasPy
+    method: GET
+    uri: https://sandbox.asaas.com/api/v3/myAccount/documents
+  response:
+    body:
+      string: "{\"rejectReasons\":null,\"data\":[{\"id\":\"766a9870-4abc-4cce-b618-99f8b8cc9334\",\"status\":\"NOT_SENT\",\"type\":\"IDENTIFICATION\",\"title\":\"Documentos
+        de identifica\xE7\xE3o\",\"description\":\"Para enviar esse documento acesse
+        nosso aplicativo ou utilize o link de onboarding.\",\"responsible\":{\"name\":\"Porco
+        Rosso\",\"type\":\"ASAAS_ACCOUNT_OWNER\"},\"onboardingUrl\":null,\"documents\":[]},{\"id\":\"766a9870-4abc-4cce-b618-99f8b8cc9334\",\"status\":\"NOT_SENT\",\"type\":\"IDENTIFICATION_SELFIE\",\"title\":\"Selfie
+        de identifica\xE7\xE3o\",\"description\":\"Para enviar esse documento acesse
+        nosso aplicativo ou utilize o link de onboarding.\",\"responsible\":{\"name\":\"Porco
+        Rosso\",\"type\":\"ASAAS_ACCOUNT_OWNER\"},\"onboardingUrl\":null,\"documents\":[]}]}"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Wed, 04 Dec 2024 01:43:57 GMT
+      Server:
+      - nginx
+      Set-Cookie:
+      - AWSALBTG=SsrixXEZuv9Pqy9FPe0hK9XPifn4VEqbGS97R7/5dcbgGcbwcaTxdn2s3T3UNb4qI69Nx9ELQeo++kgi2Q/gYCR5gCNuI0aOQH5PLa5AnxvAcVplmE+dygGrnlfFKb29bTb4+Vai3s8gnyCRvJJZh+Ez60P64UkXwhejX7y86Xpq;
+        Expires=Wed, 11 Dec 2024 01:43:56 GMT; Path=/
+      - AWSALBTGCORS=SsrixXEZuv9Pqy9FPe0hK9XPifn4VEqbGS97R7/5dcbgGcbwcaTxdn2s3T3UNb4qI69Nx9ELQeo++kgi2Q/gYCR5gCNuI0aOQH5PLa5AnxvAcVplmE+dygGrnlfFKb29bTb4+Vai3s8gnyCRvJJZh+Ez60P64UkXwhejX7y86Xpq;
+        Expires=Wed, 11 Dec 2024 01:43:56 GMT; Path=/; SameSite=None; Secure
+      - AWSALB=qmRDdlOGEhDDLbvHlVBPRsNKNUFAteHRSjLqqmBIdTQx4hUsPQAeIoR0jD8LUUgvHMM1lF0mvaZre8vtQk/mRe/3lkUnwIc6MVPdPdyMgEsLAVWjaox2XpeuuqxL;
+        Expires=Wed, 11 Dec 2024 01:43:56 GMT; Path=/
+      - AWSALBCORS=qmRDdlOGEhDDLbvHlVBPRsNKNUFAteHRSjLqqmBIdTQx4hUsPQAeIoR0jD8LUUgvHMM1lF0mvaZre8vtQk/mRe/3lkUnwIc6MVPdPdyMgEsLAVWjaox2XpeuuqxL;
+        Expires=Wed, 11 Dec 2024 01:43:56 GMT; Path=/; SameSite=None; Secure
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 152c4a8a2ea6a3c25f8efefafbfb7c18.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - TjIkpGwfOWSz_3tY71ohv1QFaXr2TYWgb2NbgSAWmivfGqm545uvgw==
+      X-Amz-Cf-Pop:
+      - FOR50-P1
+      X-Cache:
+      - Miss from cloudfront
+    status:
+      code: 200
+      message: ''
+version: 1

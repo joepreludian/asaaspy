@@ -44,3 +44,8 @@ class AccountDocument(BaseSchema):
 class MyAccountDocumentsViewSchema(BaseSchema):
     rejectReasons: Optional[str] = None
     data: List[AccountDocument]
+
+
+class MyAccountSendDocumentViewSchema(BaseSchema):
+    id: str
+    status: Literal["NOT_SENT", "PENDING", "APPROVED", "REJECTED"]
