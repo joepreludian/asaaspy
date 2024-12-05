@@ -1,5 +1,8 @@
 from asaaspy.client.base import AsaasResource
-from asaaspy.schemas.v3.my_account import MyAccountDocumentsViewSchema
+from asaaspy.schemas.v3.my_account import (
+    MyAccountDocumentsViewSchema,
+    MyAccountStatusViewSchema,
+)
 from asaaspy.schemas.v3.my_account import MyAccountSendDocumentViewSchema
 
 
@@ -18,3 +21,7 @@ class MyAccountResource(AsaasResource):
             json={"type": type},
         )
         return MyAccountSendDocumentViewSchema(**response)
+
+    def get_status(self):
+        response = self.call("GET", "v3/myAccount/status")
+        return MyAccountStatusViewSchema(**response)

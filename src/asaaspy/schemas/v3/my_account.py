@@ -56,3 +56,11 @@ class MyAccountDocumentsViewSchema(BaseSchema):
 class MyAccountSendDocumentViewSchema(BaseSchema):
     id: str
     status: Literal["NOT_SENT", "PENDING", "APPROVED", "REJECTED"]
+
+
+class MyAccountStatusViewSchema(BaseSchema):
+    id: str
+    commercialInfo: Literal["PENDING", "APPROVED", "REJECTED", "AWAITING_APPROVAL"]
+    bankAccountInfo: Literal["PENDING", "APPROVED", "REJECTED", "AWAITING_APPROVAL"]
+    documentation: Literal["PENDING", "APPROVED", "REJECTED", "AWAITING_APPROVAL"]
+    general: Literal["PENDING", "APPROVED", "REJECTED", "AWAITING_APPROVAL"]
