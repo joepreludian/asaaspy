@@ -3662,6 +3662,84 @@
                     "string": "{\"rejectReasons\":null,\"data\":[{\"id\":\"766a9870-4abc-4cce-b618-99f8b8cc9334\",\"status\":\"NOT_SENT\",\"type\":\"IDENTIFICATION\",\"title\":\"Documentos de identifica\u00e7\u00e3o\",\"description\":\"Para enviar esse documento acesse nosso aplicativo ou utilize o link de onboarding.\",\"responsible\":{\"name\":\"Porco Rosso\",\"type\":\"ASAAS_ACCOUNT_OWNER\"},\"onboardingUrl\":null,\"documents\":[]},{\"id\":\"766a9870-4abc-4cce-b618-99f8b8cc9334\",\"status\":\"NOT_SENT\",\"type\":\"IDENTIFICATION_SELFIE\",\"title\":\"Selfie de identifica\u00e7\u00e3o\",\"description\":\"Para enviar esse documento acesse nosso aplicativo ou utilize o link de onboarding.\",\"responsible\":{\"name\":\"Porco Rosso\",\"type\":\"ASAAS_ACCOUNT_OWNER\"},\"onboardingUrl\":null,\"documents\":[]}]}"
                 }
             }
+        },
+        {
+            "request": {
+                "method": "DELETE",
+                "uri": "https://sandbox.asaas.com/api/v3/myAccount/",
+                "body": "{\"removeReason\":\"Fechamento Teste\"}",
+                "headers": {
+                    "host": [
+                        "sandbox.asaas.com"
+                    ],
+                    "accept": [
+                        "*/*"
+                    ],
+                    "accept-encoding": [
+                        "gzip, deflate"
+                    ],
+                    "connection": [
+                        "keep-alive"
+                    ],
+                    "content-type": [
+                        "application/json"
+                    ],
+                    "user-agent": [
+                        "AsaasPy"
+                    ],
+                    "content-length": [
+                        "35"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": ""
+                },
+                "headers": {
+                    "Content-Type": [
+                        "application/json;charset=utf-8"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Date": [
+                        "Fri, 06 Dec 2024 22:25:16 GMT"
+                    ],
+                    "Set-Cookie": [
+                        "AWSALBTG=zeB1x933Pg5XsKYNq4RQH1uWAjM079GWl6HYUiHcwAt3uY1fySWMuWmMOe1VjSbScLDBuf9y2RqIYAm9XQcdvCnY/Jsyo5lr087KkCwOs6vLlWrp8WcE7traNGfZWcjBsQKR9D99US4/l2CV4lnhslPes/wZTNscuif0THJBd6Wa; Expires=Fri, 13 Dec 2024 22:25:14 GMT; Path=/",
+                        "AWSALBTGCORS=zeB1x933Pg5XsKYNq4RQH1uWAjM079GWl6HYUiHcwAt3uY1fySWMuWmMOe1VjSbScLDBuf9y2RqIYAm9XQcdvCnY/Jsyo5lr087KkCwOs6vLlWrp8WcE7traNGfZWcjBsQKR9D99US4/l2CV4lnhslPes/wZTNscuif0THJBd6Wa; Expires=Fri, 13 Dec 2024 22:25:14 GMT; Path=/; SameSite=None; Secure",
+                        "AWSALB=/Q2QlwpU5D7SaANFAPI4GelQBkrOJr+7k9kJRg4K0GBC5lK4RrBCJGxhjpK522ptwUBXs8bL8VF8ahwCzRhYNJKMTI+XrWqQ7YlJZjjn/0cPRujtSfSsKvRJ6UzK; Expires=Fri, 13 Dec 2024 22:25:14 GMT; Path=/",
+                        "AWSALBCORS=/Q2QlwpU5D7SaANFAPI4GelQBkrOJr+7k9kJRg4K0GBC5lK4RrBCJGxhjpK522ptwUBXs8bL8VF8ahwCzRhYNJKMTI+XrWqQ7YlJZjjn/0cPRujtSfSsKvRJ6UzK; Expires=Fri, 13 Dec 2024 22:25:14 GMT; Path=/; SameSite=None; Secure",
+                        "JSESSIONID=D2C0BFDE284DE2EF0B32535980928FE369B8C52656D006BBD923AE7F88FF880CB1F4D98DCC2A5673F392EFBADCC94C43CD4152119FDFBA98A3C96E633F7147B9.n2; Path=/; Secure; HttpOnly"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "X-Cache": [
+                        "Miss from cloudfront"
+                    ],
+                    "Via": [
+                        "1.1 403b65f391b7f20a4f543e4129c6a868.cloudfront.net (CloudFront)"
+                    ],
+                    "X-Amz-Cf-Pop": [
+                        "FOR50-P1"
+                    ],
+                    "Alt-Svc": [
+                        "h3=\":443\"; ma=86400"
+                    ],
+                    "X-Amz-Cf-Id": [
+                        "58OS87ZWSwMAZhxd2u97YaklW103zeuDA7vty23kIueG1ysSZoGKxg=="
+                    ]
+                },
+                "body": {
+                    "string": "{\"observations\":\"Conta desabilitada com sucesso.\"}"
+                }
+            }
         }
     ]
 }

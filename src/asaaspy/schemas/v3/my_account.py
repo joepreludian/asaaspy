@@ -64,3 +64,7 @@ class MyAccountStatusViewSchema(BaseSchema):
     bankAccountInfo: Literal["PENDING", "APPROVED", "REJECTED", "AWAITING_APPROVAL"]
     documentation: Literal["PENDING", "APPROVED", "REJECTED", "AWAITING_APPROVAL"]
     general: Literal["PENDING", "APPROVED", "REJECTED", "AWAITING_APPROVAL"]
+
+
+class MyAccountCloseViewSchema(BaseSchema):
+    observations: Optional[str] = None
